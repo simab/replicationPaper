@@ -1,0 +1,28 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Logit models: Civil conflict onset, AG-level analysis. \label{tab:rob:ag1}}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         &\multicolumn{1}{c}{(6)}         \\
+\hline
+Divided group       &       0.947\sym{***}&                     &                     &                     &                     &                     \\
+                    &     (0.176)         &                     &                     &                     &                     &                     \\
+Fractionalization   &                     &       2.031\sym{***}&                     &                     &                     &                     \\
+                    &                     &     (0.395)         &                     &                     &                     &                     \\
+Frac. incr. since 1946&                     &                     &       2.512\sym{***}&       2.877\sym{***}&                     &                     \\
+                    &                     &                     &     (0.628)         &     (0.681)         &                     &                     \\
+Frac. incr. before 1946&                     &                     &                     &       1.546\sym{***}&       1.326\sym{***}&                     \\
+                    &                     &                     &                     &     (0.350)         &     (0.362)         &                     \\
+Frac. incr. since 1886&                     &                     &                     &                     &                     &       1.910\sym{***}\\
+                    &                     &                     &                     &                     &                     &     (0.380)         \\
+\hline
+AG controls         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Peaceyears controls &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Log Likelihood      &   -1193.641         &   -1189.602         &   -1201.309         &   -1193.610         &   -1203.547         &   -1195.847         \\
+AIC                 &    2405.282         &    2397.203         &    2420.619         &    2407.221         &    2425.095         &    2409.694         \\
+Observations        &       22458         &       22458         &       22458         &       22458         &       22458         &       22458         \\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize AG-clustered standard errors in parentheses.}\\
+\multicolumn{7}{l}{\footnotesize $^{*}p<0.05$; $^{**}p<0.01.$; $^{***}p<0.001.$ }\\
+\end{tabular}
+\end{table}

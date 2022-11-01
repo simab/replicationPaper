@@ -1,0 +1,19 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{LPM: Conley standard errors with varying distance cutoffs (III) \label{tab:rob:cnl3}}
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         \\
+\hline
+Frac. incr. since 1886&       0.015\sym{**} &       0.015\sym{**} &       0.015\sym{**} &       0.015\sym{***}&       0.015\sym{***}\\
+                    &     (0.005)         &     (0.005)         &     (0.005)         &     (0.005)         &     (0.004)         \\
+\hline
+Distance Cutoff (km)&         250         &         500         &        1000         &        2500         &        5000         \\
+All controls        &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Year FE             &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Observations        &       27105         &       27105         &       27105         &       27105         &       27105         \\
+\hline\hline
+\multicolumn{6}{l}{\footnotesize Conley GMM standard errors in parentheses.}\\
+\multicolumn{6}{l}{\footnotesize $^{+}p<0.1$; $^{*}p<0.05$; $^{**}p<0.01.$; $^{***}p<0.001.$ }\\
+\end{tabular}
+\end{table}
