@@ -1,9 +1,12 @@
 library(foreign)
 library(mediation)
 library(gsfuns)
+library(here)
+library(viridis)
 
 ## Set working directory to own project folder
-setwd("")
+setwd(here("dataverse_files"))
+
 
 ## Load dataset
 an.df <- read.dta("epr_segment_level_analysis.dta")
