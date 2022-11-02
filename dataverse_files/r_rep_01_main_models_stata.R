@@ -96,8 +96,40 @@ stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
 ## Figure 7: Predicted probabilities from Model 3
 ################################################################################         
                                
+pred_prob_lhs <- append("tfrac_incr_post1946", vars_logit)
+pred_prob_post1946_onset_logit <- glm(onset_do_flag ~ ., 
+                   data=an.df.sub.allyears[,pred_prob_lhs], family="binomial")                               
                                
-                               
+predprob_logit_tfrac_post1946_coefs <- coeftest(pred_prob_post1946_onset_logit, 
+                                vcov. = vcovCL(pred_prob_post1946_onset_logit, 
+                                               cluster = an.df.sub.allyears$ag_id))
+
+# holding everything except tfrac_incr_post1946 at their means
+mean_var_vals <- c(1, map(an.df.sub.allyears[,pred_prob_lhs[3:16]], function(x) mean(x, na.rm=TRUE)))
+names(mean_var_vals)[1] <- c("(Intercept)")
+mean_var_vals <- unlist(mean_var_vals)
+
+# get max val of tfrac_incr_post1946 to properly specify range:
+max_tfrac_post1946 <- max(an.df.sub.allyears$tfrac_incr_post1946, na.rm=TRUE)
+
+# specify range of tfrac_incr_post1946 over which to predict
+tfrac_post1946_range <- seq(0,max_tfrac_post1946, 0.01)
+
+pred_prob_onset <- function(dyn_coef){
+  full_coefs <- as.list(c(mean_var_vals[1],tfrac_incr_post1946=dyn_coef,mean_var_vals[2:15]))
+  return(predict(pred_prob_post1946_onset_logit, full_coefs, type = "response"))
+}
+
+pred_probs_onset_tfrac_post1946 <- lapply(tfrac_post1946_range, pred_prob_onset)
+
+pred_probs_onset_tfrac_post1946_df <- data.frame(pred_probs=unlist(pred_probs_onset_tfrac_post1946))
+pred_probs_onset_tfrac_post1946_df$tfrac_incr_post1946 <- tfrac_post1946_range
+
+# WITHOUT Confidence Intervals!
+ggplot(data = pred_probs_onset_tfrac_post1946_df,
+       aes(x = tfrac_post1946_range, y=pred_probs)) +
+  geom_line()
+
 
 ################################################################################
 ## Table 2: Conflict Onset Logit
@@ -181,24 +213,24 @@ for(treat_var in treat.vars.3){
   }
 }
 
-for(treat_var in treat.vars.3){
-  full_lhs <- append(treat_var, vars_logit)
-  full_lhs <- append(full_lhs,"ag_id")
-  plm_formula <- as.formula(paste("onset_do_flag ~ ", 
-                             paste(full_lhs[!full_lhs %in% c("onset_do_flag","ag_id")], 
-                             collapse="+")))
-  d <- an.df.sub.allyears[,full_lhs]
-  plm(plm_formula, index = "ag_id", model = "within", data = d)
-  assign(paste0("onset_",treat_var,"_fe_reg"), onset_logit)
-}
-
-
-fe_reg_tfrac_coefs <- coeftest(onset_tfrac_fe_reg, 
-                                vcov. = vcovCL(onset_tfrac_fe_reg, 
-                                               cluster = an.df.sub.allyears$ag_id))
-fe_reg_tfrac_post1946_coefs <- coeftest(onset_tfrac_post1946_fe_reg, 
-                                        vcov. = vcovCL(onset_tfrac_post1946_fe_reg, 
-                                                       cluster = an.df.sub.allyears$ag_id))
+# for(treat_var in treat.vars.3){
+#   full_lhs <- append(treat_var, vars_logit)
+#   full_lhs <- append(full_lhs,"ag_id")
+#   plm_formula <- as.formula(paste("onset_do_flag ~ ", 
+#                              paste(full_lhs[!full_lhs %in% c("onset_do_flag","ag_id")], 
+#                              collapse="+")))
+#   d <- an.df.sub.allyears[,full_lhs]
+#   plm(plm_formula, index = "ag_id", model = "within", data = d)
+#   assign(paste0("onset_",treat_var,"_fe_reg"), onset_logit)
+# }
+# 
+# 
+# fe_reg_tfrac_coefs <- coeftest(onset_tfrac_fe_reg, 
+#                                 vcov. = vcovCL(onset_tfrac_fe_reg, 
+#                                                cluster = an.df.sub.allyears$ag_id))
+# fe_reg_tfrac_post1946_coefs <- coeftest(onset_tfrac_post1946_fe_reg, 
+#                                         vcov. = vcovCL(onset_tfrac_post1946_fe_reg, 
+#                                                        cluster = an.df.sub.allyears$ag_id))
 
 stargazer(onset_tfrac_fe_reg, onset_tfrac_post1946_fe_reg,
           type="text",
