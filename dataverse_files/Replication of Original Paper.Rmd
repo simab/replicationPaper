@@ -1,0 +1,23 @@
+---
+title: 'Gov 2001: Replication of Original Paper'
+author: "Sima Biondi, Priyanka Sethy, Natalie Ayers"
+date: "2022-11-05"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+We are replicating "Redemption through Rebellion: Border Change, Lost Unity, and Nationalist Conflict.” (2022), by Lars-Erik Cederman, Seraina Rüegger, and Guy Schvitz. The data and code for this paper are in the [Harvard Dataverse](https://doi.org/10.7910/DVN/SLWCLZ). We are proposing to extend this paper in three ways: first, by including a variable of the conflict instigator to identify whether the paper's proposed mechanism, which relys on the rebels instigating conflict, is correct or if there may be other, state-initiated mechanisms at work. We also play to include a measure of topological features of the ethnic group's terrain to account for previous research findings of terrain's importance in civil conflict prediction (e.g., Carter et al. 2019, Buhaug and Gates 2002; Buhaug, Gates, and Lujala 2009; Fearon and Laitin 2003). Finally, we hope to test the validity of an additional mechanism of state consolidation by expanding Cederman et al.'s list of conflicts to include intrastate and extrastate/interstate conflicts which occur between a state and ethnic groups outside of the state boundaries. 
+
+The main findings of the Cederman et al. paper which will be important for our extensions are from their logistic regression models, which they run to test the impact of aggregate group factors on the onset of conflict. These results are presented for presented for post-WWII in Table 1, for post-1886 in Table 2, and as a predicted probability model in Figure 7. They also develop fixed-effects models in their robustness checks to reduce omitted variable bias and act as an additional test for changes in fractionalization over time, and they present these results in Table 3. We replicate these 4 tables and figures in our analysis, as we plan to use the same models in our extensions to provide for a direct comparison of the results.
+
+We have so far noticed only one discrepancy between the code and data the authors provided and their published results: in Table 3, the authors find estimated coefficients of 0.058 (se 0.025) for Fractionalization and 0.067 (se 0.026) for Fractionalization increase since 1946, while our replication of their results using both their original stata code and the re-factored R code provide values of 0.046 (se 0.021) and 0.055 (se 0.024) for Fractionalization and Fractionalization increase since 1946, respectively.
+
+# Results
+
+
+# Status of Extension Analysis
