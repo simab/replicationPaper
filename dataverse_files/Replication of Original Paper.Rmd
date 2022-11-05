@@ -150,6 +150,67 @@ stargazer(logit_2_tfrac_coefs, logit_2_prepost1946_coefs, logit_2_tfrac_pre1946_
                                "State age, log","Peace years",
                                "Peace years sq","Peace years cubed"))
 ```
+## Table 3
+
+The table below replicates Table 3 in Cederman et al. (2022), which displays the results of two fixed effects models to account for potential AG omitted effects and, they argue, provide a better test of their hypothesis that stronger fractionalization should lead to greater chance of conflict.
+
+Our results from an exact re-running of their provided Stata code with their data match to the R code below, giving us confidence in these results with the provided data; however, the results do not match the published results in the paper: they are off only slightly, but the impacts reported in the paper are slightly higher for both Fractionalization and Fractionalization increase since 1946 (0.058 (se 0.025) and 0.067 (se 0.026) as compared to our results of 0.046 (se 0.021) and 0.055 (se 0.024)). We are not certain why this is the case, but imagine perhaps the data published in the Dataverse was not the exact same as that used to generate the publication - it would be a miniscule difference, though, to generate these differences. It may also be the case that the authors used different data for only this table, or perhaps re-ran all of their other analyses with updated data and did not update this one. 
+
+That said, they (and we) find significant, positive impacts of fractionalization on conflict onset using this linear fixed effects model, and it does match their goal of testing for any omitted effects of AG characteristics. One potential concern with using it as evidence that within-AG changes over time have an impact, though, is the scarcity of conflict data points for each individual AG, prompting caution with any interpretations.  
+
+```{r generating Table 3, warning = FALSE}
+# identify "treatment" variables
+treat.vars.3 <- c("tfrac", "tfrac_incr_post1946")
+
+# run fixed effects models for both treatment variables
+# felm is very picky with equation inputs, so had to manually
+# paste each equation into each regression
+for(treat_var in treat.vars.3){
+  full_lhs <- append(treat_var, vars_logit)
+  full_lhs <- append(full_lhs,"ag_id")
+  
+  # use to create formula again if need to, copy and paste
+  #felm_formula <- as.formula(paste("onset_do_flag ~ ", 
+  #                           paste(full_lhs[!full_lhs %in% c("onset_do_flag","ag_id")], 
+  #                           collapse="+")))
+  
+  d <- an.df.sub.allyears[,full_lhs]
+  if(treat_var == "tfrac"){
+    # regression for `tfrac` variable
+    onset_tfrac_fe_reg <- felm(onset_do_flag ~ tfrac + ln_ag_area_sqkm + ag_incidence_flag_lag + 
+                                 status_excl + downgraded2 + rbal + warhist + ln_capdist + 
+                                 ln_rgdppc_lag + ln_pop_lag + colonial_past + ln_state_age + 
+                                 pys + pys2 + pys3 | ag_id | 0 | ag_id, data = d)
+  }
+  else{
+    # regression for `tfrac_incr_post1946` variable
+    onset_tfrac_post1946_fe_reg <- felm(onset_do_flag ~ tfrac_incr_post1946 + ln_ag_area_sqkm + ag_incidence_flag_lag + 
+                                          status_excl + downgraded2 + rbal + warhist + ln_capdist + 
+                                          ln_rgdppc_lag + ln_pop_lag + colonial_past + ln_state_age + 
+                                          pys + pys2 + pys3 | ag_id | 0 | ag_id, data = d)
+  }
+}
+
+# display results
+stargazer(onset_tfrac_fe_reg, onset_tfrac_post1946_fe_reg,
+          type="text",
+          title = "Replication of Table 3",
+          dep.var.caption = "Linear Probability Models: Civil Conflict Onset",
+          covariate.labels = c("Fractionalization", 
+                               "Frac. incr. since 1946",
+                               "Territory sq.km, log",
+                               "Ongoing conflict, lag", "Exclusion",
+                               "Downgraded", "Relative size", "War history",
+                               "Distance to capital, log", "GDP, lag, log",
+                               "Population, log","Colonial history",
+                               "State age, log","Peace years",
+                               "Peace years sq","Peace years cubed"))
+```
+
+## Figure 7
+
+
+
 
 # Status of Extension Analysis
 
