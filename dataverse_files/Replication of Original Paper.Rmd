@@ -101,8 +101,55 @@ stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
 
 ## Table 2
 
+The below table replicates Table 2 in Cederman et al. (2022), providing the results of logit models  testing the impact of increasing fractionalization over three historical periods on conflict onset. This analysis is a direct extension of their Table 1 results, aiming to trace trends in fractionalization's impact on conflict onset through history, particularly identifying the impact of border changes around the WWII cut-off. These results also support their theory, with post-1946 fractionalization producing a stronger impact than pre-1946, but both significant and positive. Our results generated in R match exactly their published results generated in Stata. 
+
+However, this analysis relies on applying the GeoEPR ethnic settlement data from 1946 to all years from 1886-1946, which the authors acknowledge may be suspect. To alleviate concerns, they geocode a 1918 map of ethnic groups in Europe to re-run the tests for Europe, and geocode data on precolonial ethnic groups in Africa to re-run the test for African settlements. Both of these robustness checks still find significant, positive effects of historical fractionalization on conflict onset, but given the difficulties and likely inaccuracies involved with geocoding qualitative maps, the African data being only a "rough approximation" (pg 38), and the European data not reflecting anything pre-1918, there can still be doubts remaining as to the authors' ability to make these historical claims. As such, while we will replicate this analysis with our extensions, we give more weight to the Table 1 results. 
 
 
+```{r adding Table 2, warning=FALSE}
+# define "treatment" variables
+treat.vars.2 <- c("tfrac_incr", "tfrac_incr_pre1946")
+
+# Create models 2.1 and 2.3
+for(treat_var in treat.vars.2){
+  full_lhs <- append(treat_var, vars_logit)
+  onset_logit <- glm(onset_do_flag ~ ., 
+                     data=an.df.sub.allyears[,full_lhs], family="binomial")
+  assign(paste0("logit_2_",treat_var), onset_logit)
+}
+
+# Create model 2.2
+combined_lhs <- append(c("tfrac_incr_pre1946","tfrac_incr_post1946"), vars_logit)
+logit_2_prepost1946 <- glm(onset_do_flag ~ ., 
+                      data = an.df.sub.allyears[,combined_lhs], family="binomial")                               
+# generate RSEs for all three models       
+logit_2_tfrac_coefs <- coeftest(logit_2_tfrac_incr, 
+                              vcov. = vcovCL(logit_2_tfrac_incr, 
+                                             cluster = an.df.sub.allyears$ag_id))
+logit_2_tfrac_pre1946_coefs <- coeftest(logit_2_tfrac_incr_pre1946, 
+                                   vcov. = vcovCL(logit_2_tfrac_incr_pre1946, 
+                                                  cluster = an.df.sub.allyears$ag_id))
+logit_2_prepost1946_coefs <- coeftest(logit_2_prepost1946, 
+                              vcov. = vcovCL(logit_2_prepost1946, 
+                                             cluster = an.df.sub.allyears$ag_id))
+
+
+# display results 
+stargazer(logit_2_tfrac_coefs, logit_2_prepost1946_coefs, logit_2_tfrac_pre1946_coefs,
+          type="text",
+          title = "Replication of Table 2",
+          dep.var.caption = "Civil Conflict Onset",
+          covariate.labels = c("Fractionalization incr. since 1886", 
+                               "Frac. incr. before 1946", 
+                               "Frac. incr. since 1946",
+                               "Territory sq.km, log",
+                               "Ongoing conflict, lag", "Exclusion",
+                               "Downgraded", "Relative size", "War history",
+                               "Distance to capital, log", "GDP, lag, log",
+                               "Population, log","Colonial history",
+                               "State age, log","Peace years",
+                               "Peace years sq","Peace years cubed"))
+```
 
 # Status of Extension Analysis
 
