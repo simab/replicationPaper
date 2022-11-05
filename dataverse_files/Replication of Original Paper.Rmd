@@ -20,7 +20,7 @@ library("plm")
 
 # Introduction
 
-We are replicating "Redemption through Rebellion: Border Change, Lost Unity, and Nationalist Conflict.” (2022), by Lars-Erik Cederman, Seraina Rüegger, and Guy Schvitz. The data and code for this paper are in the [Harvard Dataverse](https://doi.org/10.7910/DVN/SLWCLZ). We are proposing to extend this paper in three ways: first, by including a variable of the conflict instigator to identify whether the paper's proposed mechanism, which relys on the rebels instigating conflict, is correct or if there may be other, state-initiated mechanisms at work. We also play to include a measure of topological features of the ethnic group's terrain to account for previous research findings of terrain's importance in civil conflict prediction (e.g., Carter et al. 2019, Buhaug and Gates 2002; Buhaug, Gates, and Lujala 2009; Fearon and Laitin 2003). Finally, we hope to test the validity of an additional mechanism of state consolidation by expanding Cederman et al.'s list of conflicts to include intrastate and extrastate/interstate conflicts which occur between a state and ethnic groups outside of the state boundaries. 
+We are replicating "Redemption through Rebellion: Border Change, Lost Unity, and Nationalist Conflict.” (2022), by Lars-Erik Cederman, Seraina Rüegger, and Guy Schvitz. The data and code for this paper are in the [Harvard Dataverse](https://doi.org/10.7910/DVN/SLWCLZ). We are proposing to extend this paper in three ways: first, by including a variable of the conflict instigator to identify whether the paper's proposed mechanism, which relys on the rebels instigating conflict, is correct or if there may be other, state-initiated mechanisms at work. We also play to include a measure of topological features of the ethnic group's terrain to account for previous research findings of terrain's importance in civil conflict prediction (e.g., Carter et al. 2019, Buhaug and Gates 2002; Buhaug, Gates, and Lujala 2009; Fearon and Laitin 2003). Finally, we hope to test the validity of an additional mechanism of state consolidation by expanding Cederman et al.'s list of conflicts to include intrastate and extrastate/interstate conflicts which occur between a state and ethnic groups outside of the state boundaries. 
 
 The main findings of the Cederman et al. paper which will be important for our extensions are from their logistic regression models, which they run to test the impact of aggregate group factors on the onset of conflict. These results are presented for presented for post-WWII in Table 1, for post-1886 in Table 2, and as a predicted probability model in Figure 7. They also develop fixed-effects models in their robustness checks to reduce omitted variable bias and act as an additional test for changes in fractionalization over time, and they present these results in Table 3. We replicate these 4 tables and figures in our analysis, as we plan to use the same models in our extensions to provide for a direct comparison of the results.
 
@@ -31,7 +31,7 @@ We have so far noticed only one discrepancy between the code and data the author
 ```{r ingest and prepare data}
 
 # Set working directory to own project folder
-setwd("./redemption-through-rebellion-dataverse_files/")
+#setwd("./redemption-through-rebellion-dataverse_files/")
 
 ## Load dataset
 an.df <- read.dta("epr_segment_level_analysis.dta")
@@ -55,7 +55,7 @@ an.df.sub.allyears <- an.df %>%
 
 The table below replicates Table 1 in Cederman et al. (2022), providing the results of 3 logit models with robust standard errors clustered at the AG level. Our results align exactly with the published results, which the authors originally obtained from Stata using `logit` with `cluster`. They show that having an AG divided as a binary measure has a significant, positive relationship with conflict onset (1), while testing the impact of a continuous measure of territorial fractionalization and increased fractionalization since 1946 both show even larger, positive relationships with conflict onset. Given the intent of the authors to identify whether fractionalization is relevant to conflict onset, the logit model they apply seems relevant here. 
 
-```{r generate Table 1 logit analysis, warning=FALSE}
+```{r generate Table 1 logit analysis, warning=FALSE, results='asis', header=FALSE}
 # define variables for use in all models, including DV
 vars_logit <- c("onset_do_flag", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
                 "status_excl", "downgraded2",
@@ -86,7 +86,9 @@ logit_tfrac_1946_coefs <- coeftest(logit_tfrac_incr_post1946,
 
 # Display results of logit model
 stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
-          type="text",
+          type="latex",
+          dep.var.labels.include = FALSE,
+          omit = c("pys", "pys2","pys3"),
           title = "Replication of Table 1",
           dep.var.caption = "Civil Conflict Onset",
           covariate.labels = c("Divided group", "Fractionalization", 
@@ -95,8 +97,7 @@ stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
                                "Downgraded", "Relative size", "War history",
                                "Distance to capital, log", "GDP, lag, log",
                                "Population, log","Colonial history",
-                               "State age, log","Peace years",
-                               "Peace years sq","Peace years cubed"))
+                               "State age, log"))
 ```
 
 ## Table 2
@@ -106,7 +107,7 @@ The below table replicates Table 2 in Cederman et al. (2022), providing the resu
 However, this analysis relies on applying the GeoEPR ethnic settlement data from 1946 to all years from 1886-1946, which the authors acknowledge may be suspect. To alleviate concerns, they geocode a 1918 map of ethnic groups in Europe to re-run the tests for Europe, and geocode data on precolonial ethnic groups in Africa to re-run the test for African settlements. Both of these robustness checks still find significant, positive effects of historical fractionalization on conflict onset, but given the difficulties and likely inaccuracies involved with geocoding qualitative maps, the African data being only a "rough approximation" (pg 38), and the European data not reflecting anything pre-1918, there can still be doubts remaining as to the authors' ability to make these historical claims. As such, while we will replicate this analysis with our extensions, we give more weight to the Table 1 results. 
 
 
-```{r adding Table 2, warning=FALSE}
+```{r adding Table 2, warning=FALSE, results='asis', header=FALSE}
 # define "treatment" variables
 treat.vars.2 <- c("tfrac_incr", "tfrac_incr_pre1946")
 
@@ -136,7 +137,9 @@ logit_2_prepost1946_coefs <- coeftest(logit_2_prepost1946,
 
 # display results 
 stargazer(logit_2_tfrac_coefs, logit_2_prepost1946_coefs, logit_2_tfrac_pre1946_coefs,
-          type="text",
+          type="latex",
+          dep.var.labels.include = FALSE,
+          omit = c("pys", "pys2","pys3"),
           title = "Replication of Table 2",
           dep.var.caption = "Civil Conflict Onset",
           covariate.labels = c("Fractionalization incr. since 1886", 
@@ -147,8 +150,7 @@ stargazer(logit_2_tfrac_coefs, logit_2_prepost1946_coefs, logit_2_tfrac_pre1946_
                                "Downgraded", "Relative size", "War history",
                                "Distance to capital, log", "GDP, lag, log",
                                "Population, log","Colonial history",
-                               "State age, log","Peace years",
-                               "Peace years sq","Peace years cubed"))
+                               "State age, log"))
 ```
 ## Table 3
 
@@ -158,7 +160,7 @@ Our results from an exact re-running of their provided Stata code with their dat
 
 That said, they (and we) find significant, positive impacts of fractionalization on conflict onset using this linear fixed effects model, and it does match their goal of testing for any omitted effects of AG characteristics. One potential concern with using it as evidence that within-AG changes over time have an impact, though, is the scarcity of conflict data points for each individual AG, prompting caution with any interpretations.  
 
-```{r generating Table 3, warning = FALSE}
+```{r generating Table 3, warning = FALSE,results='asis', header=FALSE}
 # identify "treatment" variables
 treat.vars.3 <- c("tfrac", "tfrac_incr_post1946")
 
@@ -184,16 +186,19 @@ for(treat_var in treat.vars.3){
   }
   else{
     # regression for `tfrac_incr_post1946` variable
-    onset_tfrac_post1946_fe_reg <- felm(onset_do_flag ~ tfrac_incr_post1946 + ln_ag_area_sqkm + ag_incidence_flag_lag + 
-                                          status_excl + downgraded2 + rbal + warhist + ln_capdist + 
-                                          ln_rgdppc_lag + ln_pop_lag + colonial_past + ln_state_age + 
+    onset_tfrac_post1946_fe_reg <- felm(onset_do_flag ~ tfrac_incr_post1946 + ln_ag_area_sqkm +
+                                          ag_incidence_flag_lag + status_excl + downgraded2 + 
+                                          rbal + warhist + ln_capdist + ln_rgdppc_lag + 
+                                          ln_pop_lag + colonial_past + ln_state_age + 
                                           pys + pys2 + pys3 | ag_id | 0 | ag_id, data = d)
   }
 }
 
 # display results
 stargazer(onset_tfrac_fe_reg, onset_tfrac_post1946_fe_reg,
-          type="text",
+          type="latex",
+          dep.var.labels.include = FALSE,
+          omit = c("pys", "pys2","pys3"),
           title = "Replication of Table 3",
           dep.var.caption = "Linear Probability Models: Civil Conflict Onset",
           covariate.labels = c("Fractionalization", 
@@ -203,21 +208,75 @@ stargazer(onset_tfrac_fe_reg, onset_tfrac_post1946_fe_reg,
                                "Downgraded", "Relative size", "War history",
                                "Distance to capital, log", "GDP, lag, log",
                                "Population, log","Colonial history",
-                               "State age, log","Peace years",
-                               "Peace years sq","Peace years cubed"))
+                               "State age, log"))
 ```
 
 ## Figure 7
 
+The figure below replicates Figure 7 in Cederman et al. (2022), which provides predicted probabilities of conflict onset as the post-1946 fractionalization increases from 0 to its maximum value, according to the original logit model developed for use in Table 1. The authors use it to indicate that their results are substantively important, demonstrating the magnitude of the predicted increase in conflict onset with increasing territorial fractionalization. The results of our R code match closely with the figure generated by the authors in Stata. Given the difficulties with making precise estimates from empirical conflict models, we are treating this figure as fairly supplemental, rather than central, to our extension - it provides a visual that is more easily interpretable, but the actual predicted values should be taken with caution, as there are wide confidence intervals around these predictions. 
 
+```{r generate Figure 7, warning=FALSE}
+pred_prob_lhs <- append("tfrac_incr_post1946", vars_logit)
+pred_prob_post1946_onset_logit <- glm(onset_do_flag ~ ., 
+                   data=an.df.sub.allyears[,pred_prob_lhs], family="binomial")                               
+                               
+predprob_logit_tfrac_post1946_coefs <- coeftest(pred_prob_post1946_onset_logit, 
+                                vcov. = vcovCL(pred_prob_post1946_onset_logit, 
+                                               cluster = an.df.sub.allyears$ag_id))
 
+# holding everything except tfrac_incr_post1946 at their means
+mean_var_vals <- c(1, map(an.df.sub.allyears[,pred_prob_lhs[3:16]], function(x) mean(x, na.rm=TRUE)))
+names(mean_var_vals)[1] <- c("(Intercept)")
+mean_var_vals <- unlist(mean_var_vals)
+
+# get max val of tfrac_incr_post1946 to properly specify range:
+max_tfrac_post1946 <- max(an.df.sub.allyears$tfrac_incr_post1946, na.rm=TRUE)
+
+# specify range of tfrac_incr_post1946 over which to predict
+tfrac_post1946_range <- seq(0,max_tfrac_post1946, 0.01)
+
+pred_prob_onset <- function(dyn_coef){
+  full_coefs <- as.list(c(mean_var_vals[1],tfrac_incr_post1946=dyn_coef,mean_var_vals[2:15]))
+  return(predict(pred_prob_post1946_onset_logit, full_coefs, type = "response"))
+}
+
+pred_probs_onset_tfrac_post1946 <- lapply(tfrac_post1946_range, pred_prob_onset)
+
+pred_probs_onset_tfrac_post1946_df <- data.frame(pred_probs=unlist(pred_probs_onset_tfrac_post1946))
+pred_probs_onset_tfrac_post1946_df$tfrac_incr_post1946 <- tfrac_post1946_range
+
+# without Confidence Intervals
+ggplot(data = pred_probs_onset_tfrac_post1946_df,
+       aes(x = tfrac_post1946_range, y=pred_probs)) +
+  geom_line() + 
+  xlab("Tfrac Post-1946 Values") + 
+  ylab("Predicted Probability of Conflict Onset") + 
+  labs(title = "Predicted Probability of Conflict Onset from Logit Model \nby Post-1946 Fractionalization")
+
+```
 
 # Status of Extension Analysis
 
+## Instigator 
+
+The inclusion of an instigator field is not possible using the UCDP conflict data which Cederman et al. employ in their analysis. Therefore, we plan on joining the UCDP data with the Correlates of War Intra-State wars dataset (and potentially other datasets with instigator values, using [xSub](http://cross-sub.org/)) to add this instigator field. We expect to lose a number of data points by performing this join, both because some data points won't be in the COW dataset and because some will be unable to join with confidence, but we expect there to be no systemic bias in the 2nd cause, and we expect any systemic bias from the first cause to have minimal to no impact on the mechanism of fractionalization's impact on conflict onset which we will be trying to test. 
+
+We plan on re-running the data creation with this updated dataset and re-running the same models above with an indicator variable for which side began the conflict and separating the dataset into two based on which side instigated. We expect the dataset creation to be the most time-intensive component of this part of the extension, given the code to run the models is already created, but we don't expect this to be infeasible. 
+
+## Topographic Features
+
+## Extrastate Conflict Inclusion
 
 
-## References Used
+
+### References Used
 
 https://stackoverflow.com/questions/16498849/logistic-regression-with-robust-clustered-standard-errors-in-r
 
 https://www.r-bloggers.com/2021/05/clustered-standard-errors-with-r/
+
+https://statisticsglobe.com/name-variables-in-for-loop-dynamically-in-r
+
+https://unc-libraries-data.github.io/R-Open-Labs/Extras/Stargazer/Stargazer.html
+
+
