@@ -12,6 +12,7 @@ an.df <- read.dta(here("redemption-through-rebellion-dataverse_files","epr_segme
 geoepr.ag <- st_read(here("redemption-through-rebellion-dataverse_files","geoepr_ag.geojson"))
 
 # they do include elevation as a control, so we only need to include ruggedness
+# from https://dataverse.harvard.edu/dataset.xhtml;jsessionid=b7ee5ce128efcce5938ff72864d2?persistentId=doi%3A10.7910%2FDVN%2FWXUZBN&version=&q=&fileAccess=&fileTag=&fileSortField=&fileSortOrder=
 ruggedness_1k <- raster(here("terrain_ruggedness_dataverse_files","Ruggedness_OneKilometerData","ruggedness1K.tif"))
 # follow process in `01_prepare_main_analysis_data.R` to replace NA with 0's (I think) reclassifying
 ruggedness_1k <- reclassify(gtopo, cbind(NA, 0))
