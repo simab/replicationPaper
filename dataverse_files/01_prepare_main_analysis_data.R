@@ -524,7 +524,7 @@ kurds.plot <- ggplot() +
   coord_sf(datum = NA, xlim = xl, ylim = yl) + 
   theme_bw()
 
-pdf("kurds_plot.pdf", 7, 4)
+pdf("dataverse_files/kurds_plot.pdf", 7, 4)
 kurds.plot
 dev.off()
 
@@ -550,7 +550,7 @@ cs.preview.plots <- ggplot() +
   facet_wrap(vars(date)) + 
   theme_bw()
 
-pdf("cs_snapshots.pdf", 6, 6)
+pdf("dataverse_files/cs_snapshots.pdf", 6, 6)
 cs.preview.plots
 dev.off()
 
@@ -573,7 +573,7 @@ md.plot <- ggplot() +
   theme_bw() + 
   coord_sf(datum = NA, xlim = c(-17, 50), ylim = c(-33, 36))
 
-pdf("murdock_plot.pdf", 7, 6)
+pdf("dataverse_files/murdock_plot.pdf", 7, 6)
 md.plot
 dev.off()
 
@@ -594,6 +594,6 @@ eur1918.plot <- ggplot() +
         axis.text = element_blank(),
         axis.ticks = element_blank())
   
-pdf("eur1918_plot.pdf", 7, 6)
+pdf("dataverse_files/eur1918_plot.pdf", 7, 6)
 eur1918.plot
 dev.off()
