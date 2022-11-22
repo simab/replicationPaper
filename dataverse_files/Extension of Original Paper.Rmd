@@ -50,7 +50,9 @@ an.df.rugged.sub.allyears <- an.df.rugged %>%
 
 ## Table 1
 
-The table below replicates Table 1 in Cederman et al. (2022), providing the results of 3 logit models with robust standard errors clustered at the AG level. Our results align exactly with the published results, which the authors originally obtained from Stata using `logit` with `cluster`. They show that having an AG divided as a binary measure has a significant, positive relationship with conflict onset (1), while testing the impact of a continuous measure of territorial fractionalization and increased fractionalization since 1946 both show even larger, positive relationships with conflict onset. Given the intent of the authors to identify whether fractionalization is relevant to conflict onset, the logit model they apply seems relevant here. 
+### Table 1 with Mean Terrain Ruggedness
+
+The table below replicates Table 1 in Cederman et al. (2022), providing the results of 3 logit models with robust standard errors clustered at the AG level. 
 
 ```{r generate Table 1 logit analysis, warning=FALSE, results='asis', header=FALSE}
 # define variables for use in all models, including DV
@@ -91,20 +93,120 @@ stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
           covariate.labels = c("Divided group", "Fractionalization", 
                                "Frac. incr. since 1946", "Territory sq.km, log",
                                "Ongoing conflict, lag", "Exclusion", "Downgraded", 
-                               "Terrain Ruggedness","Relative size", "War history",
+                               "Terrain Ruggedness (Mean)","Relative size", "War history",
                                "Distance to capital, log", "GDP, lag, log",
                                "Population, log","Colonial history",
                                "State age, log"))
 ```
 
+### Table 1 with Median Terrain Ruggedness
+
+```{r generate Table 1 logit analysis, warning=FALSE, results='asis', header=FALSE}
+# define variables for use in all models, including DV
+vars_logit <- c("onset_do_flag", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
+                "status_excl", "downgraded2", "rugged_med",
+                "rbal", "warhist", "ln_capdist", "ln_rgdppc_lag",
+                "ln_pop_lag",  "colonial_past", "ln_state_age",
+                "pys", "pys2", "pys3")
+# identify AG "treatment" variables to be analyzed separately
+treat.vars <- c("split", "tfrac", "tfrac_incr_post1946")
+
+# for each "treatment" variable, run logit model
+for(treat_var in treat.vars){
+  full_lhs <- append(treat_var, vars_logit)
+  onset_logit <- glm(onset_do_flag ~ ., 
+                     data=an.df.rugged.sub.allyears[,full_lhs], family="binomial")
+  assign(paste0("logit_",treat_var), onset_logit)
+}
+
+# include clustered standard errors for each generated model
+logit_split_coefs <- coeftest(logit_split, 
+                              vcov. = vcovCL(logit_split, 
+                                             cluster = an.df.rugged.sub.allyears$ag_id))
+logit_tfrac_coefs <- coeftest(logit_tfrac, 
+                              vcov. = vcovCL(logit_tfrac, 
+                                             cluster = an.df.rugged.sub.allyears$ag_id))
+logit_tfrac_1946_coefs <- coeftest(logit_tfrac_incr_post1946, 
+                                   vcov. = vcovCL(logit_tfrac_incr_post1946, 
+                                                  cluster = an.df.rugged.sub.allyears$ag_id))
+
+# Display results of logit model
+stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
+          type="text",
+          dep.var.labels.include = FALSE,
+          omit = c("pys", "pys2","pys3"),
+          title = "Replication of Table 1",
+          dep.var.caption = "Civil Conflict Onset",
+          covariate.labels = c("Divided group", "Fractionalization", 
+                               "Frac. incr. since 1946", "Territory sq.km, log",
+                               "Ongoing conflict, lag", "Exclusion", "Downgraded", 
+                               "Terrain Ruggedness (Med)","Relative size", "War history",
+                               "Distance to capital, log", "GDP, lag, log",
+                               "Population, log","Colonial history",
+                               "State age, log"))
+```
+
+
+### Table 1 with Range (Max - Min) Terrain Ruggedness
+
+```{r generate Table 1 logit analysis, warning=FALSE, results='asis', header=FALSE}
+# define variables for use in all models, including DV
+vars_logit <- c("onset_do_flag", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
+                "status_excl", "downgraded2", "rugged_range",
+                "rbal", "warhist", "ln_capdist", "ln_rgdppc_lag",
+                "ln_pop_lag",  "colonial_past", "ln_state_age",
+                "pys", "pys2", "pys3")
+# identify AG "treatment" variables to be analyzed separately
+treat.vars <- c("split", "tfrac", "tfrac_incr_post1946")
+
+# for each "treatment" variable, run logit model
+for(treat_var in treat.vars){
+  full_lhs <- append(treat_var, vars_logit)
+  onset_logit <- glm(onset_do_flag ~ ., 
+                     data=an.df.rugged.sub.allyears[,full_lhs], family="binomial")
+  assign(paste0("logit_",treat_var), onset_logit)
+}
+
+# include clustered standard errors for each generated model
+logit_split_coefs <- coeftest(logit_split, 
+                              vcov. = vcovCL(logit_split, 
+                                             cluster = an.df.rugged.sub.allyears$ag_id))
+logit_tfrac_coefs <- coeftest(logit_tfrac, 
+                              vcov. = vcovCL(logit_tfrac, 
+                                             cluster = an.df.rugged.sub.allyears$ag_id))
+logit_tfrac_1946_coefs <- coeftest(logit_tfrac_incr_post1946, 
+                                   vcov. = vcovCL(logit_tfrac_incr_post1946, 
+                                                  cluster = an.df.rugged.sub.allyears$ag_id))
+
+# Display results of logit model
+stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
+          type="text",
+          dep.var.labels.include = FALSE,
+          omit = c("pys", "pys2","pys3"),
+          title = "Replication of Table 1",
+          dep.var.caption = "Civil Conflict Onset",
+          covariate.labels = c("Divided group", "Fractionalization", 
+                               "Frac. incr. since 1946", "Territory sq.km, log",
+                               "Ongoing conflict, lag", "Exclusion", "Downgraded", 
+                               "Terrain Ruggedness (Range)","Relative size", "War history",
+                               "Distance to capital, log", "GDP, lag, log",
+                               "Population, log","Colonial history",
+                               "State age, log"))
+```
+
+
 ## Table 2
 
-The below table replicates Table 2 in Cederman et al. (2022), providing the results of logit models  testing the impact of increasing fractionalization over three historical periods on conflict onset. This analysis is a direct extension of their Table 1 results, aiming to trace trends in fractionalization's impact on conflict onset through history, particularly identifying the impact of border changes around the WWII cut-off. These results also support their theory, with post-1946 fractionalization producing a stronger impact than pre-1946, but both significant and positive. Our results generated in R match exactly their published results generated in Stata. 
-
-However, this analysis relies on applying the GeoEPR ethnic settlement data from 1946 to all years from 1886-1946, which the authors acknowledge may be suspect. To alleviate concerns, they geocode a 1918 map of ethnic groups in Europe to re-run the tests for Europe, and geocode data on precolonial ethnic groups in Africa to re-run the test for African settlements. Both of these robustness checks still find significant, positive effects of historical fractionalization on conflict onset, but given the difficulties and likely inaccuracies involved with geocoding qualitative maps, the African data being only a "rough approximation" (pg 38), and the European data not reflecting anything pre-1918, there can still be doubts remaining as to the authors' ability to make these historical claims. As such, while we will replicate this analysis with our extensions, we give more weight to the Table 1 results. 
-
+The below table replicates Table 2 in Cederman et al. (2022), providing the results of logit models  testing the impact of increasing fractionalization over three historical periods on conflict onset. This analysis is a direct extension of their Table 1 results, aiming to trace trends in fractionalization's impact on conflict onset through history, particularly identifying the impact of border changes around the WWII cut-off. 
 
 ```{r adding Table 2, warning=FALSE, results='asis', header=FALSE}
+# define variables for use in all models, including DV
+vars_logit <- c("onset_do_flag", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
+                "status_excl", "downgraded2", "rugged_mean",
+                "rbal", "warhist", "ln_capdist", "ln_rgdppc_lag",
+                "ln_pop_lag",  "colonial_past", "ln_state_age",
+                "pys", "pys2", "pys3")
+
 # define "treatment" variables
 treat.vars.2 <- c("tfrac_incr", "tfrac_incr_pre1946")
 
@@ -151,13 +253,19 @@ stargazer(logit_2_tfrac_coefs, logit_2_prepost1946_coefs, logit_2_tfrac_pre1946_
 ```
 ## Table 3
 
+### Table 3 with Mean Terrain Ruggedness
+
 The table below replicates Table 3 in Cederman et al. (2022), which displays the results of two fixed effects models to account for potential AG omitted effects and, they argue, provide a better test of their hypothesis that stronger fractionalization should lead to greater chance of conflict.
 
-Our results from an exact re-running of their provided Stata code with their data match to the R code below, giving us confidence in these results with the provided data; however, the results do not match the published results in the paper: they are off only slightly, but the impacts reported in the paper are slightly higher for both Fractionalization and Fractionalization increase since 1946 (0.058 (se 0.025) and 0.067 (se 0.026) as compared to our results of 0.046 (se 0.021) and 0.055 (se 0.024)). We are not certain why this is the case, but imagine perhaps the data published in the Dataverse was not the exact same as that used to generate the publication - it would be a miniscule difference, though, to generate these differences. It may also be the case that the authors used different data for only this table, or perhaps re-ran all of their other analyses with updated data and did not update this one. 
-
-That said, they (and we) find significant, positive impacts of fractionalization on conflict onset using this linear fixed effects model, and it does match their goal of testing for any omitted effects of AG characteristics. One potential concern with using it as evidence that within-AG changes over time have an impact, though, is the scarcity of conflict data points for each individual AG, prompting caution with any interpretations.  
-
 ```{r generating Table 3, warning = FALSE,results='asis', header=FALSE}
+# define variables for use in all models, including DV
+vars_logit <- c("onset_do_flag", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
+                "status_excl", "downgraded2", "rugged_mean",
+                "rbal", "warhist", "ln_capdist", "ln_rgdppc_lag",
+                "ln_pop_lag",  "colonial_past", "ln_state_age",
+                "pys", "pys2", "pys3")
+
+
 # identify "treatment" variables
 treat.vars.3 <- c("tfrac", "tfrac_incr_post1946")
 
@@ -177,7 +285,7 @@ for(treat_var in treat.vars.3){
   if(treat_var == "tfrac"){
     # regression for `tfrac` variable
     onset_tfrac_fe_reg <- felm(onset_do_flag ~ tfrac + ln_ag_area_sqkm + ag_incidence_flag_lag + 
-                                 status_excl + downgraded2 + rbal + warhist + ln_capdist + 
+                                 status_excl + downgraded2 + rugged_mean + rbal + warhist + ln_capdist + 
                                  ln_rgdppc_lag + ln_pop_lag + colonial_past + ln_state_age + 
                                  pys + pys2 + pys3 | ag_id | 0 | ag_id, data = d)
   }
@@ -185,7 +293,7 @@ for(treat_var in treat.vars.3){
     # regression for `tfrac_incr_post1946` variable
     onset_tfrac_post1946_fe_reg <- felm(onset_do_flag ~ tfrac_incr_post1946 + ln_ag_area_sqkm +
                                           ag_incidence_flag_lag + status_excl + downgraded2 + 
-                                          rbal + warhist + ln_capdist + ln_rgdppc_lag + 
+                                          rugged_mean + rbal + warhist + ln_capdist + ln_rgdppc_lag + 
                                           ln_pop_lag + colonial_past + ln_state_age + 
                                           pys + pys2 + pys3 | ag_id | 0 | ag_id, data = d)
   }
@@ -202,11 +310,135 @@ stargazer(onset_tfrac_fe_reg, onset_tfrac_post1946_fe_reg,
                                "Frac. incr. since 1946",
                                "Territory sq.km, log",
                                "Ongoing conflict, lag", "Exclusion",
-                               "Downgraded", "Terrain Ruggedness", "Relative size", "War history",
+                               "Downgraded", "Terrain Ruggedness (Mean)", "Relative size", "War history",
                                "Distance to capital, log", "GDP, lag, log",
                                "Population, log","Colonial history",
                                "State age, log"))
 ```
+
+### Table 3 with Median Terrain Ruggedness
+
+```{r generating Table 3, warning = FALSE,results='asis', header=FALSE}
+# define variables for use in all models, including DV
+vars_logit <- c("onset_do_flag", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
+                "status_excl", "downgraded2", "rugged_med",
+                "rbal", "warhist", "ln_capdist", "ln_rgdppc_lag",
+                "ln_pop_lag",  "colonial_past", "ln_state_age",
+                "pys", "pys2", "pys3")
+
+
+# identify "treatment" variables
+treat.vars.3 <- c("tfrac", "tfrac_incr_post1946")
+
+# run fixed effects models for both treatment variables
+# felm is very picky with equation inputs, so had to manually
+# paste each equation into each regression
+for(treat_var in treat.vars.3){
+  full_lhs <- append(treat_var, vars_logit)
+  full_lhs <- append(full_lhs,"ag_id")
+  
+  # use to create formula again if need to, copy and paste
+  #felm_formula <- as.formula(paste("onset_do_flag ~ ", 
+  #                           paste(full_lhs[!full_lhs %in% c("onset_do_flag","ag_id")], 
+  #                           collapse="+")))
+  
+  d <- an.df.rugged.sub.allyears[,full_lhs]
+  if(treat_var == "tfrac"){
+    # regression for `tfrac` variable
+    onset_tfrac_fe_reg <- felm(onset_do_flag ~ tfrac + ln_ag_area_sqkm + ag_incidence_flag_lag + 
+                                 status_excl + downgraded2 + rugged_med + rbal + warhist + ln_capdist + 
+                                 ln_rgdppc_lag + ln_pop_lag + colonial_past + ln_state_age + 
+                                 pys + pys2 + pys3 | ag_id | 0 | ag_id, data = d)
+  }
+  else{
+    # regression for `tfrac_incr_post1946` variable
+    onset_tfrac_post1946_fe_reg <- felm(onset_do_flag ~ tfrac_incr_post1946 + ln_ag_area_sqkm +
+                                          ag_incidence_flag_lag + status_excl + downgraded2 + 
+                                          rugged_med + rbal + warhist + ln_capdist + ln_rgdppc_lag + 
+                                          ln_pop_lag + colonial_past + ln_state_age + 
+                                          pys + pys2 + pys3 | ag_id | 0 | ag_id, data = d)
+  }
+}
+
+# display results
+stargazer(onset_tfrac_fe_reg, onset_tfrac_post1946_fe_reg,
+          type="text",
+          dep.var.labels.include = FALSE,
+          omit = c("pys", "pys2","pys3"),
+          title = "Replication of Table 3",
+          dep.var.caption = "Linear Probability Models: Civil Conflict Onset",
+          covariate.labels = c("Fractionalization", 
+                               "Frac. incr. since 1946",
+                               "Territory sq.km, log",
+                               "Ongoing conflict, lag", "Exclusion",
+                               "Downgraded", "Terrain Ruggedness (Med)", "Relative size", "War history",
+                               "Distance to capital, log", "GDP, lag, log",
+                               "Population, log","Colonial history",
+                               "State age, log"))
+```
+
+### Table 3 with Range Terrain Ruggedness
+
+```{r generating Table 3, warning = FALSE,results='asis', header=FALSE}
+# define variables for use in all models, including DV
+vars_logit <- c("onset_do_flag", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
+                "status_excl", "downgraded2", "rugged_range",
+                "rbal", "warhist", "ln_capdist", "ln_rgdppc_lag",
+                "ln_pop_lag",  "colonial_past", "ln_state_age",
+                "pys", "pys2", "pys3")
+
+
+# identify "treatment" variables
+treat.vars.3 <- c("tfrac", "tfrac_incr_post1946")
+
+# run fixed effects models for both treatment variables
+# felm is very picky with equation inputs, so had to manually
+# paste each equation into each regression
+for(treat_var in treat.vars.3){
+  full_lhs <- append(treat_var, vars_logit)
+  full_lhs <- append(full_lhs,"ag_id")
+  
+  # use to create formula again if need to, copy and paste
+  #felm_formula <- as.formula(paste("onset_do_flag ~ ", 
+  #                           paste(full_lhs[!full_lhs %in% c("onset_do_flag","ag_id")], 
+  #                           collapse="+")))
+  
+  d <- an.df.rugged.sub.allyears[,full_lhs]
+  if(treat_var == "tfrac"){
+    # regression for `tfrac` variable
+    onset_tfrac_fe_reg <- felm(onset_do_flag ~ tfrac + ln_ag_area_sqkm + ag_incidence_flag_lag + 
+                                 status_excl + downgraded2 + rugged_range + rbal + warhist + ln_capdist + 
+                                 ln_rgdppc_lag + ln_pop_lag + colonial_past + ln_state_age + 
+                                 pys + pys2 + pys3 | ag_id | 0 | ag_id, data = d)
+  }
+  else{
+    # regression for `tfrac_incr_post1946` variable
+    onset_tfrac_post1946_fe_reg <- felm(onset_do_flag ~ tfrac_incr_post1946 + ln_ag_area_sqkm +
+                                          ag_incidence_flag_lag + status_excl + downgraded2 + 
+                                          rugged_range + rbal + warhist + ln_capdist + ln_rgdppc_lag + 
+                                          ln_pop_lag + colonial_past + ln_state_age + 
+                                          pys + pys2 + pys3 | ag_id | 0 | ag_id, data = d)
+  }
+}
+
+# display results
+stargazer(onset_tfrac_fe_reg, onset_tfrac_post1946_fe_reg,
+          type="text",
+          dep.var.labels.include = FALSE,
+          omit = c("pys", "pys2","pys3"),
+          title = "Replication of Table 3",
+          dep.var.caption = "Linear Probability Models: Civil Conflict Onset",
+          covariate.labels = c("Fractionalization", 
+                               "Frac. incr. since 1946",
+                               "Territory sq.km, log",
+                               "Ongoing conflict, lag", "Exclusion",
+                               "Downgraded", "Terrain Ruggedness (Range)", 
+                               "Relative size", "War history",
+                               "Distance to capital, log", "GDP, lag, log",
+                               "Population, log","Colonial history",
+                               "State age, log"))
+```
+
 
 ## Figure 7
 

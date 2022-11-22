@@ -19,10 +19,21 @@ ruggedness_1k <- reclassify(gtopo, cbind(NA, 0))
 plot(ruggedness_1k)
 
 rugged_vals <- raster::extract(ruggedness_1k,geoepr.ag, fun=mean, weights=TRUE)
+rugged_vals_med <- raster::extract(ruggedness_1k,geoepr.ag, fun=median)
+rugged_vals_max <- raster::extract(ruggedness_1k,geoepr.ag, fun=max)
+rugged_vals_min <- raster::extract(ruggedness_1k,geoepr.ag, fun=min)
+rugged_vals_range <- rugged_vals_max - rugged_vals_min
 
+
+
+# Are the battles ocurring inside vs outside AG territory?
 
 geoepr.ag_rugged <- geoepr.ag %>%
-                    mutate(rugged_mean = unlist(rugged_vals))
+                    mutate(rugged_mean = unlist(rugged_vals),
+                           rugged_med = unlist(rugged_vals_med),
+                           rugged_range = unlist(rugged_vals_range),
+                           rugged_max = unlist(rugged_vals_max),
+                           rugged_min = unlist(rugged_vals_min))
 
 geoepr.ag_rugged_nosf <- geoepr.ag_rugged %>%
                           st_set_geometry(NULL) %>%
