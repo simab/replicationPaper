@@ -1,0 +1,297 @@
+"","dyad_new_id","side_a_new_id","side_b_new_id","conflict_new_id","country","gwid","sidea","sideb","gwgroupid","claim","recruitment","support","statename","group","type_of_violence","year","sidea_nogov","initiator_state","min_year","max_year","Confirmed"
+"1",12102,94,528,374,"Rwanda",517,"Government of Rwanda","FDLR",51701000,1,1,1,"Rwanda","Hutu",1,2001,"Rwanda",0,2001,2001,1
+"2",474,121,205,234,"Israel",666,"Government of Israel","PFLP",66601200,1,1,1,"Israel","Palestinian Arabs",1,2003,"Israel",0,2001,2003,1
+"3",474,121,205,234,"Israel",666,"Government of Israel","PFLP",66601200,1,1,1,"Israel","Palestinian Arabs",1,2001,"Israel",0,2001,2003,1
+"4",474,121,205,234,"Israel",666,"Government of Israel","PFLP",66601200,1,1,1,"Israel","Palestinian Arabs",1,2002,"Israel",0,2001,2003,1
+"5",475,121,206,234,"Lebanon",666,"Government of Israel","PFLP-GC",66601200,1,1,1,"Israel","Palestinian Arabs",1,2002,"Israel",0,2000,2002,1
+"6",475,121,206,234,"Lebanon",666,"Government of Israel","PFLP-GC",66601200,1,1,1,"Israel","Palestinian Arabs",1,2000,"Israel",0,2000,2002,1
+"7",475,121,206,234,"Lebanon",666,"Government of Israel","PFLP-GC",66601200,1,1,1,"Israel","Palestinian Arabs",1,2001,"Israel",0,2000,2002,1
+"8",476,121,207,234,"Israel",666,"Government of Israel","Fatah",66601200,1,1,1,"Israel","Palestinian Arabs",1,2000,"Israel",0,2000,2002,1
+"9",476,121,207,234,"Israel",666,"Government of Israel","Fatah",66601200,1,1,1,"Israel","Palestinian Arabs",1,2002,"Israel",0,2000,2002,1
+"10",476,121,207,234,"Israel",666,"Government of Israel","Fatah",66601200,1,1,1,"Israel","Palestinian Arabs",1,2001,"Israel",0,2000,2002,1
+"11",477,121,209,234,"Israel",666,"Government of Israel","Hamas",66601200,1,1,1,"Israel","Palestinian Arabs",1,2002,"Israel",0,2000,2003,1
+"12",477,121,209,234,"Israel",666,"Government of Israel","Hamas",66601200,1,1,1,"Israel","Palestinian Arabs",1,2000,"Israel",0,2000,2003,1
+"13",477,121,209,234,"Israel",666,"Government of Israel","Hamas",66601200,1,1,1,"Israel","Palestinian Arabs",1,2003,"Israel",0,2000,2003,1
+"14",477,121,209,234,"Israel",666,"Government of Israel","Hamas",66601200,1,1,1,"Israel","Palestinian Arabs",1,2001,"Israel",0,2000,2003,1
+"15",478,121,208,234,"Israel",666,"Government of Israel","PIJ",66601200,1,1,NA,"Israel","Palestinian Arabs",1,2002,"Israel",0,2000,2003,1
+"16",478,121,208,234,"Israel",666,"Government of Israel","PIJ",66601200,1,1,NA,"Israel","Palestinian Arabs",1,2001,"Israel",0,2000,2003,1
+"17",478,121,208,234,"Israel",666,"Government of Israel","PIJ",66601200,1,1,NA,"Israel","Palestinian Arabs",1,2000,"Israel",0,2000,2003,1
+"18",478,121,208,234,"Israel",666,"Government of Israel","PIJ",66601200,1,1,NA,"Israel","Palestinian Arabs",1,2003,"Israel",0,2000,2003,1
+"19",479,121,210,234,"Israel",666,"Government of Israel","PNA",66601200,1,1,1,"Israel","Palestinian Arabs",1,2002,"Israel",0,2000,2002,1
+"20",479,121,210,234,"Israel",666,"Government of Israel","PNA",66601200,1,1,1,"Israel","Palestinian Arabs",1,2001,"Israel",0,2000,2002,1
+"21",479,121,210,234,"Israel",666,"Government of Israel","PNA",66601200,1,1,1,"Israel","Palestinian Arabs",1,2000,"Israel",0,2000,2002,1
+"22",480,121,211,234,"Israel",666,"Government of Israel","AMB",66601200,1,1,1,"Israel","Palestinian Arabs",1,2003,"Israel",0,2000,2003,1
+"23",480,121,211,234,"Israel",666,"Government of Israel","AMB",66601200,1,1,1,"Israel","Palestinian Arabs",1,2001,"Israel",0,2000,2003,1
+"24",480,121,211,234,"Israel",666,"Government of Israel","AMB",66601200,1,1,1,"Israel","Palestinian Arabs",1,2002,"Israel",0,2000,2003,1
+"25",480,121,211,234,"Israel",666,"Government of Israel","AMB",66601200,1,1,1,"Israel","Palestinian Arabs",1,2000,"Israel",0,2000,2003,1
+"26",481,121,212,234,"Israel",666,"Government of Israel","PRC",66601200,1,1,NA,"Israel","Palestinian Arabs",1,2002,"Israel",0,2001,2002,1
+"27",481,121,212,234,"Israel",666,"Government of Israel","PRC",66601200,1,1,NA,"Israel","Palestinian Arabs",1,2001,"Israel",0,2001,2002,1
+"28",521,116,231,259,"Iraq",645,"Government of Iraq","SCIRI",64502000,1,1,1,"Iraq","Shi'a Arabs",1,1991,"Iraq",0,1991,1991,1
+"29",532,119,242,260,"Lebanon",660,"Government of Lebanon","Forces of Michel Aoun",66005000,1,1,1,"Lebanon","Maronite Christians",1,1989,"Lebanon",1,1989,1990,1
+"30",532,119,242,260,"Lebanon",660,"Government of Lebanon","Forces of Michel Aoun",66005000,1,1,1,"Lebanon","Maronite Christians",1,1990,"Lebanon",1,1989,1990,1
+"31",562,146,258,269,"Nepal",790,"Government of Nepal","CPN-M",79001000,1,1,1,"Nepal","Caste Hill Hindu Elite",1,2005,"Nepal",0,2003,2006,1
+"32",562,146,258,269,"Nepal",790,"Government of Nepal","CPN-M",79001000,1,1,1,"Nepal","Caste Hill Hindu Elite",1,2006,"Nepal",0,2003,2006,1
+"33",562,146,258,269,"Nepal",790,"Government of Nepal","CPN-M",79001000,1,1,1,"Nepal","Caste Hill Hindu Elite",1,2004,"Nepal",0,2003,2006,1
+"34",562,146,258,269,"Nepal",790,"Government of Nepal","CPN-M",79001000,1,1,1,"Nepal","Caste Hill Hindu Elite",1,2003,"Nepal",0,2003,2006,1
+"35",562,146,258,269,"Nepal",790,"Government of Nepal","CPN-M",79002000,1,1,1,"Nepal","Adibasi Janajati",1,2006,"Nepal",0,2003,2006,1
+"36",562,146,258,269,"Nepal",790,"Government of Nepal","CPN-M",79002000,1,1,1,"Nepal","Adibasi Janajati",1,2005,"Nepal",0,2003,2006,1
+"37",562,146,258,269,"Nepal",790,"Government of Nepal","CPN-M",79002000,1,1,1,"Nepal","Adibasi Janajati",1,2003,"Nepal",0,2003,2006,1
+"38",562,146,258,269,"Nepal",790,"Government of Nepal","CPN-M",79002000,1,1,1,"Nepal","Adibasi Janajati",1,2004,"Nepal",0,2003,2006,1
+"39",564,116,260,271,"Iraq",645,"Government of Iraq","KDP",64501000,1,1,1,"Iraq","Kurds",1,1991,"Iraq",0,1991,1991,1
+"40",565,116,261,271,"Iran",645,"Government of Iraq","PUK",64501000,1,1,1,"Iraq","Kurds",1,1996,"Iraq",0,1996,1996,1
+"41",565,116,261,271,"Iraq",645,"Government of Iraq","PUK",64501000,1,1,1,"Iraq","Kurds",1,1996,"Iraq",0,1996,1996,1
+"42",565,116,261,271,"Iraq",645,"Government of Iraq","PUK",64501000,1,1,1,"Iraq","Kurds",1,1991,"Iraq",0,1991,1991,1
+"43",571,97,416,275,"Ethiopia",530,"Government of Ethiopia","EPLF",53010000,1,1,1,"Ethiopia","Christian Eritreans",1,1990,"Ethiopia",0,1989,1991,1
+"44",571,97,416,275,"Ethiopia",530,"Government of Ethiopia","EPLF",53010000,1,1,1,"Ethiopia","Christian Eritreans",1,1991,"Ethiopia",0,1989,1991,1
+"45",571,97,416,275,"Ethiopia",530,"Government of Ethiopia","EPLF",53010000,1,1,1,"Ethiopia","Christian Eritreans",1,1989,"Ethiopia",0,1989,1991,1
+"46",571,97,416,275,"Ethiopia",530,"Government of Ethiopia","EPLF",53011000,1,1,1,"Ethiopia","Muslim Eritreans",1,1989,"Ethiopia",0,1989,1991,1
+"47",571,97,416,275,"Ethiopia",530,"Government of Ethiopia","EPLF",53011000,1,1,1,"Ethiopia","Muslim Eritreans",1,1990,"Ethiopia",0,1989,1991,1
+"48",571,97,416,275,"Ethiopia",530,"Government of Ethiopia","EPLF",53011000,1,1,1,"Ethiopia","Muslim Eritreans",1,1991,"Ethiopia",0,1989,1991,1
+"49",596,93,432,287,"Burundi",516,"Government of Burundi","Palipehutu-FNL",51601000,1,1,0,"Burundi","Hutu",1,2001,"Burundi",0,2001,2003,1
+"50",596,93,432,287,"Burundi",516,"Government of Burundi","Palipehutu-FNL",51601000,1,1,0,"Burundi","Hutu",1,2002,"Burundi",0,2001,2003,1
+"51",596,93,432,287,"Burundi",516,"Government of Burundi","Palipehutu-FNL",51601000,1,1,0,"Burundi","Hutu",1,2003,"Burundi",0,2001,2003,1
+"52",597,93,434,287,"Burundi",516,"Government of Burundi","CNDD-FDD",51601000,1,1,1,"Burundi","Hutu",1,2003,"Burundi",0,2001,2003,1
+"53",597,93,434,287,"Burundi",516,"Government of Burundi","CNDD-FDD",51601000,1,1,1,"Burundi","Hutu",1,2001,"Burundi",0,2001,2003,1
+"54",597,93,434,287,"Burundi",516,"Government of Burundi","CNDD-FDD",51601000,1,1,1,"Burundi","Hutu",1,2002,"Burundi",0,2001,2003,1
+"55",597,93,434,287,"DR Congo (Zaire)",516,"Government of Burundi","CNDD-FDD",51601000,1,1,1,"Burundi","Hutu",1,2002,"Burundi",0,2002,2002,1
+"56",607,87,444,288,"Chad",483,"Government of Chad","MOSANAT",48302100,1,1,0,"Chad","Hadjerai",1,1989,"Chad",0,1989,1989,1
+"57",608,87,443,288,"Sudan",483,"Government of Chad","Revolutionary Forces of 1 April",48302200,2,1,-1,"Chad","Zaghawa, Bideyat",1,1989,"Chad",0,1989,1989,1
+"58",656,154,275,308,"Philippines",840,"Government of Philippines","MNLF",84003000,1,1,1,"Philippines","Moro",1,2000,"Philippines",0,2000,2001,1
+"59",656,154,275,308,"Philippines",840,"Government of Philippines","MNLF",84003000,1,1,1,"Philippines","Moro",1,2001,"Philippines",0,2000,2001,1
+"60",657,154,276,308,"Philippines",840,"Government of Philippines","MILF",84003000,1,1,1,"Philippines","Moro",1,2001,"Philippines",0,2000,2001,1
+"61",657,154,276,308,"Philippines",840,"Government of Philippines","MILF",84003000,1,1,1,"Philippines","Moro",1,2000,"Philippines",0,2000,2001,1
+"62",658,154,277,308,"Philippines",840,"Government of Philippines","ASG",84003000,1,1,0,"Philippines","Moro",1,2000,"Philippines",0,2000,2001,1
+"63",658,154,277,308,"Philippines",840,"Government of Philippines","ASG",84003000,1,1,0,"Philippines","Moro",1,2001,"Philippines",0,2000,2001,1
+"64",659,154,278,308,"Philippines",840,"Government of Philippines","MNLF - NM",84003000,1,1,1,"Philippines","Moro",1,2001,"Philippines",0,2001,2001,1
+"65",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,1996,"Sudan",0,1989,2004,1
+"66",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,1989,"Sudan",0,1989,2004,1
+"67",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,1990,"Sudan",0,1989,2004,1
+"68",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,1993,"Sudan",0,1989,2004,1
+"69",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,2001,"Sudan",0,1989,2004,1
+"70",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,1995,"Sudan",0,1989,2004,1
+"71",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,1991,"Sudan",0,1989,2004,1
+"72",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,2002,"Sudan",0,1989,2004,1
+"73",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,2000,"Sudan",0,1989,2004,1
+"74",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,2003,"Sudan",0,1989,2004,1
+"75",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,1997,"Sudan",0,1989,2004,1
+"76",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,1998,"Sudan",0,1989,2004,1
+"77",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,1999,"Sudan",0,1989,2004,1
+"78",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,2004,"Sudan",0,1989,2004,1
+"79",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,1992,"Sudan",0,1989,2004,1
+"80",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,1994,"Sudan",0,1989,2004,1
+"81",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,2001,"Sudan",0,1989,2004,1
+"82",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,1990,"Sudan",0,1989,2004,1
+"83",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,2003,"Sudan",0,1989,2004,1
+"84",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,2002,"Sudan",0,1989,2004,1
+"85",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,1989,"Sudan",0,1989,2004,1
+"86",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,1998,"Sudan",0,1989,2004,1
+"87",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,1991,"Sudan",0,1989,2004,1
+"88",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,2004,"Sudan",0,1989,2004,1
+"89",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,1994,"Sudan",0,1989,2004,1
+"90",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,1996,"Sudan",0,1989,2004,1
+"91",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,1997,"Sudan",0,1989,2004,1
+"92",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,1995,"Sudan",0,1989,2004,1
+"93",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,1992,"Sudan",0,1989,2004,1
+"94",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,1993,"Sudan",0,1989,2004,1
+"95",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,1999,"Sudan",0,1989,2004,1
+"96",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,2000,"Sudan",0,1989,2004,1
+"97",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,1993,"Sudan",0,1989,2004,1
+"98",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,1990,"Sudan",0,1989,2004,1
+"99",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,1998,"Sudan",0,1989,2004,1
+"100",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,1997,"Sudan",0,1989,2004,1
+"101",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,1991,"Sudan",0,1989,2004,1
+"102",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,2001,"Sudan",0,1989,2004,1
+"103",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,2003,"Sudan",0,1989,2004,1
+"104",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,1999,"Sudan",0,1989,2004,1
+"105",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,1996,"Sudan",0,1989,2004,1
+"106",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,1995,"Sudan",0,1989,2004,1
+"107",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,1992,"Sudan",0,1989,2004,1
+"108",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,1989,"Sudan",0,1989,2004,1
+"109",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,2004,"Sudan",0,1989,2004,1
+"110",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,2002,"Sudan",0,1989,2004,1
+"111",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,2000,"Sudan",0,1989,2004,1
+"112",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,1994,"Sudan",0,1989,2004,1
+"113",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,1999,"Sudan",0,1989,2004,1
+"114",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,2001,"Sudan",0,1989,2004,1
+"115",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,2003,"Sudan",0,1989,2004,1
+"116",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,1997,"Sudan",0,1989,2004,1
+"117",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,1990,"Sudan",0,1989,2004,1
+"118",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,2002,"Sudan",0,1989,2004,1
+"119",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,1995,"Sudan",0,1989,2004,1
+"120",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,1991,"Sudan",0,1989,2004,1
+"121",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,1989,"Sudan",0,1989,2004,1
+"122",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,1998,"Sudan",0,1989,2004,1
+"123",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,2000,"Sudan",0,1989,2004,1
+"124",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,2004,"Sudan",0,1989,2004,1
+"125",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,1992,"Sudan",0,1989,2004,1
+"126",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,1996,"Sudan",0,1989,2004,1
+"127",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,1993,"Sudan",0,1989,2004,1
+"128",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,1994,"Sudan",0,1989,2004,1
+"129",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,2001,"Sudan",0,1989,2004,1
+"130",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,1996,"Sudan",0,1989,2004,1
+"131",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,1998,"Sudan",0,1989,2004,1
+"132",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,1989,"Sudan",0,1989,2004,1
+"133",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,2003,"Sudan",0,1989,2004,1
+"134",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,1997,"Sudan",0,1989,2004,1
+"135",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,1993,"Sudan",0,1989,2004,1
+"136",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,1990,"Sudan",0,1989,2004,1
+"137",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,1991,"Sudan",0,1989,2004,1
+"138",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,1999,"Sudan",0,1989,2004,1
+"139",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,2002,"Sudan",0,1989,2004,1
+"140",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,1995,"Sudan",0,1989,2004,1
+"141",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,1994,"Sudan",0,1989,2004,1
+"142",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,2000,"Sudan",0,1989,2004,1
+"143",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,2004,"Sudan",0,1989,2004,1
+"144",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,1992,"Sudan",0,1989,2004,1
+"145",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,1998,"Sudan",0,1989,2004,1
+"146",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,1997,"Sudan",0,1989,2004,1
+"147",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,1993,"Sudan",0,1989,2004,1
+"148",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,2004,"Sudan",0,1989,2004,1
+"149",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,2003,"Sudan",0,1989,2004,1
+"150",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,1996,"Sudan",0,1989,2004,1
+"151",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,1990,"Sudan",0,1989,2004,1
+"152",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,2001,"Sudan",0,1989,2004,1
+"153",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,2002,"Sudan",0,1989,2004,1
+"154",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,1999,"Sudan",0,1989,2004,1
+"155",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,2000,"Sudan",0,1989,2004,1
+"156",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,1995,"Sudan",0,1989,2004,1
+"157",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,1992,"Sudan",0,1989,2004,1
+"158",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,1989,"Sudan",0,1989,2004,1
+"159",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,1994,"Sudan",0,1989,2004,1
+"160",663,112,466,309,"Sudan",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,1991,"Sudan",0,1989,2004,1
+"161",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,1991,"Sudan",0,1989,1991,1
+"162",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,1990,"Sudan",0,1989,1991,1
+"163",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62503000,2,1,1,"Sudan","Beja",1,1989,"Sudan",0,1989,1991,1
+"164",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,1991,"Sudan",0,1989,1991,1
+"165",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,1990,"Sudan",0,1989,1991,1
+"166",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62504000,2,1,1,"Sudan","Dinka",1,1989,"Sudan",0,1989,1991,1
+"167",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,1990,"Sudan",0,1989,1991,1
+"168",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,1991,"Sudan",0,1989,1991,1
+"169",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62507000,2,1,1,"Sudan","Nuba",1,1989,"Sudan",0,1989,1991,1
+"170",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,1989,"Sudan",0,1989,1991,1
+"171",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,1990,"Sudan",0,1989,1991,1
+"172",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62508000,2,1,1,"Sudan","Nuer",1,1991,"Sudan",0,1989,1991,1
+"173",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,1991,"Sudan",0,1989,1991,1
+"174",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,1990,"Sudan",0,1989,1991,1
+"175",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62511000,2,1,1,"Sudan","Other Southern groups",1,1989,"Sudan",0,1989,1991,1
+"176",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,1991,"Sudan",0,1989,1991,1
+"177",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,1990,"Sudan",0,1989,1991,1
+"178",663,112,466,309,"Uganda",625,"Government of Sudan","SPLM/A",62513000,2,1,1,"Sudan","Shilluk",1,1989,"Sudan",0,1989,1991,1
+"179",664,112,467,309,"Sudan",625,"Government of Sudan","NDA",62508000,1,1,1,"Sudan","Nuer",1,2000,"Sudan",0,1996,2002,1
+"180",664,112,467,309,"Sudan",625,"Government of Sudan","NDA",62508000,1,1,1,"Sudan","Nuer",1,1999,"Sudan",0,1996,2002,1
+"181",664,112,467,309,"Sudan",625,"Government of Sudan","NDA",62508000,1,1,1,"Sudan","Nuer",1,2001,"Sudan",0,1996,2002,1
+"182",664,112,467,309,"Sudan",625,"Government of Sudan","NDA",62508000,1,1,1,"Sudan","Nuer",1,1997,"Sudan",0,1996,2002,1
+"183",664,112,467,309,"Sudan",625,"Government of Sudan","NDA",62508000,1,1,1,"Sudan","Nuer",1,1998,"Sudan",0,1996,2002,1
+"184",664,112,467,309,"Sudan",625,"Government of Sudan","NDA",62508000,1,1,1,"Sudan","Nuer",1,2002,"Sudan",0,1996,2002,1
+"185",664,112,467,309,"Sudan",625,"Government of Sudan","NDA",62508000,1,1,1,"Sudan","Nuer",1,1996,"Sudan",0,1996,2002,1
+"186",665,112,468,309,"Sudan",625,"Government of Sudan","JEM",62515000,2,1,1,"Sudan","Zaghawa",1,2004,"Sudan",0,2003,2004,1
+"187",665,112,468,309,"Sudan",625,"Government of Sudan","JEM",62515000,2,1,1,"Sudan","Zaghawa",1,2003,"Sudan",0,2003,2004,1
+"188",666,112,469,309,"Sudan",625,"Government of Sudan","SLM/A",62505000,2,1,1,"Sudan","Fur",1,2005,"Sudan",0,2003,2006,1
+"189",666,112,469,309,"Sudan",625,"Government of Sudan","SLM/A",62505000,2,1,1,"Sudan","Fur",1,2006,"Sudan",0,2003,2006,1
+"190",666,112,469,309,"Sudan",625,"Government of Sudan","SLM/A",62505000,2,1,1,"Sudan","Fur",1,2004,"Sudan",0,2003,2006,1
+"191",666,112,469,309,"Sudan",625,"Government of Sudan","SLM/A",62505000,2,1,1,"Sudan","Fur",1,2003,"Sudan",0,2003,2006,1
+"192",666,112,469,309,"Sudan",625,"Government of Sudan","SLM/A",62514000,2,1,1,"Sudan","Masalit",1,2006,"Sudan",0,2003,2006,1
+"193",666,112,469,309,"Sudan",625,"Government of Sudan","SLM/A",62514000,2,1,1,"Sudan","Masalit",1,2005,"Sudan",0,2003,2006,1
+"194",666,112,469,309,"Sudan",625,"Government of Sudan","SLM/A",62514000,2,1,1,"Sudan","Masalit",1,2004,"Sudan",0,2003,2006,1
+"195",666,112,469,309,"Sudan",625,"Government of Sudan","SLM/A",62514000,2,1,1,"Sudan","Masalit",1,2003,"Sudan",0,2003,2006,1
+"196",666,112,469,309,"Sudan",625,"Government of Sudan","SLM/A",62515000,2,1,1,"Sudan","Zaghawa",1,2006,"Sudan",0,2003,2006,1
+"197",666,112,469,309,"Sudan",625,"Government of Sudan","SLM/A",62515000,2,1,1,"Sudan","Zaghawa",1,2005,"Sudan",0,2003,2006,1
+"198",666,112,469,309,"Sudan",625,"Government of Sudan","SLM/A",62515000,2,1,1,"Sudan","Zaghawa",1,2004,"Sudan",0,2003,2006,1
+"199",666,112,469,309,"Sudan",625,"Government of Sudan","SLM/A",62515000,2,1,1,"Sudan","Zaghawa",1,2003,"Sudan",0,2003,2006,1
+"200",668,112,471,309,"Sudan",625,"Government of Sudan","SLM/A - MM",62515000,2,1,1,"Sudan","Zaghawa",1,2006,"Sudan",0,2006,2006,1
+"201",742,14,759,336,"Nicaragua",93,"Government of Nicaragua","Contras",9303000,1,1,1,"Nicaragua","Miskitos",1,1990,"Nicaragua",0,1989,1990,1
+"202",742,14,759,336,"Nicaragua",93,"Government of Nicaragua","Contras",9303000,1,1,1,"Nicaragua","Miskitos",1,1989,"Nicaragua",0,1989,1990,1
+"203",742,14,759,336,"Nicaragua",93,"Government of Nicaragua","Contras",9305000,1,1,1,"Nicaragua","Sumus",1,1990,"Nicaragua",0,1989,1990,1
+"204",742,14,759,336,"Nicaragua",93,"Government of Nicaragua","Contras",9305000,1,1,1,"Nicaragua","Sumus",1,1989,"Nicaragua",0,1989,1990,1
+"205",759,79,507,341,"Ivory Coast",450,"Government of Liberia","NPFL",45003020,2,1,1,"Liberia","Gio",1,1990,"Liberia",0,1990,1990,1
+"206",759,79,507,341,"Ivory Coast",450,"Government of Liberia","NPFL",45003080,2,1,1,"Liberia","Mano",1,1990,"Liberia",0,1990,1990,1
+"207",759,79,507,341,"Liberia",450,"Government of Liberia","NPFL",45003020,2,1,1,"Liberia","Gio",1,1990,"Liberia",0,1989,1990,1
+"208",759,79,507,341,"Liberia",450,"Government of Liberia","NPFL",45003020,2,1,1,"Liberia","Gio",1,1989,"Liberia",0,1989,1990,1
+"209",759,79,507,341,"Liberia",450,"Government of Liberia","NPFL",45003080,2,1,1,"Liberia","Mano",1,1990,"Liberia",0,1989,1990,1
+"210",759,79,507,341,"Liberia",450,"Government of Liberia","NPFL",45003080,2,1,1,"Liberia","Mano",1,1989,"Liberia",0,1989,1990,1
+"211",760,79,508,341,"Liberia",450,"Government of Liberia","INPFL",45003020,2,1,0,"Liberia","Gio",1,1990,"Liberia",0,1990,1990,1
+"212",776,145,320,352,"France",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,1996,"Sri Lanka",0,1996,1996,1
+"213",776,145,320,352,"Sri Lanka",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,1999,"Sri Lanka",0,1989,2002,1
+"214",776,145,320,352,"Sri Lanka",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,1992,"Sri Lanka",0,1989,2002,1
+"215",776,145,320,352,"Sri Lanka",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,1991,"Sri Lanka",0,1989,2002,1
+"216",776,145,320,352,"Sri Lanka",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,1995,"Sri Lanka",0,1989,2002,1
+"217",776,145,320,352,"Sri Lanka",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,1990,"Sri Lanka",0,1989,2002,1
+"218",776,145,320,352,"Sri Lanka",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,1994,"Sri Lanka",0,1989,2002,1
+"219",776,145,320,352,"Sri Lanka",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,1993,"Sri Lanka",0,1989,2002,1
+"220",776,145,320,352,"Sri Lanka",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,1998,"Sri Lanka",0,1989,2002,1
+"221",776,145,320,352,"Sri Lanka",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,1996,"Sri Lanka",0,1989,2002,1
+"222",776,145,320,352,"Sri Lanka",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,1989,"Sri Lanka",0,1989,2002,1
+"223",776,145,320,352,"Sri Lanka",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,2000,"Sri Lanka",0,1989,2002,1
+"224",776,145,320,352,"Sri Lanka",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,1997,"Sri Lanka",0,1989,2002,1
+"225",776,145,320,352,"Sri Lanka",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,2001,"Sri Lanka",0,1989,2002,1
+"226",776,145,320,352,"Sri Lanka",780,"Government of Sri Lanka","LTTE",78004000,1,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,2002,"Sri Lanka",0,1989,2002,1
+"227",778,145,322,352,"Sri Lanka",780,"Government of Sri Lanka","EPRLF",78004000,2,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,1990,"Sri Lanka",0,1989,1990,1
+"228",778,145,322,352,"Sri Lanka",780,"Government of Sri Lanka","EPRLF",78004000,2,1,0,"Sri Lanka (Ceylon)","Sri Lankan Tamils",1,1989,"Sri Lanka",0,1989,1990,1
+"229",781,115,323,354,"Iraq",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1994,"Turkey",0,1991,1999,1
+"230",781,115,323,354,"Iraq",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1998,"Turkey",0,1991,1999,1
+"231",781,115,323,354,"Iraq",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1996,"Turkey",0,1991,1999,1
+"232",781,115,323,354,"Iraq",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1991,"Turkey",1,1991,1992,1
+"233",781,115,323,354,"Iraq",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1991,"Turkey",0,1991,1999,1
+"234",781,115,323,354,"Iraq",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1997,"Turkey",0,1991,1999,1
+"235",781,115,323,354,"Iraq",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1997,"Turkey",1,1997,1997,1
+"236",781,115,323,354,"Iraq",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1999,"Turkey",0,1991,1999,1
+"237",781,115,323,354,"Iraq",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1995,"Turkey",0,1991,1999,1
+"238",781,115,323,354,"Iraq",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1992,"Turkey",1,1991,1992,1
+"239",781,115,323,354,"Iraq",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1992,"Turkey",0,1991,1999,1
+"240",781,115,323,354,"Turkey",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1994,"Turkey",0,1991,1999,1
+"241",781,115,323,354,"Turkey",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1995,"Turkey",0,1991,1999,1
+"242",781,115,323,354,"Turkey",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1992,"Turkey",0,1991,1999,1
+"243",781,115,323,354,"Turkey",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1992,"Turkey",1,1991,1992,1
+"244",781,115,323,354,"Turkey",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1993,"Turkey",0,1991,1999,1
+"245",781,115,323,354,"Turkey",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1999,"Turkey",0,1991,1999,1
+"246",781,115,323,354,"Turkey",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1996,"Turkey",0,1991,1999,1
+"247",781,115,323,354,"Turkey",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1997,"Turkey",0,1991,1999,1
+"248",781,115,323,354,"Turkey",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1997,"Turkey",1,1997,1997,1
+"249",781,115,323,354,"Turkey",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1991,"Turkey",0,1991,1999,1
+"250",781,115,323,354,"Turkey",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1991,"Turkey",1,1991,1992,1
+"251",781,115,323,354,"Turkey",640,"Government of Turkey","PKK",64001000,1,1,1,"Turkey (Ottoman Empire)","Kurds",1,1998,"Turkey",0,1991,1999,1
+"252",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,2005,"India",0,1990,2005,1
+"253",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,1995,"India",0,1990,2005,1
+"254",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,1998,"India",0,1990,2005,1
+"255",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,2003,"India",0,1990,2005,1
+"256",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,2001,"India",0,1990,2005,1
+"257",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,1999,"India",0,1990,2005,1
+"258",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,1996,"India",0,1990,2005,1
+"259",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,2002,"India",0,1990,2005,1
+"260",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,1991,"India",0,1990,2005,1
+"261",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,2004,"India",0,1990,2005,1
+"262",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,1993,"India",0,1990,2005,1
+"263",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,1997,"India",0,1990,2005,1
+"264",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,2000,"India",0,1990,2005,1
+"265",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,1990,"India",0,1990,2005,1
+"266",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,1994,"India",0,1990,2005,1
+"267",792,141,325,364,"India",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,1992,"India",0,1990,2005,1
+"268",792,141,325,364,"Pakistan",750,"Government of India","Kashmir insurgents",75006000,1,1,0,"India","Kashmiri Muslims",1,2000,"India",0,2000,2000,1
+"269",794,155,327,366,"Indonesia",850,"Government of Indonesia","GAM",85001000,1,1,1,"Indonesia","Acehnese",1,2002,"Indonesia",0,1999,2002,1
+"270",794,155,327,366,"Indonesia",850,"Government of Indonesia","GAM",85001000,1,1,1,"Indonesia","Acehnese",1,1991,"Indonesia",0,1989,1991,1
+"271",794,155,327,366,"Indonesia",850,"Government of Indonesia","GAM",85001000,1,1,1,"Indonesia","Acehnese",1,2000,"Indonesia",0,1999,2002,1
+"272",794,155,327,366,"Indonesia",850,"Government of Indonesia","GAM",85001000,1,1,1,"Indonesia","Acehnese",1,2003,"Indonesia",1,2003,2003,1
+"273",794,155,327,366,"Indonesia",850,"Government of Indonesia","GAM",85001000,1,1,1,"Indonesia","Acehnese",1,1999,"Indonesia",0,1999,2002,1
+"274",794,155,327,366,"Indonesia",850,"Government of Indonesia","GAM",85001000,1,1,1,"Indonesia","Acehnese",1,1990,"Indonesia",0,1989,1991,1
+"275",794,155,327,366,"Indonesia",850,"Government of Indonesia","GAM",85001000,1,1,1,"Indonesia","Acehnese",1,1989,"Indonesia",0,1989,1991,1
+"276",794,155,327,366,"Indonesia",850,"Government of Indonesia","GAM",85001000,1,1,1,"Indonesia","Acehnese",1,2001,"Indonesia",0,1999,2002,1
+"277",797,157,328,369,"Papua New Guinea",910,"Government of Papua New Guinea","BRA",91002000,1,1,1,"Papua New Guinea","Bougainvilleans",1,1991,"Papua New Guinea",0,1989,1992,1
+"278",797,157,328,369,"Papua New Guinea",910,"Government of Papua New Guinea","BRA",91002000,1,1,1,"Papua New Guinea","Bougainvilleans",1,1990,"Papua New Guinea",0,1989,1992,1
+"279",797,157,328,369,"Papua New Guinea",910,"Government of Papua New Guinea","BRA",91002000,1,1,1,"Papua New Guinea","Bougainvilleans",1,1989,"Papua New Guinea",0,1989,1992,1
+"280",797,157,328,369,"Papua New Guinea",910,"Government of Papua New Guinea","BRA",91002000,1,1,1,"Papua New Guinea","Bougainvilleans",1,1992,"Papua New Guinea",0,1989,1992,1
+"281",797,157,328,369,"Solomon Islands",910,"Government of Papua New Guinea","BRA",91002000,1,1,1,"Papua New Guinea","Bougainvilleans",1,1992,"Papua New Guinea",0,1992,1992,1
+"282",804,94,527,374,"Rwanda",517,"Government of Rwanda","FPR",51702000,1,1,1,"Rwanda","Tutsi",1,1994,"Rwanda",0,1994,1994,1
+"283",805,94,1128,374,"DR Congo (Zaire)",517,"Government of Rwanda","ALiR",51701000,1,1,1,"Rwanda","Hutu",1,1997,"Rwanda",0,1997,1998,1
+"284",805,94,1128,374,"DR Congo (Zaire)",517,"Government of Rwanda","ALiR",51701000,1,1,1,"Rwanda","Hutu",1,1998,"Rwanda",0,1997,1998,1
+"285",805,94,1128,374,"Rwanda",517,"Government of Rwanda","ALiR",51701000,1,1,1,"Rwanda","Hutu",1,1997,"Rwanda",0,1997,1998,1
+"286",805,94,1128,374,"Rwanda",517,"Government of Rwanda","ALiR",51701000,1,1,1,"Rwanda","Hutu",1,1998,"Rwanda",0,1997,1998,1
+"287",833,64,338,388,"Armenia",373,"Government of Azerbaijan","Republic of Artsakh",37304000,1,1,1,"Azerbaijan","Armenians",1,1992,"Azerbaijan",0,1992,1993,1
+"288",833,64,338,388,"Armenia",373,"Government of Azerbaijan","Republic of Artsakh",37304000,1,1,1,"Azerbaijan","Armenians",1,1993,"Azerbaijan",0,1992,1993,1
+"289",833,64,338,388,"Azerbaijan",373,"Government of Azerbaijan","Republic of Artsakh",37304000,1,1,1,"Azerbaijan","Armenians",1,1993,"Azerbaijan",0,1991,1993,1
+"290",833,64,338,388,"Azerbaijan",373,"Government of Azerbaijan","Republic of Artsakh",37304000,1,1,1,"Azerbaijan","Armenians",1,1991,"Azerbaijan",0,1991,1993,1
+"291",833,64,338,388,"Azerbaijan",373,"Government of Azerbaijan","Republic of Artsakh",37304000,1,1,1,"Azerbaijan","Armenians",1,1992,"Azerbaijan",0,1991,1993,1
+"292",837,48,340,390,"Bosnia-Herzegovina",344,"Government of Croatia","Serbian Republic of Krajina",34402000,1,1,1,"Croatia","Serbs",1,1995,"Croatia",0,1995,1995,1
+"293",837,48,340,390,"Croatia",344,"Government of Croatia","Serbian Republic of Krajina",34402000,1,1,1,"Croatia","Serbs",1,1995,"Croatia",0,1995,1995,1
+"294",839,63,342,392,"Georgia",372,"Government of Georgia","Republic of Abkhazia",37207000,1,1,1,"Georgia","Abkhazians",1,1993,"Georgia",1,1993,1993,1
+"295",869,97,551,413,"Ethiopia",530,"Government of Ethiopia","OLF",53006000,1,1,0,"Ethiopia","Oroma",1,1999,"Ethiopia",0,1999,1999,1
+"296",869,97,551,413,"Kenya",530,"Government of Ethiopia","OLF",53006000,1,1,0,"Ethiopia","Oroma",1,1999,"Ethiopia",0,1999,1999,1
