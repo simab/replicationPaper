@@ -1,0 +1,23 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Logit Models: Fractionalization increases by time periods \label{tab:rob:prd}}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         \\
+\hline
+Frac. incr. since 1886&       1.428\sym{***}&                     &                     \\
+                    &     (0.375)         &                     &                     \\
+Frac. incr. since 1918&                     &       1.934\sym{**} &                     \\
+                    &                     &     (0.651)         &                     \\
+Frac. incr. since 1946&                     &                     &       2.405\sym{**} \\
+                    &                     &                     &     (0.775)         \\
+\hline
+All controls        &         Yes         &         Yes         &         Yes         \\
+Log Likelihood      &   -1109.117         &   -1110.282         &   -1110.149         \\
+AIC                 &    2244.234         &    2246.564         &    2246.298         \\
+Observations        &       27105         &       27105         &       27105         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize AG-clustered standard errors in parentheses.}\\
+\multicolumn{4}{l}{\footnotesize $^{*}p<0.05$; $^{**}p<0.01.$; $^{***}p<0.001.$ }\\
+\end{tabular}
+\end{table}

@@ -1,0 +1,27 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Logit models: Civil conflict onset, dropping lagged conflict and EPR status \label{tab:robptreat}}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         &\multicolumn{1}{c}{(6)}         \\
+\hline
+Divided group       &       0.577\sym{**} &                     &                     &                     &                     &                     \\
+                    &     (0.180)         &                     &                     &                     &                     &                     \\
+Fractionalization   &                     &       1.538\sym{***}&                     &                     &                     &                     \\
+                    &                     &     (0.367)         &                     &                     &                     &                     \\
+Frac. incr. since 1946&                     &                     &       2.405\sym{**} &       2.405\sym{**} &                     &                     \\
+                    &                     &                     &     (0.775)         &     (0.775)         &                     &                     \\
+Frac. incr. before 1946&                     &                     &                     &                     &       0.945\sym{*}  &                     \\
+                    &                     &                     &                     &                     &     (0.378)         &                     \\
+Frac. incr. since 1886&                     &                     &                     &                     &                     &       1.428\sym{***}\\
+                    &                     &                     &                     &                     &                     &     (0.375)         \\
+\hline
+All controls        &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Log Likelihood      &   -1111.237         &   -1105.126         &   -1110.149         &   -1110.149         &   -1113.677         &   -1109.117         \\
+AIC                 &    2248.475         &    2236.253         &    2246.298         &    2246.298         &    2253.354         &    2244.234         \\
+Observations        &       27105         &       27105         &       27105         &       27105         &       27105         &       27105         \\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize AG-clustered standard errors in parentheses.}\\
+\multicolumn{7}{l}{\footnotesize $^{*}p<0.05$; $^{**}p<0.01.$; $^{***}p<0.001.$ }\\
+\end{tabular}
+\end{table}
