@@ -4,6 +4,8 @@ library(dplyr)
 library(here)
 library(readr)
 library(stringr)
+library(foreign)
+
 
 
 acd2epr <- read_csv(here('raw_epr_ucd_data','ACD2EPR-2021.csv'))
@@ -148,7 +150,7 @@ ged_cow <- merge(ged_acd2epr_agg_noadm, acd_cows_matched_1_onlycow,
                           "conflict_new_id", "country", "gwid", "sidea", "sideb", 
                           "gwgroupid", "claim", "recruitment", "support",
                         "statename","group","type_of_violence")) %>%
-            filter(year >= min_year & year <= max_year)
+            filter(year >= min_year & year <= max_year) 
 
 
 write.csv(ged_cow, "ged_cow_confirmed1.csv")
@@ -164,37 +166,34 @@ ged_cow01 <- merge(ged_acd2epr_agg_noadm, acd_cows_matched_01_onlycow,
 write.csv(ged_cow01, "ged_cow_confirmedmaybe01.csv")
 
 
+#------------------------------ ADD TFRAC -----------------------------------#
 
-# of the AGs involved in conflict-years in our datasets, does higher fractionalization
-# relate to more / less likelihood of state or rebel initiated? 
+an.df <- read.dta(here("redemption-through-rebellion-dataverse_files","epr_segment_level_analysis.dta"))
+
+an.df$pys <- an.df$peaceyears
+an.df$pys2 <- an.df$peaceyears^2
+an.df$pys3 <- an.df$peaceyears^3
+
+tfrac_group <- an.df %>%
+              select(c(year, gwgroupid, countries_gwid, ag_id, split, tfrac, tfrac_incr, tfrac_incr_post1946,
+                       ln_ag_area_sqkm, status_excl, downgraded2, rbal, warhist, 
+                       ln_capdist, ln_rgdppc_lag, ln_pop_lag, colonial_past, ln_state_age, ag_incidence_flag_lag,
+                       pys, pys2, pys3)) %>%
+              unique()
+ged_cow_tojoin <- ged_cow %>%
+  # remove country field from epr data - potential for using it to identify extrastate? 
+  # but secondary concern
+  select(-c(min_year, max_year, country)) %>%
+  unique()
+
+# we lose another 44 observations joining with tfrac.. 
+ged_cow_tfrac <- merge(ged_cow_tojoin, tfrac_group, by.x = c("year", "gwid", "gwgroupid"),
+                       by.y = c("year", "countries_gwid", "gwgroupid"))
+
+ged_cow_tfrac_lm <- lm(initiator_state ~ tfrac, data=ged_cow_tfrac)
+summary(ged_cow_tfrac_lm)
+
+# We can include all of the controls present in the original regression run by Cederman et al., as they are all year-specific to the particular AG and country in which the conflict occurs.
+# Should we include peace years, since our COW data is different? Some are not included in this? 
 
 
-
-# 1946 - 2017 are the years available from the an.df.rugged (EPR Segment Level data)
-# xSub_multi_available <- xSub_census_multiple_raw
-# info_xSub(details = TRUE,
-#          sources_type = "multiple",
-#          data_type = "event",
-#          geo_window = "5 km",
-#          time_window = "2 day",
-#          dyad_type = "directed")
-# 
-# 
-# # get 5km, 2day, directed data from multiple sources
-# # (most conservative, err on side of missing unique events)
-# # http://cross-sub.org/about/data-sources
-# # From warning message: "* daily-level data available only for adm0, adm1"
-# get_xSub_multi(data_source = "MELTT5km2dA",
-#                                 sources_type="multiple",
-#                                 data_type="event",
-#                                 space_unit = "adm0",
-#                                 time_unit = "year",
-#                                 geo_window="5 km",
-#                                 time_window= "2 days",
-#                                 dyad_type = "directed",
-#                                 merge_files = TRUE,
-#                                 write_file = "xsub_multi_adm1_week",
-#                                 write_format = "csv",
-#                                 verbose=TRUE)
-# 
-# test_from_github <- load(file=here("xSub_census_multiple_raw.rda"))
