@@ -1,0 +1,23 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Logit models: Civil conflict onset, population-based fractionalization \label{tab:rob:pop1}}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         \\
+\hline
+Pop. fractionalization&       1.677\sym{***}&                     &                     \\
+                    &     (0.364)         &                     &                     \\
+Pop. frac. incr. since 1946&                     &       2.760\sym{***}&                     \\
+                    &                     &     (0.783)         &                     \\
+Pop. frac. incr. since 1886&                     &                     &       1.425\sym{***}\\
+                    &                     &                     &     (0.383)         \\
+\hline
+All controls        &         Yes         &         Yes         &         Yes         \\
+Log Likelihood      &   -1103.937         &   -1109.144         &   -1109.410         \\
+AIC                 &    2233.874         &    2244.288         &    2244.821         \\
+Observations        &       27105         &       27105         &       27105         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize AG-clustered standard errors in parentheses.}\\
+\multicolumn{4}{l}{\footnotesize $^{*}p<0.05$; $^{**}p<0.01.$; $^{***}p<0.001.$ }\\
+\end{tabular}
+\end{table}
