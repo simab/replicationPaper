@@ -142,12 +142,30 @@ logit_tfrac_1946_coefs <- coeftest(logit_tfrac_incr_post1946,
 
 # Display results of logit model
 stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
-          type="latex",
-          dep.var.labels.include = FALSE,
+          type="text",
+          dep.var.labels.include = T,
           header = F,
           omit = c("pys", "pys2","pys3"),
           column.sep.width = "3pt", # to reduce column width
           single.row = TRUE, # to put coefficients and standard errors on same line
+          font.size = "small", # to make font size smaller
+          title = "Replication of Table 1",
+          dep.var.caption = "Civil Conflict Onset",
+          covariate.labels = c("Divided group", "Fractionalization", 
+                               "Frac. incr. since 1946", "Territory sq.km, log",
+                               "Ongoing conflict, lag", "Exclusion", "Downgraded", 
+                               "Terrain Ruggedness (Mean)","Relative size", "War history",
+                               "Distance to capital, log", "GDP, lag, log",
+                               "Population, log","Colonial history",
+                               "State age, log",
+                               "Downgrade of autonomy (5 years)", "Downgrade of inclusion (5 years)"))
+
+
+stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
+          type="text",
+          header = T,
+          omit = c("pys", "pys2","pys3"),
+          single.row = T, # to put coefficients and standard errors on same line
           font.size = "small", # to make font size smaller
           title = "Replication of Table 1",
           dep.var.caption = "Civil Conflict Onset",
