@@ -2,7 +2,10 @@
 title: 'Gov 2001: Extension of Original Paper'
 author: "Sima Biondi, Priyanka Sethy, Natalie Ayers"
 date: "2022-11-29"
-output: pdf_document
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
@@ -16,6 +19,7 @@ library("lmtest")
 library("stargazer")
 library("lfe")
 library("plm")
+library(here)
 ```
 
 # Introduction
@@ -56,13 +60,13 @@ exten.df.sub.allyears <- exten.df %>%
 
 The table below replicates Table 1 in Cederman et al. (2022), providing the results of 3 logit models with robust standard errors clustered at the AG level. 
 
-```{r generate Table 1 logit analysis, warning=FALSE, results='asis', header=FALSE}
+```{r generate Table 1 logit analysis violence+lost_auto, warning=FALSE, results='asis', header=FALSE}
 # define variables for use in all models, including DV
 vars_logit <- c("onset_do_flag", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
                 "status_excl", "downgraded2", "rugged_mean",
                 "rbal", "warhist", "ln_capdist", "ln_rgdppc_lag",
                 "ln_pop_lag",  "colonial_past", "ln_state_age",
-                "pys", "pys2", "pys3", "nviolsd_violsd", "lost_autonomy")
+                "pys", "pys2", "pys3",  "lost_autonomy")
 # identify AG "treatment" variables to be analyzed separately
 treat.vars <- c("split", "tfrac", "tfrac_incr_post1946")
 
@@ -98,13 +102,12 @@ stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
                                "Terrain Ruggedness (Mean)","Relative size", "War history",
                                "Distance to capital, log", "GDP, lag, log",
                                "Population, log","Colonial history",
-                               "State age, log",
-                               "AG level of violence", "Lost autonomy"))
+                               "State age, log", "Lost autonomy"))
 ```
 
 
 
-### Table 1 with Mean Terrain Ruggedness and AG violence/lost autonomy
+### Table 1 with Mean Terrain Ruggedness and AG post-inclusion/post-downgrade
 
 The table below replicates Table 1 in Cederman et al. (2022), providing the results of 3 logit models with robust standard errors clustered at the AG level. 
 
@@ -114,7 +117,7 @@ vars_logit <- c("onset_do_flag", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
                 "status_excl", "downgraded2", "rugged_mean",
                 "rbal", "warhist", "ln_capdist", "ln_rgdppc_lag",
                 "ln_pop_lag",  "colonial_past", "ln_state_age",
-                "pys", "pys2", "pys3", "nviolsd_violsd", "downgr5_aut", "downgr5_incl")
+                "pys", "pys2", "pys3",  "downgr5_aut", "downgr5_incl")
 # identify AG "treatment" variables to be analyzed separately
 treat.vars <- c("split", "tfrac", "tfrac_incr_post1946")
 
@@ -139,9 +142,13 @@ logit_tfrac_1946_coefs <- coeftest(logit_tfrac_incr_post1946,
 
 # Display results of logit model
 stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
-          type="text",
+          type="latex",
           dep.var.labels.include = FALSE,
+          header = F,
           omit = c("pys", "pys2","pys3"),
+          column.sep.width = "3pt", # to reduce column width
+          single.row = TRUE, # to put coefficients and standard errors on same line
+          font.size = "small", # to make font size smaller
           title = "Replication of Table 1",
           dep.var.caption = "Civil Conflict Onset",
           covariate.labels = c("Divided group", "Fractionalization", 
@@ -151,14 +158,13 @@ stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
                                "Distance to capital, log", "GDP, lag, log",
                                "Population, log","Colonial history",
                                "State age, log",
-                               "AG level of violence", 
                                "Downgrade of autonomy (5 years)", "Downgrade of inclusion (5 years)"))
 ```
 
 
 ### Table 1 with Median Terrain Ruggedness
 
-```{r generate Table 1 logit analysis, warning=FALSE, results='asis', header=FALSE}
+```{r generate Table 1 logit analysis median, warning=FALSE, results='asis', header=FALSE}
 # define variables for use in all models, including DV
 vars_logit <- c("onset_do_flag", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
                 "status_excl", "downgraded2", "rugged_med",
@@ -206,7 +212,7 @@ stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
 
 ### Table 1 with Range (Max - Min) Terrain Ruggedness
 
-```{r generate Table 1 logit analysis, warning=FALSE, results='asis', header=FALSE}
+```{r generate Table 1 logit analysis range, warning=FALSE, results='asis', header=FALSE}
 # define variables for use in all models, including DV
 vars_logit <- c("onset_do_flag", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
                 "status_excl", "downgraded2", "rugged_range",
@@ -375,7 +381,7 @@ stargazer(onset_tfrac_fe_reg, onset_tfrac_post1946_fe_reg,
 
 ### Table 3 with Median Terrain Ruggedness
 
-```{r generating Table 3, warning = FALSE,results='asis', header=FALSE}
+```{r generating Table 3 median, warning = FALSE,results='asis', header=FALSE}
 # define variables for use in all models, including DV
 vars_logit <- c("onset_do_flag", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
                 "status_excl", "downgraded2", "rugged_med",
@@ -436,7 +442,7 @@ stargazer(onset_tfrac_fe_reg, onset_tfrac_post1946_fe_reg,
 
 ### Table 3 with Range Terrain Ruggedness
 
-```{r generating Table 3, warning = FALSE,results='asis', header=FALSE}
+```{r generating Table 3 range, warning = FALSE,results='asis', header=FALSE}
 # define variables for use in all models, including DV
 vars_logit <- c("onset_do_flag", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
                 "status_excl", "downgraded2", "rugged_range",
