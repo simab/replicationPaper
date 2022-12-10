@@ -117,6 +117,15 @@ stargazer(logit_split, logit_tfrac,
                                "Population, log","Colonial history"))
 ```
 
+## Case Study of Divided with High/Low Fractionalization
+
+```{r examine divided groups with high vs low frac}
+ged_cow_tfrac_div <- ged_cow_tfrac %>%
+                  filter(split == 1)
+
+ged_cow_tfrac_div %>% filter(tfrac < 0.66219) %>% nrow()
+```
+
 ## Less Conservative COW - ACD Combination
 
 ```{r conservative regression no covars}

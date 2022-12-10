@@ -29,6 +29,13 @@ ged_acd2epr <- ged221_filt %>%
          claim >= 1,
          recruitment == 1)
 
+# id number of rows of AG-year-country conflict
+# to compare with ultimate joined COW data
+ged_acd2epr_pre2006 <- ged_acd2epr_agg_noadm %>%
+              filter((year <= 2006) & 
+                      (year >= 1989))
+
+
 ged_acd2epr_agg <- ged_acd2epr %>%
                   dplyr::select(-c(id, relid, where_coordinates, latitude,
                                    longitude, geom_wkt, priogrid_gid, date_start,
@@ -42,6 +49,15 @@ ged_acd2epr_agg_noadm <- ged_acd2epr %>%
                                            date_end,adm_1,adm_2)) %>%
                           mutate(sidea_nogov = str_replace(sidea, "Government of ","")) %>%
                           unique
+
+
+# id number of rows of AG-year-country conflict
+# to compare with ultimate joined COW data
+ged_acd2epr_pre2006_nrow <- ged_acd2epr_agg_noadm %>%
+  filter((year <= 2006) & 
+           (year >= 1989)) %>%
+  nrow()
+
 
 ged_acd2epr_dyads <- ged_acd2epr %>%
                     dplyr::select(c(dyad_new_id, side_a_new_id, side_b_new_id,
