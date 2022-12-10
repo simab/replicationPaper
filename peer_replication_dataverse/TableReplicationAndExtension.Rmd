@@ -1,0 +1,183 @@
+---
+title: "ReplicationR"
+output: pdf_document
+date: "2022-11-23"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(pacman)
+pacman::p_load(
+               tidyverse,
+               latex2exp,
+               kableExtra,
+               mvtnorm,
+               here,
+               stringr,
+               readr,
+               data.table,
+               broom,
+               haven,
+               dplyr,
+               foreign,
+               lfe)
+
+here::here() 
+```
+
+```{r, results='asis', results = 'hide'}
+
+# read in data + create fixed effects data
+# shark <- read_dta('SharkAttacksElectionsCleaned_AllStates.dta') # the original data
+shark <- read_dta('NewData2.dta') # our new data including non-fatal attacks
+#shark <- read_dta('NewData2Y.dta') # our new data only years 1980-2012
+
+shark$state_year <- (shark %>% group_by(state, year) %>% mutate(state_year = cur_group_id()))$state_year
+period <- ceiling((shark$year - 1872)/20)
+period[period == 0] <- 1 
+shark$period <- period
+shark$countyid <- (shark %>% group_by(state, county) %>% mutate(countyid = cur_group_id()))$countyid
+shark$county_period <- (shark %>% group_by(countyid, period) %>% mutate(county_period = cur_group_id()))$county_period
+
+## attack variables
+shark$attack <- as.integer(shark$attacks > 0)
+
+shark$attack_incparty <- shark$attack*shark$incparty
+shark$eyattack <- as.integer(shark$electionyearattacks >0)
+shark$eyattack_incparty <- shark$eyattack*shark$incparty
+
+shark$attack_incumbency <- shark$attack*shark$incumbency
+shark$attacks_incparty <- shark$attacks*shark$incparty
+shark$reelection <- as.integer(shark$incumbency != 0)
+shark$attack_reelection <- shark$attack*shark$reelection
+shark$attack_reelection_incparty <- shark$attack*shark$reelection*shark$incparty
+
+shark$eyattack_reelection <- shark$eyattack*shark$reelection
+shark$eyattack_reelection_incparty <- shark$eyattack*shark$reelection*shark$incparty
+
+```
+
+```{r}
+# TABLE 1
+
+# run regression
+model1 = felm(
+  voteshare ~  attack + attack_incparty
+  | state_year + county_period | 0 | countyid, 
+  data = shark,
+  cmethod = 'cgm2',
+  exactDOF=TRUE
+)
+
+model2 = felm(
+  voteshare ~  attacks + attacks_incparty
+  | state_year + county_period | 0 | countyid,
+  data = shark,
+  cmethod = 'cgm2',
+  exactDOF=TRUE
+)
+
+model3 = felm(
+  voteshare ~  eyattack + eyattack_incparty
+  | state_year + county_period | 0 | countyid,
+  data = shark,
+  cmethod = 'cgm2',
+  exactDOF=TRUE
+)
+
+model4 = felm(
+  voteshare ~  attack_reelection + attack_reelection_incparty
+  | state_year + county_period | 0 | countyid,
+  data = shark,
+  cmethod = 'cgm2',
+  exactDOF=TRUE
+)
+
+model5 = felm(
+  voteshare ~  eyattack_reelection + eyattack_reelection_incparty
+  | state_year + county_period | 0 | countyid,
+  data = shark,
+  cmethod = 'cgm2',
+  exactDOF=TRUE
+)
+
+# install.packages("stargazer")
+library(stargazer)
+
+# the output is a txt! 
+stargazer(model1,model2,model3, model4, model5, type = 'text', out = 'ExtensionTable1.txt', 
+          title = "Shark Regression Extension Table 1")
+
+```
+
+```{r, results = 'hide'}
+# Table 2
+
+# new vars
+shark$state_coastal <- (shark %>% group_by(state, coastal) %>% mutate(state_coastal = cur_group_id()))$state_coastal
+
+shark <- within(shark, (attackinstate = ave(attacks, state_year, FUN = max)))
+
+shark$cattack <- shark$attackinstate*shark$coastal
+shark$cattack_incparty <- shark$cattack*shark$incparty
+
+shark <- within(shark, (attacksinstate = ave(attacks, state_year, FUN = sum)))
+
+shark$cattacks <- shark$attacksinstate * shark$coastal
+shark$cattacks_incparty <- shark$cattacks*shark$incparty
+
+shark <- within(shark, (eyattackinstate = ave(eyattack, state_year, FUN = max)))
+shark$ceyattack <- shark$eyattackinstate*shark$coastal
+shark$ceyattack_incparty <- shark$ceyattack*shark$incparty
+shark$cattack_reelection <- shark$cattack*shark$reelection
+shark$cattack_reelection_incparty <- shark$cattack_reelection * shark$incparty
+shark$ceyattack_reelection <- shark$ceyattack*shark$reelection
+shark$ceyattack_reelection_incparty <- shark$ceyattack_reelection*shark$incparty
+
+model1 = felm(
+  voteshare ~  cattack + cattack_incparty
+  | state_year + county_period | 0 | state_coastal, 
+  data = shark,
+  cmethod = 'cgm2',
+  exactDOF=TRUE
+)
+
+model2 = felm(
+  voteshare ~  cattacks + cattacks_incparty
+  | state_year + county_period | 0 | state_coastal, 
+  data = shark,
+  cmethod = 'cgm2',
+  exactDOF=TRUE
+)
+
+model3 = felm(
+  voteshare ~  ceyattack + ceyattack_incparty
+  | state_year + county_period | 0 | state_coastal, 
+  data = shark,
+  cmethod = 'cgm2',
+  exactDOF=TRUE
+)
+
+model4 = felm(
+  voteshare ~  cattack_reelection + cattack_reelection_incparty
+  | state_year + county_period | 0 | state_coastal, 
+  data = shark,
+  cmethod = 'cgm2',
+  exactDOF=TRUE
+)
+
+model5 = felm(
+  voteshare ~  ceyattack_reelection + ceyattack_reelection_incparty
+  | state_year + county_period | 0 | state_coastal, 
+  data = shark,
+  cmethod = 'cgm2',
+  exactDOF=TRUE
+)
+
+table2ext = stargazer(model1,model2,model3, model4, model5, type = 'text', out = 'ExtensionTable2.txt', 
+          title = "Shark Regression Extension Table 2")
+
+table2ext
+
+```
