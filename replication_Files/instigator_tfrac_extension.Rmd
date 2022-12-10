@@ -1,7 +1,7 @@
 ---
 title: "Instigator and Fractionalization Extension"
 author: "Sima Biondi, Priyanka Sethy, Natalie Ayers"
-date: "2022-11-26"
+date: "2022-12-10"
 output: html_document
 ---
 
@@ -17,6 +17,7 @@ library("stargazer")
 library("lfe")
 library("plm")
 library(dplyr)
+library(here)
 ```
 
 ## Data Ingestion and Preparation
@@ -39,12 +40,9 @@ tfrac_group <- an.df %>%
 ged_cow <- read.csv(here("ged_cow_confirmed1.csv"))
 
 ged_cow_tojoin <- ged_cow %>%
-  # remove country field from epr data - potential for using it to identify extrastate? 
-  # but secondary concern
   dplyr::select(-c(min_year, max_year, country)) %>%
   unique()
 
-# we lose another 44 observations joining with tfrac.. 
 ged_cow_tfrac <- merge(ged_cow_tojoin, tfrac_group, by.x = c("year", "gwid", "gwgroupid"),
                        by.y = c("year", "countries_gwid", "gwgroupid"))
 
@@ -52,8 +50,6 @@ ged_cow_tfrac <- merge(ged_cow_tojoin, tfrac_group, by.x = c("year", "gwid", "gw
 ged_cow01 <- read.csv(here("ged_cow_confirmedmaybe01.csv"))
 
 ged_cow01_tojoin <- ged_cow01 %>%
-  # remove country field from epr data - potential for using it to identify extrastate? 
-  # but secondary concern
   dplyr::select(-c(min_year, max_year, country)) %>%
   unique()
 

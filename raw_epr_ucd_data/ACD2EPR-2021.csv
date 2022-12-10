@@ -1,0 +1,657 @@
+gwid,statename,dyadid,sidea,sidea_id,sideb,sideb_id,group,gwgroupid,claim,recruitment,support
+40,Cuba,490,Government of Cuba,5,M-26-7,734,,,,,
+40,Cuba,491,Government of Cuba,5,Cuban Revolutionary Council,735,,,,,
+41,Haiti,814,Government of Haiti,6,Military faction (forces of Himmler Rebu and Guy Francois),763,,,0,2,-1
+41,Haiti,815,Government of Haiti,6,Military faction (forces of Raol Cédras),764,,,,,
+41,Haiti,816,Government of Haiti,6,FLRN,765,Haitians,4101000,0,2,2
+41,Haiti,817,Government of Haiti,6,OP Lavalas,766,,,,,
+42,Dominican Republic,627,Government of Dominican Republic,7,Military faction (constitutionalists),747,Dominicans,4201000,0,2,2
+52,Trinidad and Tobago,809,Government of Trinidad and Tobago,8,Jamaat al-Muslimeen,762,Blacks,5202000,1,1,0
+70,Mexico,850,Government of Mexico,10,EZLN,767,Maya,7002000,1,1,1
+70,Mexico,851,Government of Mexico,10,EPR,768,,,0,-1,-1
+90,Guatemala,463,Government of Guatemala,11,Military faction (Guatemala),726,,,0,0,2
+90,Guatemala,464,Government of Guatemala,11,Forces of Carlos Castillo Armas,727,,,,,
+90,Guatemala,465,Government of Guatemala,11,FAR I,728,Ladinos,9001000,0,2,2
+90,Guatemala,466,Government of Guatemala,11,FAR II,729,Ladinos,9001000,0,2,2
+90,Guatemala,467,Government of Guatemala,11,EGP,730,Maya,9002000,1,1,1
+90,Guatemala,468,Government of Guatemala,11,ORPA,731,Maya,9002000,2,1,1
+90,Guatemala,469,Government of Guatemala,11,URNG,732,Maya,9002000,2,1,1
+92,El Salvador,694,Government of El Salvador,13,Military faction (forces of Benjamin Mejia),752,,,,,
+92,El Salvador,695,Government of El Salvador,13,ERP,753,,,,,
+92,El Salvador,696,Government of El Salvador,13,FPL,754,,,,,
+92,El Salvador,697,Government of El Salvador,13,FMLN,755,,,,,
+93,Nicaragua,741,Government of Nicaragua,14,FSLN,758,Whites/mestizos,9301000,0,2,2
+93,Nicaragua,742,Government of Nicaragua,14,Contras,759,Whites/mestizos,9301000,0,2,2
+93,Nicaragua,742,Government of Nicaragua,14,Contras,759,Miskitos,9303000,1,1,1
+93,Nicaragua,742,Government of Nicaragua,14,Contras,759,Sumus,9305000,1,1,1
+93,Nicaragua,742,Government of Nicaragua,14,Contras,759,,,,,
+94,Costa Rica,447,Government of Costa Rica,15,National Liberation Army,725,,,,,
+95,Panama,795,Government of Panama,16,Military faction (forces of Moisés Giroldi),761,Whites/mestizos,9501000,0,2,0
+100,Colombia,623,Government of Colombia,17,FARC,743,,,,,
+100,Colombia,624,Government of Colombia,17,ELN,744,,,,,
+100,Colombia,625,Government of Colombia,17,M-19,745,,,,,
+100,Colombia,626,Government of Colombia,17,EPL,746,,,,,
+100,Colombia,15558,Government of Colombia,17,EPL - Megateo,7074,,,,,
+101,Venezuela,573,Government of Venezuela,18,Military faction (navy),740,,,,,
+101,Venezuela,574,Government of Venezuela,18,Bandera Roja,741,,,0,-1,-1
+101,Venezuela,575,Government of Venezuela,18,Military faction (forces of Hugo Chávez),742,,,,,
+115,Surinam,784,Government of Suriname,19,SLA,760,Maroons,11506000,1,1,1
+115,Surinam,784,Government of Suriname,19,SLA,760,,,0,1,1
+135,Peru,629,Government of Peru,21,ELN,748,Whites/mestizos,13502000,0,2,0
+135,Peru,630,Government of Peru,21,MIR,749,Whites/mestizos,13502000,0,2,0
+135,Peru,631,Government of Peru,21,Sendero Luminoso,750,Indigenous peoples of the Andes,13501000,0,1,0
+135,Peru,631,Government of Peru,21,Sendero Luminoso,750,Whites/mestizos,13502000,0,2,0
+135,Peru,632,Government of Peru,21,MRTA,751,Indigenous peoples of the Andes,13501000,0,1,0
+135,Peru,632,Government of Peru,21,MRTA,751,Whites/mestizos,13502000,0,2,0
+145,Bolivia,399,Government of Bolivia,23,Popular Revolutionary Movement,719,Whites/mestizos,14504000,0,2,0
+145,Bolivia,400,Government of Bolivia,23,MNR,720,Whites/mestizos,14504000,0,2,2
+145,Bolivia,401,Government of Bolivia,23,ELN,721,,,,,
+150,Paraguay,424,Government of Paraguay,24,"Opposition coalition (Febreristas, Liberals and Communists)",722,Whites/mestizos,15001000,0,2,0
+150,Paraguay,425,Government of Paraguay,24,Military faction (forces of Alfredo Stroessner),723,Whites/mestizos,15001000,0,2,0
+150,Paraguay,426,Government of Paraguay,24,Military faction (forces of Andres Rodriguez),724,Whites/mestizos,15001000,0,2,0
+155,Chile,704,Government of Chile,25,"Military faction (forces of Augusto Pinochet, Toribio Merino and Leigh Guzman)",757,Whites/mestizos,15501000,0,2,0
+160,Argentina,499,Government of Argentina,26,Military faction (forces of Eduardo A. Lonardi Doucet),736,Whites/mestizos,16001000,0,2,0
+160,Argentina,500,Government of Argentina,26,Military faction (forces of Samuel Toranzo Calderón),1113,,,0,0,2
+160,Argentina,501,Government of Argentina,26,Military faction (colorados),737,Whites/mestizos,16001000,0,2,0
+160,Argentina,502,Government of Argentina,26,ERP,738,Whites/mestizos,16001000,0,2,0
+160,Argentina,503,Government of Argentina,26,Montoneros,739,Whites/mestizos,16001000,0,2,2
+165,Uruguay,702,Government of Uruguay,27,MLN/Tupamaros,756,,,,,
+200,United Kingdom,692,Government of United Kingdom,28,PIRA,282,Catholics In N. Ireland,20006000,1,1,1
+200,United Kingdom,693,Government of United Kingdom,28,RIRA,283,Catholics In N. Ireland,20006000,1,1,0
+220,France,563,Government of France,33,OAS,259,French,22001000,0,2,0
+230,Spain,763,Government of Spain,35,ETA,313,Basques,23004000,1,1,0
+343,Macedonia (FYROM/North Macedonia),877,Government of North Macedonia,47,UCK,361,Albanians,34302000,1,1,0
+344,Croatia,836,Government of Croatia,48,Serbian irregulars,371,Serbs,34402000,1,0,1
+344,Croatia,837,Government of Croatia,48,Serbian Republic of Krajina,340,Serbs,34402000,1,1,1
+345,Yugoslavia,824,Government of Serbia (Yugoslavia),49,Republic of Slovenia,336,Slovenes,34507000,1,1,1
+345,Yugoslavia,825,Government of Serbia (Yugoslavia),49,Croatian irregulars,370,Croats,34502000,1,1,1
+345,Yugoslavia,826,Government of Serbia (Yugoslavia),49,Republic of Croatia,337,Croats,34502000,1,1,1
+345,Yugoslavia,868,Government of Serbia (Yugoslavia),49,UCK,357,Albanians,34506000,1,1,1
+346,Bosnia-Herzegovina,834,Government of Bosnia-Herzegovina,50,Serbian irregulars,371,Serbs,34602000,1,1,1
+346,Bosnia-Herzegovina,835,Government of Bosnia-Herzegovina,50,Serbian Republic of Bosnia-Herzegovina,339,Serbs,34602000,1,1,1
+346,Bosnia-Herzegovina,846,Government of Bosnia-Herzegovina,50,Autonomous Province of Western Bosnia,349,Bosniaks/Muslims,34601000,0,2,2
+346,Bosnia-Herzegovina,847,Government of Bosnia-Herzegovina,50,Croatian irregulars,370,Croats,34603000,1,0,1
+346,Bosnia-Herzegovina,848,Government of Bosnia-Herzegovina,50,Croatian Republic of Bosnia-Herzegovina,350,Croats,34603000,1,1,1
+350,Greece,404,Government of Greece,52,DSE,162,Greeks,35001000,0,2,2
+350,Greece,404,Government of Greece,52,DSE,162,Macedonians,35004000,0,1,1
+359,Moldova,841,Government of Moldova,55,PMR,344,,,,,
+360,Rumania,798,Government of Romania,56,NSF,329,Romanians,36001000,0,2,2
+360,Rumania,14471,Government of Romania,56,Military faction (forces of Nicolae Ceausescu),6137,,,,,
+365,Russia (Soviet Union),413,Government of Russia (Soviet Union),57,Forest Brothers,171,Estonians,36524000,1,1,1
+365,Russia (Soviet Union),414,Government of Russia (Soviet Union),57,LNPA,172,Latvians,36521000,1,1,1
+365,Russia (Soviet Union),415,Government of Russia (Soviet Union),57,LTS(p)A,173,Latvians,36521000,1,1,1
+365,Russia (Soviet Union),416,Government of Russia (Soviet Union),57,BDPS,174,Lithuanians,36513000,1,1,1
+365,Russia (Soviet Union),417,Government of Russia (Soviet Union),57,UPA,175,Ukrainians,36502000,1,1,1
+365,Russia (Soviet Union),807,Government of Russia (Soviet Union),57,Republic of Armenia,330,Armenians,36508000,1,1,1
+365,Russia (Soviet Union),808,Government of Russia (Soviet Union),57,APF,331,Azeri,36509000,1,1,1
+365,Russia (Soviet Union),849,Government of Russia (Soviet Union),57,Parliamentary Forces,351,,,,,
+365,Russia (Soviet Union),852,Government of Russia (Soviet Union),57,Chechen Republic of Ichkeria,352,Chechens,36516000,1,1,1
+365,Russia (Soviet Union),870,Government of Russia (Soviet Union),57,Wahhabi movement of the Buinaksk district,358,,,,,
+365,Russia (Soviet Union),899,Government of Russia (Soviet Union),57,Forces of the Caucasus Emirate,367,Chechens,36516000,1,1,0
+365,Russia (Soviet Union),899,Government of Russia (Soviet Union),57,Forces of the Caucasus Emirate,367,Avars,36523000,0,1,0
+365,Russia (Soviet Union),899,Government of Russia (Soviet Union),57,Forces of the Caucasus Emirate,367,Dargins,36526000,0,1,0
+365,Russia (Soviet Union),899,Government of Russia (Soviet Union),57,Forces of the Caucasus Emirate,367,Kabardins,36528000,0,1,0
+365,Russia (Soviet Union),899,Government of Russia (Soviet Union),57,Forces of the Caucasus Emirate,367,Ingush,36533000,0,1,0
+365,Russia (Soviet Union),899,Government of Russia (Soviet Union),57,Forces of the Caucasus Emirate,367,Kumyks,36534000,0,-1,0
+365,Russia (Soviet Union),899,Government of Russia (Soviet Union),57,Forces of the Caucasus Emirate,367,Lezgins,36535000,0,1,0
+365,Russia (Soviet Union),899,Government of Russia (Soviet Union),57,Forces of the Caucasus Emirate,367,Adyghe,36540000,0,-1,0
+365,Russia (Soviet Union),899,Government of Russia (Soviet Union),57,Forces of the Caucasus Emirate,367,Balkars,36543000,0,1,0
+365,Russia (Soviet Union),899,Government of Russia (Soviet Union),57,Forces of the Caucasus Emirate,367,Cherkess,36544000,0,1,0
+365,Russia (Soviet Union),899,Government of Russia (Soviet Union),57,Forces of the Caucasus Emirate,367,Karachai,36554000,0,1,0
+365,Russia (Soviet Union),899,Government of Russia (Soviet Union),57,Forces of the Caucasus Emirate,367,,36559000,0,1,0
+365,Russia (Soviet Union),899,Government of Russia (Soviet Union),57,Forces of the Caucasus Emirate,367,,36561000,0,1,0
+365,Russia (Soviet Union),899,Government of Russia (Soviet Union),57,Forces of the Caucasus Emirate,367,,36565000,0,-1,0
+365,Russia (Soviet Union),14619,Government of Russia (Soviet Union),57,IS,234,Chuvashes,36506000,0,1,-1
+369,Ukraine,14085,Government of Ukraine,61,Maidan,5817,Ukrainians,36901000,0,2,2
+369,Ukraine,14124,Government of Ukraine,61,DPR,5840,Russians,36902000,1,2,1
+369,Ukraine,14184,Government of Ukraine,61,LPR,5839,Russians,36902000,1,2,1
+369,Ukraine,14210,Government of Ukraine,61,United Armed Forces of Novorossiya,5914,Russians,36902000,1,2,1
+369,Ukraine,15100,Government of Ukraine,61,DPR,6711,Russians,36902000,1,2,1
+369,Ukraine,15101,Government of Ukraine,61,LPR,6712,Russians,36902000,1,2,1
+372,Georgia,812,Government of Georgia,63,National Guard and Mkhedrioni,332,,,,,
+372,Georgia,813,Government of Georgia,63,Zviadists,333,Georgians,37201000,0,2,0
+372,Georgia,839,Government of Georgia,63,Republic of Abkhazia,342,Abkhazians,37207000,1,1,1
+372,Georgia,840,Government of Georgia,63,Republic of South Ossetia,343,Ossetians (South),37206000,1,1,1
+373,Azerbaijan,833,Government of Azerbaijan,64,Republic of Artsakh,338,Armenians,37304000,1,1,1
+373,Azerbaijan,844,Government of Azerbaijan,64,Military faction (forces of Suret Husseinov),347,,,,,
+373,Azerbaijan,845,Government of Azerbaijan,64,OPON Forces,348,,,,,
+404,Guinea-Bissau,866,Government of Guinea-Bissau,70,"Military Junta for the Consolidation of Democracy, Peace and Justice",549,,,,,
+420,Gambia,765,Government of Gambia,71,NRC,512,,,0,0,
+432,Mali,800,Government of Mali,72,MPA,521,Tuareg,43202000,1,1,
+432,Mali,801,Government of Mali,72,FIAA,522,Arabs/Moors,43203000,1,1,
+432,Mali,802,Government of Mali,72,ATNMC,523,Tuareg,43202000,1,1,0
+432,Mali,830,Government of Mali,72,AQIM,539,,,0,,0
+432,Mali,10054,Government of Mali,72,FPLA,934,Tuareg,43202000,1,1,
+432,Mali,11984,Government of Mali,72,MUJAO,1161,,,0,,
+432,Mali,11985,Government of Mali,72,CMA,1158,Tuareg,43202000,1,1,1
+432,Mali,11986,Government of Mali,72,Ansar Dine,1157,Tuareg,43202000,0,1,-1
+432,Mali,11987,Government of Mali,72,Military faction (Red Berets),1164,,,0,2,-1
+432,Mali,12578,Government of Mali,72,Signed-in-Blood Battalion,3481,Tuareg,43202000,0,1,2
+432,Mali,12582,Government of Mali,72,al-Murabitun,4376,,,0,0,-1
+432,Mali,14610,Government of Mali,72,FLM,6267,"Blacks (Mande, Peul, Voltaic etc.)",43201000,0,2,-1
+432,Mali,15108,Government of Mali,72,JNIM,6716,,,0,0,-1
+432,Mali,15259,Government of Mali,72,IS,234,,,0,0,-1
+433,Senegal,806,Government of Senegal,73,MFDC,529,Diola,43305000,1,1,0
+435,Mauritania,830,Government of Mauritania,74,AQIM,539,,,,,
+435,Mauritania,893,Government of Mauritania,74,POLISARIO,563,Sahrawis,43504000,1,1,1
+436,Niger,803,Government of Niger,75,CRA,525,Tuareg,43606000,1,1,
+436,Niger,859,Government of Niger,75,FDR,543,Toubou,43605000,1,1,
+436,Niger,895,Government of Niger,75,FLAA,524,Tuareg,43606000,1,1,
+436,Niger,896,Government of Niger,75,UFRA,526,Tuareg,43606000,1,1,
+436,Niger,897,Government of Niger,75,MNJ,562,Tuareg,43606000,0,1,-1
+436,Niger,14668,Government of Niger,75,IS,234,,,0,0,-1
+437,Cote D'Ivoire,879,Government of Ivory Coast,76,MPCI,556,Northerners (Mande and Voltaic/Gur),43703000,1,1,1
+437,Cote D'Ivoire,880,Government of Ivory Coast,76,MPIGO,557,Southern Mande,43705000,1,1,0
+437,Cote D'Ivoire,881,Government of Ivory Coast,76,MJP,555,,,,,
+437,Cote D'Ivoire,882,Government of Ivory Coast,76,FRCI,558,Northerners (Mande and Voltaic/Gur),43703000,1,1,1
+437,Cote D'Ivoire,882,Government of Ivory Coast,76,FRCI,558,Southern Mande,43705000,1,1,1
+437,Cote D'Ivoire,10842,Government of Ivory Coast,76,FDSI-CI,1125,,,0,-1,-1
+438,Guinea,654,Government of Guinea,77,RFDG,463,,,,,
+439,Burkina Faso (Upper Volta),787,Government of Burkina Faso,78,Popular Front,517,,,,,
+450,Liberia,758,Government of Liberia,79,Military faction (forces of Samuel Doe),506,Indigenous Peoples,45003000,1,1,1
+450,Liberia,759,Government of Liberia,79,NPFL,507,Gio,45003020,2,1,1
+450,Liberia,759,Government of Liberia,79,NPFL,507,Mano,45003080,2,1,1
+450,Liberia,760,Government of Liberia,79,INPFL,508,Gio,45003020,2,1,0
+450,Liberia,760,Government of Liberia,79,INPFL,508,,,,,
+450,Liberia,761,Government of Liberia,79,LURD,509,Krahn (Guere),45003050,0,1,0
+450,Liberia,761,Government of Liberia,79,LURD,509,Mandingo,45003070,0,1,0
+450,Liberia,762,Government of Liberia,79,MODEL,510,Krahn (Guere),45003050,0,1,1
+451,Sierra Leone,818,Government of Sierra Leone,80,RUF,532,,,,,
+451,Sierra Leone,819,Government of Sierra Leone,80,AFRC,533,,,,,
+451,Sierra Leone,820,Government of Sierra Leone,80,Kamajors,534,Mende,45104000,0,1,1
+451,Sierra Leone,821,Government of Sierra Leone,80,WSB,535,,,,,
+452,Ghana,635,Government of Ghana,81,NLC,457,Ewe,45202000,0,2,2
+452,Ghana,636,Government of Ghana,81,Military faction (forces of Jerry John Rawlings),458,Ewe,45202000,2,1,-1
+452,Ghana,637,Government of Ghana,81,Military faction (forces of Ekow Dennis and Edward Adjei-Ampofo),459,,,0,-1,-1
+461,Togo,785,Government of Togo,82,MTD,516,Ewe (and related groups),46101000,2,1,1
+471,Cameroon,779,Government of Cameroon,83,UPC,564,Bamileke,47101000,0,1,1
+471,Cameroon,779,Government of Cameroon,83,UPC,564,Bassa/Duala,47102000,0,1,1
+471,Cameroon,780,Government of Cameroon,83,Military faction (forces of Ibrahim Saleh),515,Fulani (and other northern Muslim peoples),47104000,2,1,
+471,Cameroon,12422,Government of Cameroon,83,Jama'atu Ahlis Sunna Lidda'awati wal-Jihad,1051,,,,,
+471,Cameroon,14666,Government of Cameroon,83,IS,234,,,0,0,-1
+471,Cameroon,15895,Government of Cameroon,83,Ambazonia insurgents,7332,Northwestern Anglophones (Grassfielders),47105000,1,1,1
+471,Cameroon,15895,Government of Cameroon,83,Ambazonia insurgents,7332,Southwestern Anglophones (Bakweri etc.),47106000,1,1,1
+475,Nigeria,639,Government of Nigeria,84,Military faction (forces of Patrick Nzeogwu),460,Igbo,47502000,0,1,1
+475,Nigeria,640,Government of Nigeria,84,Jama'atu Ahlis Sunna Lidda'awati wal-Jihad,1051,,,,,
+475,Nigeria,650,Government of Nigeria,84,Republic of Biafra,462,Igbo,47502000,1,1,1
+475,Nigeria,889,Government of Nigeria,84,Ahlul Sunnah Jamaa,559,,,,,
+475,Nigeria,890,Government of Nigeria,84,NDPVF,560,Ijaw,47503000,1,1,0
+475,Nigeria,14669,Government of Nigeria,84,IS,234,,,0,0,-1
+481,Gabon,589,Government of Gabon,85,Military faction (forces loyal to Léon M'Ba),427,,,,,
+482,Central African Republic,873,Government of Central African Republic,86,Military faction (forces of André Kolingba),552,Yakoma,48206080,2,1,1
+482,Central African Republic,874,Government of Central African Republic,86,Forces of Francois Bozize,553,,,,,
+482,Central African Republic,875,Government of Central African Republic,86,Seleka,554,Goula,48205090,1,1,1
+482,Central African Republic,876,Government of Central African Republic,86,CPJP,1053,,,,,
+482,Central African Republic,12380,Government of Central African Republic,86,anti-Balaka,4201,,,0,-1,-1
+483,Chad,598,Government of Chad,87,Frolinat,435,Muslim Sahel groups,48302000,2,1,1
+483,Chad,598,Government of Chad,87,Frolinat,435,Toubou,48306000,2,1,1
+483,Chad,599,Government of Chad,87,First Liberation Army,436,Muslim Sahel groups,48302000,0,1,-1
+483,Chad,599,Government of Chad,87,First Liberation Army,436,Toubou,48306000,0,1,-1
+483,Chad,600,Government of Chad,87,Second Liberation Army,437,Toubou,48306000,0,1,-1
+483,Chad,601,Government of Chad,87,FAN,438,Toubou,48306000,0,1,
+483,Chad,602,Government of Chad,87,FAP,439,Arabs,48301000,0,1,-1
+483,Chad,602,Government of Chad,87,FAP,439,Muslim Sahel groups,48302000,0,1,-1
+483,Chad,602,Government of Chad,87,FAP,439,Toubou,48306000,0,1,-1
+483,Chad,603,Government of Chad,87,FAT,440,Sara,48304000,0,2,-1
+483,Chad,604,Government of Chad,87,GUNT,441,Arabs,48301000,0,1,-1
+483,Chad,604,Government of Chad,87,GUNT,441,Muslim Sahel groups,48302000,0,1,-1
+483,Chad,604,Government of Chad,87,GUNT,441,Sara,48304000,0,2,-1
+483,Chad,604,Government of Chad,87,GUNT,441,Toubou,48306000,0,1,-1
+483,Chad,605,Government of Chad,87,CDR,455,Arabs,48301000,0,0,-1
+483,Chad,606,Government of Chad,87,Islamic Legion,442,"Zaghawa, Bideyat",48302200,0,1,0
+483,Chad,607,Government of Chad,87,MOSANAT,444,Hadjerai,48302100,1,1,0
+483,Chad,608,Government of Chad,87,Revolutionary Forces of 1 April,443,"Zaghawa, Bideyat",48302200,2,1,-1
+483,Chad,609,Government of Chad,87,MPS,445,Hadjerai,48302100,0,1,1
+483,Chad,609,Government of Chad,87,MPS,445,"Zaghawa, Bideyat",48302200,0,1,1
+483,Chad,610,Government of Chad,87,MDD,446,,,0,-1,0
+483,Chad,611,Government of Chad,87,Military faction (forces of Maldoum Bada Abbas),449,Hadjerai,48302100,1,1,-1
+483,Chad,612,Government of Chad,87,CNR,447,"Zaghawa, Bideyat",48302200,0,1,
+483,Chad,613,Government of Chad,87,CSNPD,448,Sara,48304000,1,1,0
+483,Chad,614,Government of Chad,87,FNT,450,"Zaghawa, Bideyat",48302200,0,1,0
+483,Chad,615,Government of Chad,87,FARF,451,Sara,48304000,0,1,0
+483,Chad,616,Government of Chad,87,MDJT,452,Toubou,48306000,0,1,1
+483,Chad,617,Government of Chad,87,FUCD,453,Tama,48302300,0,1,0
+483,Chad,618,Government of Chad,87,RAFD,454,"Zaghawa, Bideyat",48302200,0,1,0
+483,Chad,619,Government of Chad,87,UFDD,456,Arabs,48301000,0,1,0
+483,Chad,619,Government of Chad,87,UFDD,456,"Zaghawa, Bideyat",48302200,0,1,0
+483,Chad,619,Government of Chad,87,UFDD,456,Toubou,48306000,0,1,0
+483,Chad,620,Government of Chad,87,AN,716,Arabs,48301000,0,1,0
+483,Chad,620,Government of Chad,87,AN,716,"Zaghawa, Bideyat",48302200,0,1,0
+483,Chad,620,Government of Chad,87,AN,716,Tama,48302300,0,1,0
+483,Chad,620,Government of Chad,87,AN,716,Toubou,48306000,0,1,0
+483,Chad,621,Government of Chad,87,UFR,1069,Arabs,48301000,0,1,0
+483,Chad,621,Government of Chad,87,UFR,1069,"Zaghawa, Bideyat",48302200,0,1,0
+483,Chad,621,Government of Chad,87,UFR,1069,Toubou,48306000,0,1,0
+483,Chad,622,Government of Chad,87,FPRN,1112,,,0,1,-1
+483,Chad,14667,Government of Chad,87,IS,234,,,0,0,-1
+484,Congo,861,Government of Congo,88,Ninjas,546,Lari/Bakongo,48405000,0,1,0
+484,Congo,862,Government of Congo,88,Cobras,545,Mbochi (proper),48406070,0,1,0
+484,Congo,863,Government of Congo,88,Cocoyes,547,,48409000,0,1,0
+484,Congo,864,Government of Congo,88,Ntsiloulous,548,Lari/Bakongo,48405000,1,1,0
+490,"Congo, Democratic Republic of (Zaire)",551,Government of DR Congo (Zaire),89,State of Katanga,406,Lunda-Yeke,49011000,1,1,1
+490,"Congo, Democratic Republic of (Zaire)",552,Government of DR Congo (Zaire),89,Independent Mining State of South Kasai,407,Luba Kasai,49005000,1,1,1
+490,"Congo, Democratic Republic of (Zaire)",581,Government of DR Congo (Zaire),89,CNL,419,Tetela-Kusu,49012000,0,1,1
+490,"Congo, Democratic Republic of (Zaire)",582,Government of DR Congo (Zaire),89,Military Faction (Forces of Jean Schramme),420,,,,,
+490,"Congo, Democratic Republic of (Zaire)",583,Government of DR Congo (Zaire),89,FLNC,421,Luba Shaba,49007000,0,1,0
+490,"Congo, Democratic Republic of (Zaire)",583,Government of DR Congo (Zaire),89,FLNC,421,Lunda-Yeke,49011000,0,1,0
+490,"Congo, Democratic Republic of (Zaire)",584,Government of DR Congo (Zaire),89,AFDL,422,Tutsi-Banyamulenge,49013000,1,1,1
+490,"Congo, Democratic Republic of (Zaire)",585,Government of DR Congo (Zaire),89,MLC,423,Mbandja,49002000,2,1,1
+490,"Congo, Democratic Republic of (Zaire)",585,Government of DR Congo (Zaire),89,MLC,423,Mongo,49004000,2,1,1
+490,"Congo, Democratic Republic of (Zaire)",585,Government of DR Congo (Zaire),89,MLC,423,Ngbaka,49006000,2,1,1
+490,"Congo, Democratic Republic of (Zaire)",585,Government of DR Congo (Zaire),89,MLC,423,Ngbandi,49008000,2,1,1
+490,"Congo, Democratic Republic of (Zaire)",586,Government of DR Congo (Zaire),89,RCD,424,Tutsi-Banyamulenge,49013000,1,1,0
+490,"Congo, Democratic Republic of (Zaire)",588,Government of DR Congo (Zaire),89,CNDP,426,Tutsi-Banyamulenge,49013000,1,1,1
+490,"Congo, Democratic Republic of (Zaire)",894,Government of DR Congo (Zaire),89,BDK,561,Bakongo,49003000,1,1,0
+490,"Congo, Democratic Republic of (Zaire)",10509,Government of DR Congo (Zaire),89,APCLS,1200,,,-1,1,-1
+490,"Congo, Democratic Republic of (Zaire)",11377,Government of DR Congo (Zaire),89,CNPSC,3043,,,0,-1,-1
+490,"Congo, Democratic Republic of (Zaire)",11982,Government of DR Congo (Zaire),89,M23,1160,Tutsi-Banyamulenge,49013000,1,1,-1
+490,"Congo, Democratic Republic of (Zaire)",12009,Government of DR Congo (Zaire),89,Kata Katanga,3967,Lunda-Yeke,49011000,2,1,0
+490,"Congo, Democratic Republic of (Zaire)",12463,Government of DR Congo (Zaire),89,Forces of Paul Joseph Mukungubila,4286,Luba Shaba,49007000,2,-1,-1
+490,"Congo, Democratic Republic of (Zaire)",14929,Government of DR Congo (Zaire),89,Kamuina Nsapu,6590,Luba Kasai,49005000,2,1,-1
+490,"Congo, Democratic Republic of (Zaire)",15135,Government of DR Congo (Zaire),89,MNR,6740,,,0,0,-1
+490,"Congo, Democratic Republic of (Zaire)",15389,Government of DR Congo (Zaire),89,CMC,6920,,,0,0,-1
+490,"Congo, Democratic Republic of (Zaire)",16286,Government of DR Congo (Zaire),89,Baraka group,7098,,,,,
+500,Uganda,675,Government of Uganda,90,Military faction (forces of Idi Amin),475,"Far North-West Nile (Kakwa-Nubian, Madi, Lugbara, Alur)",50009110,2,1,0
+500,Uganda,676,Government of Uganda,90,Kikosi Maalum,476,Langi/Acholi,50009120,0,1,0
+500,Uganda,677,Government of Uganda,90,Military faction (forces of Charles Arube),477,,,,,
+500,Uganda,678,Government of Uganda,90,Fronasa,478,"South-Westeners (Ankole, Banyoro, Toro, Banyarwanda)",50011000,0,1,0
+500,Uganda,679,Government of Uganda,90,UNLF,479,Langi/Acholi,50009120,0,1,0
+500,Uganda,680,Government of Uganda,90,FUNA,480,"Far North-West Nile (Kakwa-Nubian, Madi, Lugbara, Alur)",50009110,0,1,1
+500,Uganda,681,Government of Uganda,90,NRA,481,Baganda,50002000,0,1,1
+500,Uganda,681,Government of Uganda,90,NRA,481,"South-Westeners (Ankole, Banyoro, Toro, Banyarwanda)",50011000,0,1,1
+500,Uganda,682,Government of Uganda,90,UNRF,482,"Far North-West Nile (Kakwa-Nubian, Madi, Lugbara, Alur)",50009110,1,1,1
+500,Uganda,683,Government of Uganda,90,UFM,485,,,,,
+500,Uganda,684,Government of Uganda,90,HSM,483,Langi/Acholi,50009120,1,1,1
+500,Uganda,685,Government of Uganda,90,UPDA,484,Langi/Acholi,50009120,1,1,1
+500,Uganda,686,Government of Uganda,90,UPA,486,Teso,50009210,0,1,1
+500,Uganda,687,Government of Uganda,90,Lord's Army,487,Langi/Acholi,50009120,1,1,1
+500,Uganda,688,Government of Uganda,90,LRA,488,Langi/Acholi,50009120,1,1,0
+500,Uganda,689,Government of Uganda,90,ADF,489,,,,,
+500,Uganda,689,Government of Uganda,90,ADF,489,,,,,
+500,Uganda,690,Government of Uganda,90,WNBF,490,"Far North-West Nile (Kakwa-Nubian, Madi, Lugbara, Alur)",50009110,2,1,0
+500,Uganda,691,Government of Uganda,90,UNRF II,491,"Far North-West Nile (Kakwa-Nubian, Madi, Lugbara, Alur)",50009110,1,1,0
+501,Kenya,772,Government of Kenya,91,Military faction (forces of Hezekiah Ochuka),514,Luo,50106000,0,1,0
+501,Kenya,10589,Government of Kenya,91,Al-Shabaab,717,,,,,
+516,Burundi,592,Government of Burundi,93,Military faction (forces loyal to Gervais Nyangoma),429,Hutu,51601000,1,1,0
+516,Burundi,593,Government of Burundi,93,Palipehutu,430,Hutu,51601000,1,1,0
+516,Burundi,594,Government of Burundi,93,CNDD,431,Hutu,51601000,1,1,1
+516,Burundi,595,Government of Burundi,93,Frolina,433,Hutu,51601000,1,1,0
+516,Burundi,596,Government of Burundi,93,Palipehutu-FNL,432,Hutu,51601000,1,1,0
+516,Burundi,597,Government of Burundi,93,CNDD-FDD,434,Hutu,51601000,1,1,1
+516,Burundi,14528,Government of Burundi,93,Military faction (forces of Godefroid Niyombare),6187,,,0,0,-1
+516,Burundi,14649,Government of Burundi,93,FPB,6297,,,0,0,-1
+516,Burundi,14842,Government of Burundi,93,RED-TABARA,6513,,,0,0,-1
+517,Rwanda,804,Government of Rwanda,94,FPR,527,Tutsi,51702000,1,1,1
+517,Rwanda,805,Government of Rwanda,94,ALiR,1128,Hutu,51701000,1,1,1
+517,Rwanda,805,Government of Rwanda,94,ALiR,1128,Tutsi,51702000,1,,
+517,Rwanda,12102,Government of Rwanda,94,FDLR,528,Hutu,51701000,1,1,1
+520,Somalia,743,Government of Somalia,95,SSDF,499,Somali,52001000,-1,2,-1
+520,Somalia,744,Government of Somalia,95,SNM,500,Somali,52001000,-1,2,-1
+520,Somalia,745,Government of Somalia,95,SPM,501,Somali,52001000,-1,2,-1
+520,Somalia,746,Government of Somalia,95,USC/SSA,502,Somali,52001000,-1,2,-1
+520,Somalia,747,Government of Somalia,95,USC/SNA,503,Somali,52001000,-1,2,-1
+520,Somalia,748,Government of Somalia,95,SRRC,504,Somali,52001000,-1,2,-1
+520,Somalia,749,Government of Somalia,95,ARS/UIC,505,Somali,52001000,-1,2,-1
+520,Somalia,750,Government of Somalia,95,Al-Shabaab,717,Somali,52001000,-1,2,-1
+520,Somalia,752,Government of Somalia,95,Hizbul Islam,1004,Somali,52001000,-1,2,-1
+522,Djibouti,810,Government of Djibouti,96,FRUD,530,Afar,52202000,1,1,-1
+522,Djibouti,811,Government of Djibouti,96,FRUD-C,531,Afar,52202000,1,1,-1
+530,Ethiopia,553,Government of Ethiopia,97,Military faction (forces of Mengistu Neway),408,,,0,,0
+530,Ethiopia,554,Government of Ethiopia,97,EPRP,409,Tigry,53009000,0,1,0
+530,Ethiopia,555,Government of Ethiopia,97,TPLF,410,Tigry,53009000,1,1,1
+530,Ethiopia,556,Government of Ethiopia,97,EDU,411,Tigry,53009000,0,1,0
+530,Ethiopia,556,Government of Ethiopia,97,EDU,411,,,,,
+530,Ethiopia,557,Government of Ethiopia,97,EPDM,412,Amhara,53002000,0,2,0
+530,Ethiopia,558,Government of Ethiopia,97,EPRDF,414,Amhara,53002000,0,1,-1
+530,Ethiopia,558,Government of Ethiopia,97,EPRDF,414,Oroma,53006000,0,1,-1
+530,Ethiopia,558,Government of Ethiopia,97,EPRDF,414,Tigry,53009000,0,1,1
+530,Ethiopia,559,Government of Ethiopia,97,Military faction (forces of Amsha Desta and Merid Negusie),413,,,0,,
+530,Ethiopia,570,Government of Ethiopia,97,ELF,415,Muslim Eritreans,53011000,1,1,1
+530,Ethiopia,571,Government of Ethiopia,97,EPLF,416,Christian Eritreans,53010000,1,1,1
+530,Ethiopia,571,Government of Ethiopia,97,EPLF,416,Muslim Eritreans,53011000,1,1,1
+530,Ethiopia,716,Government of Ethiopia,97,Ogaden Liberation Front,1056,Somali (Ogaden),53008000,1,1,0
+530,Ethiopia,717,Government of Ethiopia,97,WSLF,496,Somali (Ogaden),53008000,1,1,0
+530,Ethiopia,718,Government of Ethiopia,97,AIAI,542,Somali (Ogaden),53008000,1,0,0
+530,Ethiopia,719,Government of Ethiopia,97,ONLF,497,Somali (Ogaden),53008000,1,1,1
+530,Ethiopia,790,Government of Ethiopia,97,ALF,519,Afar,53001000,1,1,1
+530,Ethiopia,791,Government of Ethiopia,97,ARDUF,520,Afar,53001000,1,1,0
+530,Ethiopia,869,Government of Ethiopia,97,OLF,551,Oroma,53006000,1,1,0
+530,Ethiopia,903,Government of Ethiopia,97,SALF,1054,Oroma,53006000,0,1,0
+530,Ethiopia,903,Government of Ethiopia,97,SALF,1054,Somali (Ogaden),53008000,2,1,0
+530,Ethiopia,904,Government of Ethiopia,97,SLM,1055,,,-1,-1,-1
+530,Ethiopia,10006,Government of Ethiopia,97,IGLF,1115,Somali (Ogaden),53008000,1,1,-1
+530,Ethiopia,12104,Government of Ethiopia,97,Forces of Harar garrison,1215,,,-1,-1,-1
+530,Ethiopia,16023,Government of Ethiopia,97,Military faction (forces of Asaminew Tsige),7438,Amhara,53002000,1,1,1
+531,Eritrea,712,Government of Eritrea,98,EIJM - AS,495,,,1,1,0
+540,Angola,713,Government of Angola,99,FNLA,566,Bakongo,54001000,0,1,1
+540,Angola,714,Government of Angola,99,UNITA,567,Ovimbundu-Ovambo,54005000,0,1,1
+540,Angola,831,Government of Angola,99,FLEC-R,540,Bakongo,54001000,1,1,1
+540,Angola,831,Government of Angola,99,FLEC-R,540,Cabindan Mayombe,54002000,1,1,1
+540,Angola,832,Government of Angola,99,FLEC-FAC,541,Cabindan Mayombe,54002000,1,1,1
+540,Angola,832,Government of Angola,99,FLEC-FAC,541,,,,,
+540,Angola,15993,Government of Angola,99,FLEC-FAC-TN,7412,Cabindan Mayombe,54002000,1,1,1
+541,Mozambique,722,Government of Mozambique,100,Renamo,498,,,,,
+541,Mozambique,16022,Government of Mozambique,100,IS,234,,,0,0,-1
+552,Zimbabwe (Rhodesia),699,Government of Zimbabwe (Rhodesia),101,ZAPU,492,Africans,55201000,1,1,0
+552,Zimbabwe (Rhodesia),700,Government of Zimbabwe (Rhodesia),101,ZANU,493,Africans,55201000,1,1,0
+552,Zimbabwe (Rhodesia),701,Government of Zimbabwe (Rhodesia),101,PF,494,Africans,55201000,1,1,0
+560,South Africa,641,Government of South Africa,102,SWAPO,461,,,0,,
+560,South Africa,766,Government of South Africa,102,ANC,513,Asians,56002000,1,1,1
+560,South Africa,766,Government of South Africa,102,ANC,513,Coloreds,56003000,1,1,1
+560,South Africa,766,Government of South Africa,102,ANC,513,Blacks,56005000,1,1,1
+570,Lesotho,867,Government of Lesotho,104,Military faction (Lesotho),550,,,,,
+580,Madagascar (Malagasy),671,Government of Madagascar,106,Monima,473,Côtiers,58001000,0,2,0
+581,Comoros,789,Government of Comoros,107,Presidential guard,518,,,,,
+581,Comoros,789,Government of Comoros,107,Presidential guard,518,,,,,
+581,Comoros,860,Government of Comoros,107,MPA/Republic of Anjouan,544,Nzwani Comorans,58101000,1,2,1
+581,Comoros,860,Government of Comoros,107,MPA/Republic of Anjouan,544,,,1,-1,0
+600,Morocco,672,Government of Morocco,108,Military faction (forces of Mohamed Madbouh),474,,,,,
+600,Morocco,721,Government of Morocco,108,POLISARIO,563,Sahrawis,60003000,1,1,0
+615,Algeria,827,Government of Algeria,109,Takfir wa'l Hijra,536,Arabs,61501000,0,2,0
+615,Algeria,828,Government of Algeria,109,AIS,537,Arabs,61501000,0,2,2
+615,Algeria,829,Government of Algeria,109,GIA,538,Arabs,61501000,0,2,0
+615,Algeria,830,Government of Algeria,109,AQIM,539,Arabs,61501000,0,2,0
+615,Algeria,11984,Government of Algeria,109,MUJAO,1161,,,,,
+615,Algeria,14847,Government of Algeria,109,IS,234,,,0,0,-1
+616,Tunisia,764,Government of Tunisia,110,Résistance Armée Tunisienne,511,,,,,
+616,Tunisia,14747,Government of Tunisia,110,IS,234,,,0,0,-1
+620,Libya,10885,Government of Libya,111,Forces of Muammar Gaddafi,1127,Arabs,62001000,0,2,2
+620,Libya,11980,Government of Libya,111,NTC,1126,Arabs,62001000,0,2,2
+620,Libya,14059,Government of Libya,111,Forces of the House of Representatives,5802,,,0,0,2
+620,Libya,14249,Government of Libya,111,Zintan Military Council,5940,Arabs,62001000,0,2,0
+620,Libya,14745,Government of Libya,111,IS,234,Arabs,62001000,0,2,-1
+620,Libya,15225,Government of Libya,111,Forces of Khalifa al-Ghawil,6814,Arabs,62001000,0,2,-1
+620,Libya,15333,Government of Libya,111,PFLL,6893,Arabs,62001000,0,2,-1
+620,Libya,15539,Government of Libya,111,ASL,7046,Arabs,62001000,1,2,0
+625,Sudan,580,Government of Sudan,112,SSLM,418,Azande,62501000,1,1,1
+625,Sudan,580,Government of Sudan,112,SSLM,418,Bari,62502000,1,1,1
+625,Sudan,580,Government of Sudan,112,SSLM,418,Dinka,62504000,1,1,1
+625,Sudan,580,Government of Sudan,112,SSLM,418,Latoka,62506000,1,1,1
+625,Sudan,580,Government of Sudan,112,SSLM,418,Other Southern groups,62511000,1,1,1
+625,Sudan,661,Government of Sudan,112,Sudanese Communist Party,464,,,,,
+625,Sudan,662,Government of Sudan,112,National Front,465,,,,,
+625,Sudan,663,Government of Sudan,112,SPLM/A,466,Beja,62503000,2,1,1
+625,Sudan,663,Government of Sudan,112,SPLM/A,466,Dinka,62504000,2,1,1
+625,Sudan,663,Government of Sudan,112,SPLM/A,466,Nuba,62507000,2,1,1
+625,Sudan,663,Government of Sudan,112,SPLM/A,466,Nuer,62508000,2,1,1
+625,Sudan,663,Government of Sudan,112,SPLM/A,466,Other Southern groups,62511000,2,1,1
+625,Sudan,663,Government of Sudan,112,SPLM/A,466,Shilluk,62513000,2,1,1
+625,Sudan,664,Government of Sudan,112,NDA,467,Nuer,62508000,1,1,1
+625,Sudan,665,Government of Sudan,112,JEM,468,Zaghawa,62515000,2,1,1
+625,Sudan,666,Government of Sudan,112,SLM/A,469,Fur,62505000,2,1,1
+625,Sudan,666,Government of Sudan,112,SLM/A,469,Masalit,62514000,2,1,1
+625,Sudan,666,Government of Sudan,112,SLM/A,469,Zaghawa,62515000,2,1,1
+625,Sudan,667,Government of Sudan,112,NRF,470,Fur,62505000,0,1,1
+625,Sudan,667,Government of Sudan,112,NRF,470,Masalit,62514000,0,1,1
+625,Sudan,667,Government of Sudan,112,NRF,470,Zaghawa,62515000,0,1,1
+625,Sudan,668,Government of Sudan,112,SLM/A - MM,471,Zaghawa,62515000,2,1,1
+625,Sudan,669,Government of Sudan,112,SLFA,472,Fur,62505000,2,1,1
+625,Sudan,669,Government of Sudan,112,SLFA,472,Masalit,62514000,2,1,1
+625,Sudan,669,Government of Sudan,112,SLFA,472,Zaghawa,62515000,2,1,1
+625,Sudan,670,Government of Sudan,112,SSDM/A,1108,,,,,
+625,Sudan,11975,Government of Sudan,112,SPLM/A-North,1123,Nuba,62507000,2,1,-1
+625,Sudan,11976,Government of Sudan,112,SSLM/A,1124,Nuer,62508000,0,1,-1
+625,Sudan,11977,Government of Sudan,112,Republic of South Sudan,1129,Dinka,62504000,2,1,1
+625,Sudan,11977,Government of Sudan,112,Republic of South Sudan,1129,Nuer,62508000,2,1,1
+625,Sudan,11977,Government of Sudan,112,Republic of South Sudan,1129,Other Southern groups,62511000,2,1,1
+625,Sudan,11977,Government of Sudan,112,Republic of South Sudan,1129,Shilluk,62513000,2,1,1
+625,Sudan,11988,Government of Sudan,112,SRF,1162,,,0,0,-1
+625,Sudan,14134,Government of Sudan,112,SARC,5849,,,-1,-1,-1
+625,Sudan,14150,Government of Sudan,112,Darfur Joint Resistance Forces,5866,,,-1,-1,-1
+626,South Sudan,670,Government of South Sudan,113,SSDM/A,1108,,,,,
+626,South Sudan,11805,Government of South Sudan,113,SSDM/A - Cobra Faction,3563,Murle,62617000,1,1,0
+626,South Sudan,11805,Government of South Sudan,113,SSDM/A - Cobra Faction,3563,Anyuak,62619000,1,1,0
+626,South Sudan,11976,Government of South Sudan,113,SSLM/A,1124,Nuer,62608000,1,1,
+626,South Sudan,12413,Government of South Sudan,113,SPLM/A - IO,4226,Nuer,62608000,2,1,1
+630,Iran (Persia),406,Government of Iran,114,KDPI,164,Kurds,63008000,1,1,1
+630,Iran (Persia),407,Government of Iran,114,Republic of Azerbaijan,165,Azeri,63004000,1,,0
+630,Iran (Persia),753,Government of Iran,114,MEK,308,Persians,63009000,0,2,0
+630,Iran (Persia),754,Government of Iran,114,PJAK,309,Kurds,63008000,1,1,-1
+630,Iran (Persia),755,Government of Iran,114,Jondullah,310,Baloch,63006000,1,1,-1
+630,Iran (Persia),756,Government of Iran,114,APCO,311,Arabs,63001000,1,1,1
+630,Iran (Persia),14895,Government of Iran,114,IS,234,,,0,0,-1
+640,Turkey (Ottoman Empire),781,Government of Turkey,115,PKK,323,Kurds,64001000,1,1,1
+640,Turkey (Ottoman Empire),822,Government of Turkey,115,DHKP-C,334,,,,,
+640,Turkey (Ottoman Empire),823,Government of Turkey,115,MKP,335,,,,,
+640,Turkey (Ottoman Empire),10516,Government of Turkey,115,TAK,2034,Kurds,64001000,1,1,-1
+640,Turkey (Ottoman Empire),14701,Government of Turkey,115,IS,234,,,,,
+640,Turkey (Ottoman Empire),15065,Government of Turkey,115,Yurtta Sulh Konseyi,6689,Turkish,64002000,0,2,0
+645,Iraq,517,Government of Iraq,116,Military faction (free Officers Movement),227,,,,,
+645,Iraq,518,Government of Iraq,116,Military faction (forces of Abdul Wahab al-Shawaf),228,,,,,
+645,Iraq,519,Government of Iraq,116,Military faction (forces of Abd as-Salam Arif),229,,,,,
+645,Iraq,520,Government of Iraq,116,NCRC,230,,,,,
+645,Iraq,521,Government of Iraq,116,SCIRI,231,Shi'a Arabs,64502000,1,1,1
+645,Iraq,523,Government of Iraq,116,Ansar al-Islam,233,Kurds,64501000,2,1,-1
+645,Iraq,523,Government of Iraq,116,Ansar al-Islam,233,Sunni Arabs,64503000,2,1,-1
+645,Iraq,524,Government of Iraq,116,IS,234,Sunni Arabs,64503000,1,1,-1
+645,Iraq,525,Government of Iraq,116,RJF,235,Sunni Arabs,64503000,1,1,-1
+645,Iraq,564,Government of Iraq,116,KDP,260,Kurds,64501000,1,1,1
+645,Iraq,565,Government of Iraq,116,PUK,261,Kurds,64501000,1,1,1
+645,Iraq,566,Government of Iraq,116,KDP-QM,262,Kurds,64501000,1,1,-1
+645,Iraq,13891,Government of Iraq,116,al-Mahdi Army,5659,Shi'a Arabs,64502000,1,2,1
+651,Egypt,838,Government of Egypt,117,al-Gama'a al-Islamiyya,341,Arab Muslims,65101000,0,2,0
+651,Egypt,12487,Government of Egypt,117,Ansar Bayt al-Maqdis,4319,,,,,
+651,Egypt,14677,Government of Egypt,117,IS,234,,,,,
+651,Egypt,14973,Government of Egypt,117,Harakit Sawa'id Misr,6616,,,,,
+651,Egypt,15262,Government of Egypt,117,Jama'at Ansar al-Islam,6844,,,0,-1,0
+652,Syria,642,Government of Syria,118,Military faction (forces loyal to Nureddin Atassi and Youssef Zeayen),268,,,,,
+652,Syria,643,Government of Syria,118,Muslim Brotherhood,269,Sunni Arabs,65202000,1,1,0
+652,Syria,11973,Government of Syria,118,Syrian insurgents,4456,Sunni Arabs,65202000,1,1,1
+652,Syria,11973,Government of Syria,118,Syrian insurgents,4456,Kurds,65206000,-1,-1,2
+652,Syria,13821,Government of Syria,118,PYD,4163,Kurds,65206000,1,1,2
+652,Syria,14620,Government of Syria,118,IS,234,Sunni Arabs,65202000,1,1,2
+652,Syria,14784,Government of Syria,118,SDF,6288,Sunni Arabs,65202000,0,1,-1
+652,Syria,14784,Government of Syria,118,SDF,6288,Kurds,65206000,0,1,-1
+660,Lebanon,526,Government of Lebanon,119,Independent Nasserite Movement,236,Sunnis (Arab),66010000,1,1,1
+660,Lebanon,527,Government of Lebanon,119,NSF,237,Druze,66002000,0,1,1
+660,Lebanon,527,Government of Lebanon,119,NSF,237,Sunnis (Arab),66010000,0,1,1
+660,Lebanon,528,Government of Lebanon,119,LAA,238,Sunnis (Arab),66010000,1,2,-1
+660,Lebanon,529,Government of Lebanon,119,Amal,239,Shi'a Muslims (Arab),66008000,1,2,-1
+660,Lebanon,530,Government of Lebanon,119,NUF,240,,,,,
+660,Lebanon,531,Government of Lebanon,119,Lebanese Forces - Hobeika faction,241,Maronite Christians,66005000,2,2,-1
+660,Lebanon,532,Government of Lebanon,119,Forces of Michel Aoun,242,Maronite Christians,66005000,1,1,1
+660,Lebanon,533,Government of Lebanon,119,Lebanese Forces,243,Maronite Christians,66005000,2,2,-1
+660,Lebanon,14244,Government of Lebanon,119,IS,234,Sunnis (Arab),66010000,2,0,0
+663,Jordan,14741,Government of Jordan,120,IS,234,,,,,
+666,Israel,470,Government of Israel,121,Palestinian insurgents,202,Palestinians (Arab),66601000,1,1,
+666,Israel,471,Government of Israel,121,Non PLO groups,203,Palestinian Arabs,66601200,1,1,
+666,Israel,472,Government of Israel,121,PLO,204,Palestinian Arabs,66601200,1,1,1
+666,Israel,473,Government of Israel,121,Rejectionist Front,1067,Palestinian Arabs,66601200,1,1,
+666,Israel,474,Government of Israel,121,PFLP,205,Palestinian Arabs,66601200,1,1,1
+666,Israel,475,Government of Israel,121,PFLP-GC,206,Palestinian Arabs,66601200,1,1,1
+666,Israel,476,Government of Israel,121,Fatah,207,Palestinian Arabs,66601200,1,1,1
+666,Israel,477,Government of Israel,121,Hamas,209,Palestinian Arabs,66601200,1,1,1
+666,Israel,478,Government of Israel,121,PIJ,208,Palestinian Arabs,66601200,1,1,
+666,Israel,479,Government of Israel,121,PNA,210,Palestinian Arabs,66601200,1,1,1
+666,Israel,480,Government of Israel,121,AMB,211,Palestinian Arabs,66601200,1,1,1
+666,Israel,481,Government of Israel,121,PRC,212,Palestinian Arabs,66601200,1,1,
+666,Israel,891,Government of Israel,121,Hezbollah,366,Palestinians (Arab),66601000,1,0,-1
+670,Saudi Arabia,757,Government of Saudi Arabia,122,JSM,312,Sunni Wahhabi (Najdi) (Arab),67005000,0,2,0
+678,Yemen (Arab Republic of Yemen),456,Government of Yemen (North Yemen),123,Opposition coalition,197,,,,,
+678,Yemen (Arab Republic of Yemen),457,Government of Yemen (North Yemen),123,Royalists,198,Northerners,67802000,1,0,0
+678,Yemen (Arab Republic of Yemen),458,Government of Yemen (North Yemen),123,NDF,199,Sunni Shafi'i (Arab),67802200,2,1,1
+678,Yemen (Arab Republic of Yemen),458,Government of Yemen (North Yemen),123,NDF,199,,,,,
+678,Yemen (Arab Republic of Yemen),459,Government of Yemen (North Yemen),123,AQAP,881,Southerners,67801000,0,2,0
+678,Yemen (Arab Republic of Yemen),459,Government of Yemen (North Yemen),123,AQAP,881,Sunni Shafi'i (Arab),67802200,0,2,0
+678,Yemen (Arab Republic of Yemen),853,Government of Yemen (North Yemen),123,Democratic Republic of Yemen,353,Southerners,67801000,1,1,0
+678,Yemen (Arab Republic of Yemen),10855,Government of Yemen (North Yemen),123,Ansarallah,1091,Northern Zaydis,67805000,1,2,2
+678,Yemen (Arab Republic of Yemen),14595,Government of Yemen (North Yemen),123,Forces of Hadi,6254,,,0,0,-1
+678,Yemen (Arab Republic of Yemen),14609,Government of Yemen (North Yemen),123,IS,234,Northern Shafi'i,67806000,1,1,0
+678,Yemen (Arab Republic of Yemen),14609,Government of Yemen (North Yemen),123,IS,234,Southern Shafi'i,67807000,1,1,0
+680,"Yemen, People's Republic of",786,Government of South Yemen,124,YSP - AFI,324,,,,,
+698,Oman,516,Government of Oman,129,State of Oman/Free Oman,226,,,,,
+698,Oman,698,Government of Oman,129,PFLO,284,,,,,
+700,Afghanistan,723,Government of Afghanistan,130,PDPA,291,Pashtuns,70012000,0,2,-1
+700,Afghanistan,724,Government of Afghanistan,130,Jam'iyyat-i Islami-yi Afghanistan,292,Pashtuns,70012000,0,1,1
+700,Afghanistan,724,Government of Afghanistan,130,Jam'iyyat-i Islami-yi Afghanistan,292,Tajiks,70014000,0,1,1
+700,Afghanistan,724,Government of Afghanistan,130,Jam'iyyat-i Islami-yi Afghanistan,292,Uzbeks,70016000,0,1,1
+700,Afghanistan,725,Government of Afghanistan,130,Harakat-i Inqilab-i Islami-yi Afghanistan,293,Hazara,70007000,0,1,-1
+700,Afghanistan,726,Government of Afghanistan,130,Hizb-i Islami-yi Afghanistan,299,Pashtuns,70012000,0,1,1
+700,Afghanistan,727,Government of Afghanistan,130,Hizb-i Islami-yi Afghanistan - Khalis faction,294,Pashtuns,70012000,0,1,1
+700,Afghanistan,728,Government of Afghanistan,130,Jabha-yi Nijat-i Milli-yi Afghanistan,295,Tajiks,70014000,0,2,-1
+700,Afghanistan,729,Government of Afghanistan,130,Mahaz-i Milli-yi Islami-yi Afghanistan,296,Pashtuns,70012000,0,1,1
+700,Afghanistan,730,Government of Afghanistan,130,Ittihad-i Islami Bara-yi Azadi-yi Afghanistan,297,Pashtuns,70012000,0,2,-1
+700,Afghanistan,731,Government of Afghanistan,130,Harakat-i Islami-yi Afghanistan,298,Pashtuns,70012000,0,2,-1
+700,Afghanistan,732,Government of Afghanistan,130,Hizb-i Wahdat,300,Hazara,70007000,1,1,1
+700,Afghanistan,733,Government of Afghanistan,130,Military faction (forces of Shahnawaz Tanay),301,,,,,
+700,Afghanistan,734,Government of Afghanistan,130,Junbish-i Milli-yi Islami,302,Uzbeks,70016000,0,1,-1
+700,Afghanistan,735,Government of Afghanistan,130,Taleban,303,Pashtuns,70012000,2,1,1
+700,Afghanistan,736,Government of Afghanistan,130,UIFSA,304,Hazara,70007000,2,1,1
+700,Afghanistan,736,Government of Afghanistan,130,UIFSA,304,Pashtuns,70012000,0,2,0
+700,Afghanistan,736,Government of Afghanistan,130,UIFSA,304,Tajiks,70014000,2,1,1
+700,Afghanistan,736,Government of Afghanistan,130,UIFSA,304,Uzbeks,70016000,2,1,1
+700,Afghanistan,14320,Government of Afghanistan,130,IS,234,Pashtuns,70012000,0,1,-1
+702,Tajikistan,842,Government of Tajikistan,131,UTO,345,Tajiks,70203000,0,2,0
+702,Tajikistan,842,Government of Tajikistan,131,UTO,345,Pamiri Tajiks,70206000,0,1,-1
+702,Tajikistan,843,Government of Tajikistan,131,Forces of Khudoberdiyev,346,Uzbeks,70205000,1,1,0
+702,Tajikistan,908,Government of Tajikistan,131,IMU,359,Kyrgyz,70201000,0,1,0
+702,Tajikistan,908,Government of Tajikistan,131,IMU,359,Tajiks,70203000,0,1,0
+702,Tajikistan,908,Government of Tajikistan,131,IMU,359,Uzbeks,70205000,0,1,0
+702,Tajikistan,12298,Government of Tajikistan,131,PFT,1186,Tajiks,70203000,0,2,0
+702,Tajikistan,12300,Government of Tajikistan,131,Forces of Mullo Abdullo,1216,Tajiks,70203000,0,2,-1
+704,Uzbekistan,872,Government of Uzbekistan,133,JIG,360,Uzbeks,70406000,0,2,0
+704,Uzbekistan,908,Government of Uzbekistan,133,IMU,359,Uzbeks,70406000,0,2,0
+710,China,403,Government of China,135,PLA,161,,,,,
+710,China,421,Government of China,135,Taiwanese insurgents,177,,,2,1,1
+710,China,483,Government of China,135,Tibet,213,Tibetans,71010000,1,1,1
+710,China,11990,Government of China,135,ETIM,1156,Uyghur,71036000,1,1,0
+750,India,449,Government of India,141,CPI,178,,,,,
+750,India,450,Government of India,141,CPI-ML,192,,,,,
+750,India,451,Government of India,141,PWG,193,,,,,
+750,India,452,Government of India,141,MCC,194,,,,,
+750,India,453,Government of India,141,CPI-Maoist,195,Other Backward Classes/Castes,75016000,0,1,0
+750,India,453,Government of India,141,CPI-Maoist,195,Scheduled Castes,75021000,0,1,0
+750,India,453,Government of India,141,CPI-Maoist,195,Scheduled Tribes,75022000,0,1,0
+750,India,507,Government of India,141,NNC,222,Naga,75014000,1,1,0
+750,India,508,Government of India,141,NSCN-IM,223,Naga,75014000,1,1,1
+750,India,638,Government of India,141,MNF,267,Mizo,75012000,1,1,1
+750,India,738,Government of India,141,TNV,305,Indigenous Tripuri,75007000,1,1,0
+750,India,739,Government of India,141,ATTF,306,Indigenous Tripuri,75007000,1,1,0
+750,India,740,Government of India,141,NLFT,307,Indigenous Tripuri,75007000,1,1,1
+750,India,768,Government of India,141,PLA,314,Manipuri,75010000,1,1,1
+750,India,769,Government of India,141,UNLF,315,Manipuri,75010000,1,1,1
+750,India,770,Government of India,141,KCP,317,Manipuri,75010000,1,1,0
+750,India,771,Government of India,141,PREPAK,318,Manipuri,75010000,1,1,0
+750,India,775,Government of India,141,Sikh insurgents,319,Punjabi-Sikhs (non-SC/ST/OBCs),75017000,1,1,1
+750,India,792,Government of India,141,Kashmir insurgents,325,Kashmiri Muslims,75006000,1,1,0
+750,India,793,Government of India,141,ULFA,326,Assamese (non-SC/ST/OBCs),75001000,1,1,1
+750,India,884,Government of India,141,ABSU,362,Bodo,75003000,1,1,1
+750,India,885,Government of India,141,NDFB,363,Bodo,75003000,1,1,0
+750,India,886,Government of India,141,NDFB - RD,1066,Bodo,75003000,1,1,0
+750,India,901,Government of India,141,PULF,369,,,-1,-1,-1
+750,India,11018,Government of India,141,NSCN-K,224,Naga,75014000,,,0
+750,India,11299,Government of India,141,NLFT-B,2939,Indigenous Tripuri,75007000,1,1,-1
+750,India,11932,Government of India,141,CPI-ML-J,3946,,,0,-1,-1
+750,India,11971,Government of India,141,GNLA,1163,Scheduled Tribes,75022000,1,1,0
+750,India,14102,Government of India,141,NDFB-S,5826,Bodo,75003000,1,1,0
+750,India,14685,Government of India,141,UNLFW,6320,Assamese (non-SC/ST/OBCs),75001000,1,-1,-1
+750,India,14685,Government of India,141,UNLFW,6320,Bodo,75003000,1,-1,-1
+750,India,14685,Government of India,141,UNLFW,6320,Manipuri,75010000,1,-1,-1
+750,India,14685,Government of India,141,UNLFW,6320,Naga,75014000,1,-1,-1
+770,Pakistan,673,Government of Pakistan,142,Mukti Bahini,280,Bengali,77002000,1,1,1
+770,Pakistan,708,Government of Pakistan,142,BLF,1166,Baluchis,77001000,1,1,1
+770,Pakistan,709,Government of Pakistan,142,BLA,287,Baluchis,77001000,1,1,1
+770,Pakistan,710,Government of Pakistan,142,Baloch Ittehad,288,Baluchis,77001000,1,1,1
+770,Pakistan,711,Government of Pakistan,142,BRA,289,Baluchis,77001000,1,1,-1
+770,Pakistan,855,Government of Pakistan,142,MQM,354,Mohajirs,77003000,1,1,1
+770,Pakistan,857,Government of Pakistan,142,TTP,356,Pashtuns,77004000,0,2,0
+770,Pakistan,10961,Government of Pakistan,142,IMU,359,,,,,
+770,Pakistan,11336,Government of Pakistan,142,Lashkar-e-Islam,399,,,,,
+770,Pakistan,11497,Government of Pakistan,142,TTP - TA,1101,,,,,
+770,Pakistan,11521,Government of Pakistan,142,UBA,3192,Baluchis,77001000,1,1,-1
+770,Pakistan,14227,Government of Pakistan,142,Jamaat-ul-Ahrar,5928,,,,,
+770,Pakistan,14319,Government of Pakistan,142,IS,234,,,,,
+771,Bangladesh,705,Government of Bangladesh,143,JSS/SB,285,Tribal-Buddhists,77103000,1,1,1
+771,Bangladesh,10985,Government of Bangladesh,143,PBCP,805,,,,,
+771,Bangladesh,11991,Government of Bangladesh,143,PBCP-J,1165,,,,,
+771,Bangladesh,14718,Government of Bangladesh,143,IS,234,Bengali Muslims,77102000,0,1,0
+775,Myanmar (Burma),427,Government of Myanmar (Burma),144,KNUP,890,Kayin (Karens),77506000,1,1,1
+775,Myanmar (Burma),428,Government of Myanmar (Burma),144,KNU,180,Kayin (Karens),77506000,1,1,1
+775,Myanmar (Burma),429,Government of Myanmar (Burma),144,God's Army,181,Kayin (Karens),77506000,1,1,0
+775,Myanmar (Burma),430,Government of Myanmar (Burma),144,DKBA 5,1107,Kayin (Karens),77506000,1,1,1
+775,Myanmar (Burma),431,Government of Myanmar (Burma),144,CPB,182,Bamar (Barman),77501000,0,2,2
+775,Myanmar (Burma),431,Government of Myanmar (Burma),144,CPB,182,Buddhist Arakanese,77502000,0,1,1
+775,Myanmar (Burma),431,Government of Myanmar (Burma),144,CPB,182,Chinese,77503000,0,1,1
+775,Myanmar (Burma),431,Government of Myanmar (Burma),144,CPB,182,Wa,77510000,0,1,1
+775,Myanmar (Burma),432,Government of Myanmar (Burma),144,CPB-RF,183,,,,,
+775,Myanmar (Burma),433,Government of Myanmar (Burma),144,"PVO - ""White Band"" faction",184,Bamar (Barman),77501000,0,2,1
+775,Myanmar (Burma),434,Government of Myanmar (Burma),144,ABSDF,185,,,,,
+775,Myanmar (Burma),435,Government of Myanmar (Burma),144,APLP,1050,Buddhist Arakanese,77502000,1,1,0
+775,Myanmar (Burma),436,Government of Myanmar (Burma),144,Mujahid Party,1065,Muslim Arakanese,77508000,2,1,1
+775,Myanmar (Burma),437,Government of Myanmar (Burma),144,ANLP,1049,Buddhist Arakanese,77502000,1,1,1
+775,Myanmar (Burma),438,Government of Myanmar (Burma),144,CPA,1052,Buddhist Arakanese,77502000,2,1,0
+775,Myanmar (Burma),439,Government of Myanmar (Burma),144,RPF,1068,Muslim Arakanese,77508000,1,1,1
+775,Myanmar (Burma),440,Government of Myanmar (Burma),144,ALP,1048,,,1,0,0
+775,Myanmar (Burma),442,Government of Myanmar (Burma),144,RSO,187,Muslim Arakanese,77508000,1,1,0
+775,Myanmar (Burma),443,Government of Myanmar (Burma),144,MFL-MUF,188,Mons,77507000,1,1,1
+775,Myanmar (Burma),444,Government of Myanmar (Burma),144,MPF,189,Mons,77507000,1,1,1
+775,Myanmar (Burma),445,Government of Myanmar (Burma),144,NMSP,190,Mons,77507000,1,1,
+775,Myanmar (Burma),446,Government of Myanmar (Burma),144,BMA,191,Mons,77507000,1,1,0
+775,Myanmar (Burma),460,Government of Myanmar (Burma),144,PNDF,200,Kachins,77505000,1,1,
+775,Myanmar (Burma),461,Government of Myanmar (Burma),144,KIO,201,Kachins,77505000,1,1,1
+775,Myanmar (Burma),511,Government of Myanmar (Burma),144,KNPP,225,Karenni (Red Karens),77512000,1,1,1
+775,Myanmar (Burma),541,Government of Myanmar (Burma),144,NSH,247,Shan,77509000,1,1,1
+775,Myanmar (Burma),542,Government of Myanmar (Burma),144,SSIA,248,Shan,77509000,1,1,
+775,Myanmar (Burma),543,Government of Myanmar (Burma),144,SNUF,249,Shan,77509000,2,1,1
+775,Myanmar (Burma),544,Government of Myanmar (Burma),144,SSA,250,Shan,77509000,1,1,1
+775,Myanmar (Burma),545,Government of Myanmar (Burma),144,SSNLO,251,Shan,77509000,1,1,
+775,Myanmar (Burma),546,Government of Myanmar (Burma),144,SURA,252,Shan,77509000,2,1,0
+775,Myanmar (Burma),547,Government of Myanmar (Burma),144,SSRA,253,,,-1,-1,-1
+775,Myanmar (Burma),548,Government of Myanmar (Burma),144,TRC,254,Shan,77509000,0,1,0
+775,Myanmar (Burma),549,Government of Myanmar (Burma),144,MTA,255,Shan,77509000,1,1,1
+775,Myanmar (Burma),550,Government of Myanmar (Burma),144,RCSS,256,Shan,77509000,1,1,0
+775,Myanmar (Burma),887,Government of Myanmar (Burma),144,UWSA,364,Wa,77510000,1,1,1
+775,Myanmar (Burma),906,Government of Myanmar (Burma),144,MNDAA,880,,,-1,-1,-1
+775,Myanmar (Burma),907,Government of Myanmar (Burma),144,LNUP,889,,,-1,-1,-1
+775,Myanmar (Burma),11018,Government of Myanmar (Burma),144,NSCN-K,224,,,,,
+775,Myanmar (Burma),11387,Government of Myanmar (Burma),144,ULA,3051,Buddhist Arakanese,77502000,1,1,0
+775,Myanmar (Burma),11972,Government of Myanmar (Burma),144,SSPP,1122,Shan,77509000,1,1,-1
+775,Myanmar (Burma),14273,Government of Myanmar (Burma),144,PSLF,5965,Shan,77509000,1,1,2
+775,Myanmar (Burma),15069,Government of Myanmar (Burma),144,ARSA,6692,Muslim Arakanese,77508000,1,1,0
+780,Sri Lanka (Ceylon),674,Government of Sri Lanka,145,JVP,281,Sinhalese,78003000,0,2,0
+780,Sri Lanka (Ceylon),776,Government of Sri Lanka,145,LTTE,320,Sri Lankan Tamils,78004000,1,1,0
+780,Sri Lanka (Ceylon),777,Government of Sri Lanka,145,TELO,321,Sri Lankan Tamils,78004000,1,1,0
+780,Sri Lanka (Ceylon),778,Government of Sri Lanka,145,EPRLF,322,Sri Lankan Tamils,78004000,2,1,0
+790,Nepal,561,Government of Nepal,146,NC,257,,,,,
+790,Nepal,562,Government of Nepal,146,CPN-M,258,Caste Hill Hindu Elite,79001000,1,1,1
+790,Nepal,562,Government of Nepal,146,CPN-M,258,Adibasi Janajati,79002000,1,1,1
+790,Nepal,562,Government of Nepal,146,CPN-M,258,Newars,79003000,0,2,2
+800,Thailand,487,Government of Thailand,147,Military faction (navy),215,,,,,
+800,Thailand,488,Government of Thailand,147,CPT,216,,,0,-1,2
+800,Thailand,888,Government of Thailand,147,Patani insurgents,365,Malay Muslims,80001000,1,1,1
+811,Cambodia (Kampuchea),644,Government of Cambodia (Kampuchea),148,KR,270,Khmer,81103000,0,2,0
+811,Cambodia (Kampuchea),644,Government of Cambodia (Kampuchea),148,KR,270,Khmer Loeu (various indigenous minorities),81105000,0,1,0
+811,Cambodia (Kampuchea),645,Government of Cambodia (Kampuchea),148,KNUFNS,271,,,,,
+811,Cambodia (Kampuchea),646,Government of Cambodia (Kampuchea),148,KPNLF,272,Khmer,81103000,0,2,0
+811,Cambodia (Kampuchea),647,Government of Cambodia (Kampuchea),148,FUNCINPEC,273,Khmer,81103000,0,2,0
+811,Cambodia (Kampuchea),15800,Government of Cambodia (Kampuchea),148,Forces of Norodom Ranariddh,7248,,,,,
+811,Cambodia (Kampuchea),15801,Government of Cambodia (Kampuchea),148,Military faction (Forces of Hun Sen),7249,,,,,
+812,Laos,535,Government of Laos,149,Pathet Lao,244,,,,,
+812,Laos,536,Government of Laos,149,Neutralists,245,,,,,
+812,Laos,537,Government of Laos,149,LRM,246,Hmong,81201000,1,1,1
+817,"Vietnam, Republic of",505,Government of South Vietnam,151,FNL,221,,,,,
+817,"Vietnam, Republic of",505,Government of South Vietnam,151,FNL,221,,,,,
+820,Malaysia,534,Government of Malaysia,152,CPM,196,,,0,-1,2
+820,Malaysia,578,Government of Malaysia,152,CCO,264,Chinese,82001000,0,1,1
+820,Malaysia,12139,Government of Malaysia,152,Sultanate of Sulu,4006,,,1,-1,1
+840,Philippines,410,Government of Philippines,154,Huk,168,,,,,
+840,Philippines,411,Government of Philippines,154,CPP,169,,,0,0,
+840,Philippines,412,Government of Philippines,154,"Military faction (forces of Honasan, Abenina & Zumel)",170,,,0,0,2
+840,Philippines,655,Government of Philippines,154,MIM,274,Moro,84003000,1,1,1
+840,Philippines,656,Government of Philippines,154,MNLF,275,Moro,84003000,1,1,1
+840,Philippines,657,Government of Philippines,154,MILF,276,Moro,84003000,1,1,1
+840,Philippines,658,Government of Philippines,154,ASG,277,Moro,84003000,1,1,0
+840,Philippines,659,Government of Philippines,154,MNLF - NM,278,Moro,84003000,1,1,1
+840,Philippines,660,Government of Philippines,154,MNLF - HM,279,Moro,84003000,1,1,1
+840,Philippines,11246,Government of Philippines,154,BIFM,1146,Moro,84003000,1,1,1
+840,Philippines,14913,Government of Philippines,154,Maute group,6578,Moro,84003000,1,1,1
+840,Philippines,15473,Government of Philippines,154,IS,234,Moro,84003000,0,1,-1
+840,Philippines,15474,Government of Philippines,154,al-Harakat al-Islamiyah,6998,Moro,84003000,1,1,-1
+850,Indonesia,484,Government of Indonesia,155,Republic of South Moluccas,214,Amboinese,85002000,1,1,1
+850,Indonesia,492,Government of Indonesia,155,Darul Islam,217,Javanese,85008000,0,2,0
+850,Indonesia,493,Government of Indonesia,155,Permesta Movement,218,Minahasa,85011000,0,1,1
+850,Indonesia,494,Government of Indonesia,155,PRRI,219,,,,,
+850,Indonesia,628,Government of Indonesia,155,OPM,266,Papuans,85013000,1,1,1
+850,Indonesia,720,Government of Indonesia,155,CNRT,290,East Timorese,85006000,1,1,1
+850,Indonesia,794,Government of Indonesia,155,GAM,327,Acehnese,85001000,1,1,1
+910,Papua New Guinea,797,Government of Papua New Guinea,157,BRA,328,Bougainvilleans,91002000,1,1,1

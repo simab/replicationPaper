@@ -12,5 +12,5 @@ Both of these scripts build upon the authors' original datasets, which we would 
 
 ### Instigator Extension
 
-Run `instigator_tfrac_extension.Rmd` in `replicationPaper/redemption-through-rebellion-dataverse_files/`. This markdown uses data created in `rep_04_include_instigator.R`, which it is not possible to entirely replicate because it involved manual intervention to generate the `acd_dyads_cows_years_rough_matched.csv` file which is used to combine the Correlates of War and ACD conflict data: we manually checked each of the contents of `acd_dyads_cows_years_rough_gb` to identify whether the conflict records from CoW and ACD were referring to the same conflict. 
+Run `instigator_tfrac_extension.Rmd` in `replicationPaper/replication_Files/`. This markdown uses data created in `rep_04_include_instigator.R`, which it is not possible to entirely replicate because it involved manual intervention to generate the `acd_dyads_cows_years_rough_matched.csv` file, which is used to combine the Correlates of War and ACD conflict data: we manually checked each of the contents of `acd_dyads_cows_years_rough_gb` to identify whether the conflict records from CoW and ACD were referring to the same conflict. 
  
