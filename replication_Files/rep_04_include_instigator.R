@@ -10,6 +10,10 @@ library(foreign)
 
 acd2epr <- read_csv(here('raw_epr_ucd_data','ACD2EPR-2021.csv'))
 epr_ag_seg <- read_csv(here('raw_epr_ucd_data','EPR-AG_segment_level_dataset.csv'))
+
+# too large to include in repository;
+# to replicate, download 'UCDP Georeferenced Event Dataset (GED) Global version 22.1'
+# from https://ucdp.uu.se/downloads/index.html#ged_global
 ged221 <- read_csv(here("ged221-csv","GEDEvent_v22_1.csv"))
 
 ged221_filt <- ged221 %>%
