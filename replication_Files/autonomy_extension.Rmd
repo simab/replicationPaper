@@ -1,0 +1,159 @@
+---
+title: 'Gov 2001: Extension 2'
+author: "Sima Biondi, Priyanka Sethy, Natalie Ayers"
+date: "2022-11-29"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(foreign)
+library(mediation)
+library(gsfuns)
+library("sandwich")
+library("lmtest")
+library("stargazer")
+library("lfe")
+library("plm")
+library(here)
+library(ggplot2)
+library("jtools")
+```
+
+# Introduction
+
+We are extending "Redemption through Rebellion: Border Change, Lost Unity, and Nationalist Conflict.” (2022), by Lars-Erik Cederman, Seraina Rüegger, and Guy Schvitz. The data and code for this paper are in the [Harvard Dataverse](https://doi.org/10.7910/DVN/SLWCLZ).
+
+# Results
+
+```{r ingest and prepare data}
+
+# Set working directory to own project folder
+#setwd("./redemption-through-rebellion-dataverse_files/")
+
+## Load dataset
+#an.df <- read.dta("epr_segment_level_analysis_ext.dta")
+#an.df.rugged <- read.csv(here("redemption-through-rebellion-dataverse_files","epr_segment_level_analysis_rugged.csv"))
+exten.df = read.csv(here("redemption-through-rebellion-dataverse_files",
+                         "epr_segment_level_analysis_extensions_rugged_claims.csv"))
+
+## Code "peaceyears" variable: years since last conflict, squared, cubed
+exten.df$pys <- exten.df$peaceyears
+exten.df$pys2 <- exten.df$peaceyears^2
+exten.df$pys3 <- exten.df$peaceyears^3
+exten.df$downgr5_aut = as.factor(exten.df$downgr5_aut)
+
+## Subset dataset: only politically relevant groups (EPR definition), exclude 
+## dominant and monopoly groups and groups without settlement area in GeoEPR, 
+exten.df.sub.allyears <- exten.df %>%
+  filter(isrelevant==1,
+         status_monopoly==0,
+         status_dominant==0,
+         !is.na(seg_area_sqkm),
+         !is.na(onset_do_flag))
+```
+
+## Table 1
+
+
+### Table 1 with Mean Terrain Ruggedness and AG post-inclusion/post-downgrade
+
+The table below replicates Table 1 in Cederman et al. (2022), providing the results of 3 logit models with robust standard errors clustered at the AG level. 
+
+```{r generate Table 1 logit analysis, warning=FALSE, results='asis', header=FALSE}
+# define variables for use in all models, including DV
+vars_logit <- c("onset_do_flag", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
+                "status_excl", "downgraded2", "rugged_mean",
+                "rbal", "warhist", "ln_capdist", "ln_rgdppc_lag",
+                "ln_pop_lag",  "colonial_past", "ln_state_age",
+                "pys", "pys2", "pys3",  "downgr5_aut", "downgr5_incl")
+# identify AG "treatment" variables to be analyzed separately
+treat.vars <- c("split", "tfrac", "tfrac_incr_post1946")
+
+# for each "treatment" variable, run logit model
+for(treat_var in treat.vars){
+  full_lhs <- append(treat_var, vars_logit)
+  onset_logit <- glm(onset_do_flag ~ ., 
+                     data=exten.df.sub.allyears[,full_lhs], family="binomial")
+  assign(paste0("logit_",treat_var), onset_logit)
+}
+
+# include clustered standard errors for each generated model
+logit_split_coefs <- coeftest(logit_split, 
+                              vcov. = vcovCL(logit_split, 
+                                             cluster = exten.df.sub.allyears$ag_id))
+logit_tfrac_coefs <- coeftest(logit_tfrac, 
+                              vcov. = vcovCL(logit_tfrac, 
+                                             cluster = exten.df.sub.allyears$ag_id))
+logit_tfrac_1946_coefs <- coeftest(logit_tfrac_incr_post1946, 
+                                   vcov. = vcovCL(logit_tfrac_incr_post1946, 
+                                                  cluster = exten.df.sub.allyears$ag_id))
+
+# Display results of logit model
+stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
+          type="text",
+          dep.var.labels.include = T,
+          header = T,
+          omit = c("pys", "pys2","pys3"),
+          column.sep.width = "3pt", # to reduce column width
+          single.row = TRUE, # to put coefficients and standard errors on same line
+          font.size = "small", # to make font size smaller
+          title = "Replication of Table 1 with Terrain Ruggedness and Lost Autonomy",
+          dep.var.caption = "Civil Conflict Onset",
+          covariate.labels = c("Divided group", "Fractionalization", 
+                               "Frac. incr. since 1946", "Territory sq.km, log",
+                               "Ongoing conflict, lag", "Exclusion", "Downgraded", 
+                               "Terrain Ruggedness (Mean)","Relative size", "War history",
+                               "Distance to capital, log", "GDP, lag, log",
+                               "Population, log","Colonial history",
+                               "State age, log",
+                               "Downgrade of autonomy (5 years)", "Downgrade of inclusion (5 years)"))
+
+
+```
+```{r}
+logit_split
+```
+
+
+```{r prediction plot}
+effect_plot(logit_split, 
+            pred = downgr5_aut, interval = T,
+            x.label = "Downgrade in autonomy within last 5 years",
+            y.label = "Onset of civil conflict",
+            title = "test"
+            )
+
+ggsave("ext2_autonomy_prediction_plot.jpeg")
+
+```
+
+
+
+
+# References
+
+Cederman, Lars-Erik, Seraina Rüegger, and Guy Schvitz. 2022. “Redemption through Rebellion: Border Change, Lost Unity, and Nationalist Conflict.” American Journal of Political Science 66 (1): 24–42. https://doi.org/10.1111/ajps.12634.
+
+Carter, David B., Andrew C. Shaver, and Austin L. Wright. 2019. “Places to Hide: Terrain, Ethnicity, and Civil Conflict.” The Journal of Politics, September. https://doi.org/10.1086/704597.
+
+Fearon, James D., and David D. Laitin. 2003. “Ethnicity, Insurgency, and Civil War.” American Political Science Review 97 (1): 75–90. https://doi.org/10.1017/S0003055403000534.
+
+Shaver, A., Carter, D. B., & Shawa, T. W. (2019). Terrain ruggedness and land cover: Improved data for most research designs. Conflict Management and Peace Science, 36(2), 191–218. https://doi-org.ezp-prod1.hul.harvard.edu/10.1177/0738894216659843
+
+
+### Sources Used
+
+https://stackoverflow.com/questions/16498849/logistic-regression-with-robust-clustered-standard-errors-in-r
+
+https://www.r-bloggers.com/2021/05/clustered-standard-errors-with-r/
+
+https://statisticsglobe.com/name-variables-in-for-loop-dynamically-in-r
+
+https://unc-libraries-data.github.io/R-Open-Labs/Extras/Stargazer/Stargazer.html
+
+
