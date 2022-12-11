@@ -235,6 +235,38 @@ stargazer(logit_split_coefs, logit_tfrac_coefs, logit_tfrac_1946_coefs,
                                "Downgrade of autonomy (5 years)", "Downgrade of inclusion (5 years)"))
 ```
 
+### Examine Terrain Ruggedness
+
+```{r study terrain ruggedness}
+vars_logit <- c("rugged_mean","split", "ln_ag_area_sqkm", "ag_incidence_flag_lag",
+                "status_excl", "downgraded2", 
+                "rbal", "warhist", "ln_capdist", "ln_rgdppc_lag",
+                "ln_pop_lag",  "colonial_past", "ln_state_age",
+                "pys", "pys2", "pys3",  "downgr5_aut", "downgr5_incl")
+
+full_lhs <- append(treat_var, vars_logit)
+test_ruggedness <- lm(rugged_mean ~ ., data = exten.df.sub.allyears[,full_lhs])
+
+stargazer(test_ruggedness,
+          type="latex",
+          dep.var.labels.include = T,
+          header = T,
+          omit = c("pys", "pys2","pys3"),
+          column.sep.width = "3pt", # to reduce column width
+          single.row = TRUE, # to put coefficients and standard errors on same line
+          font.size = "small", # to make font size smaller
+          title = "Terrain Ruggedness Accounted for by Other Controls",
+          dep.var.caption = "Terrain Ruggedness",
+          covariate.labels = c("Divided group",  
+                               "Territory sq.km, log",
+                               "Ongoing conflict, lag", "Exclusion", "Downgraded", 
+                               "Relative size", "War history",
+                               "Distance to capital, log", "GDP, lag, log",
+                               "Population, log","Colonial history",
+                               "State age, log",
+                               "Downgrade of autonomy (5 years)", "Downgrade of inclusion (5 years)"))
+```
+
 
 # References
 
