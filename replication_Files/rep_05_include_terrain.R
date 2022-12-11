@@ -8,8 +8,8 @@ library(terra)
 library(lubridate)
 here()
 
-an.df <- read.dta(here("redemption-through-rebellion-dataverse_files","epr_segment_level_analysis.dta"))
-geoepr.ag <- st_read(here("redemption-through-rebellion-dataverse_files","geoepr_ag.geojson"))
+an.df <- read.dta(here("epr_segment_level_analysis.dta"))
+geoepr.ag <- st_read(here("geoepr_ag.geojson"))
 
 # must download ruggedness to fully replicate, large file
 # from https://dataverse.harvard.edu/dataset.xhtml;jsessionid=b7ee5ce128efcce5938ff72864d2?persistentId=doi%3A10.7910%2FDVN%2FWXUZBN&version=&q=&fileAccess=&fileTag=&fileSortField=&fileSortOrder=
@@ -50,4 +50,4 @@ an.df.rugged <- an.df %>%
                 rename(groupname = 'groupname.x') %>%
                 dplyr::select(-c("groupname.y","syear","eyear"))
 
-write.csv(an.df.rugged, here("redemption-through-rebellion-dataverse_files","epr_segment_level_analysis_rugged.csv"))
+write.csv(an.df.rugged, here("epr_segment_level_analysis_rugged.csv"))

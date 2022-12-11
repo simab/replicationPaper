@@ -23,7 +23,7 @@ library(here)
 ## Data Ingestion and Preparation
 
 ```{r read in data}
-an.df <- read.dta(here("redemption-through-rebellion-dataverse_files","epr_segment_level_analysis.dta"))
+an.df <- read.dta(here("epr_segment_level_analysis.dta"))
 
 an.df$pys <- an.df$peaceyears
 an.df$pys2 <- an.df$peaceyears^2

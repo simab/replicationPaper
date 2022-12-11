@@ -8,8 +8,8 @@ library(foreign)
 
 
 
-acd2epr <- read_csv(here('raw_epr_ucd_data','ACD2EPR-2021.csv'))
-epr_ag_seg <- read_csv(here('raw_epr_ucd_data','EPR-AG_segment_level_dataset.csv'))
+acd2epr <- read_csv(here('ACD2EPR-2021.csv'))
+epr_ag_seg <- read_csv(here('EPR-AG_segment_level_dataset.csv'))
 
 # too large to include in repository;
 # to replicate, download 'UCDP Georeferenced Event Dataset (GED) Global version 22.1'
@@ -88,7 +88,7 @@ ged_acd2epr_dyads <- ged_acd2epr %>%
 
 
 #---------------------- DATA INPUT + PREP -----------------------------#
-cow_intrastate <- read.csv(here("cow_data","Intra-StateWarData_v4.1.csv"))
+cow_intrastate <- read.csv(here("Intra-StateWarData_v4.1.csv"))
 cow_intra_df <- cow_intrastate %>%
                 filter(WarType %in%  c(4, 5, 6),
                        StartYear1 >= 1946) %>%
@@ -96,7 +96,7 @@ cow_intra_df <- cow_intrastate %>%
                                  "Version","Intnl"))
 
 
-cow_extrastate <- read.csv(here("cow_data","Extra-StateWarData_v4.0.csv"))
+cow_extrastate <- read.csv(here("Extra-StateWarData_v4.0.csv"))
 cow_extra_df <- cow_extrastate %>%
                       filter(StartYear1 >= 1946) %>%
                       dplyr::select(-c("TransTo","BatDeath",
@@ -188,7 +188,7 @@ write.csv(ged_cow01, "ged_cow_confirmedmaybe01.csv")
 
 #------------------------------ ADD TFRAC -----------------------------------#
 
-an.df <- read.dta(here("redemption-through-rebellion-dataverse_files","epr_segment_level_analysis.dta"))
+an.df <- read.dta(here("epr_segment_level_analysis.dta"))
 
 an.df$pys <- an.df$peaceyears
 an.df$pys2 <- an.df$peaceyears^2

@@ -35,7 +35,7 @@ We have so far noticed only one discrepancy between the code and data the author
 #setwd("./redemption-through-rebellion-dataverse_files/")
 
 ## Load dataset
-an.df <- read.dta(here("redemption-through-rebellion-dataverse_files", "epr_segment_level_analysis.dta"))
+an.df <- read.dta(here("epr_segment_level_analysis.dta"))
 
 ## Code "peaceyears" variable: years since last conflict, squared, cubed
 an.df$pys <- an.df$peaceyears

@@ -34,8 +34,7 @@ We are extending "Redemption through Rebellion: Border Change, Lost Unity, and N
 
 
 ## Load dataset
-exten.df = read.csv(here("redemption-through-rebellion-dataverse_files",
-             "epr_segment_level_analysis_extensions_rugged_claims.csv"))
+exten.df = read.csv(here("epr_segment_level_analysis_extensions_rugged_claims.csv"))
 
 ## Code "peaceyears" variable: years since last conflict, squared, cubed
 exten.df$pys <- exten.df$peaceyears
